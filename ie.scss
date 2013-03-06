@@ -1,0 +1,46 @@
+@import "vars";
+@import "mixins";
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
+$wrap: $col * 12 + $gutter * 11;
+@for $i from 2 through 12 {
+    .col#{$i} {
+        width: $col * $i + $gutter * $i - $gutter;
+        float: left;
+        margin: 0 $gutter/2 $vgrid $gutter/2;
+    }
+}
+@for $i from 1 through 11 {
+    .pre#{$i} {
+        padding-left: $col * $i + $gutter * $i;
+    }
+}
+@for $i from 1 through 11 {
+    .suf#{$i} {
+        padding-right: $col * $i + $gutter * $i;
+    }
+}
+.container {
+	width: $wrap + $gutter;
+	margin: 0 auto;
+}
+.colr {
+    float: right;
+    margin: 0 $gutter/2 $vgrid $gutter/2;
+}
+.alpha {
+	margin-left: 0;
+}
+.omega {
+	margin-right: 0;
+}
+.clear {
+    clear: both;
+}
+.ruler {
+	border-bottom: 1px solid $gray_lt;
+	clear: both;
+}
+
+@import "desk/*";

@@ -1,0 +1,29 @@
+// navigation
+.nav {
+	ul {
+		padding: 28px 0 0 0;
+		margin: 0;
+		list-style: none;
+		li {
+			padding: 0;
+			margin: 0;
+		}
+		&.sub.opened {
+			display: block;
+		}
+	}
+	a {
+		height: 22px;
+		font-size: 16px;
+		line-height: 20px;
+		padding: 6px 15px;
+		&.btn-project {
+			margin-left: 25px;
+			span {
+				display: block;
+				padding: 0 15px 2px 0;
+				background: url('#{$img}bg-btn-project-head.png') 100% 50% no-repeat;
+			}
+		}
+	}
+}

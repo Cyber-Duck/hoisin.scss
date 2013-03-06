@@ -1,0 +1,782 @@
+// Intro
+.home-intro {
+	text-align: center;
+	padding: 40px 0;
+	a {
+		color: $gray;
+		display: inline-block;
+		border-bottom: 1px dotted $gray_lt;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+			border-bottom: 1px solid $gray;
+		}
+	}
+	h2 {
+		text-shadow: 2px 2px 0 #FFF;
+		line-height: 40px;
+		color: $title;
+		a {
+			color: $text;
+			height: 34px;
+			@include radius(0);
+		}		
+	}
+	p {
+		font-family: $title_font;
+		color: $gray;
+		font-size: 22px;
+		line-height: 30px;
+		text-shadow: 1px 1px 0 #FFF;
+		a {
+			height: 26px;
+		}
+	}
+}
+
+// Home content
+.home {
+	.services-wrap {
+		padding: 0 0 10px 0;
+	}
+	h2.hero {
+		text-align: center;
+	}
+}
+.home-content {
+	padding: 40px 0 0 0;
+	.col4 {
+		margin: 0 10px;
+	}
+}
+.home-txt-blocks {
+	height: 180px;
+}
+
+.home-inverted {
+	color: $white;
+	background: $blue;
+	h3 {
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+	}
+}
+
+
+// Carousel
+.home-slideshow {
+	text-align: center;
+	width: 100%;
+	height: 740px;
+	background: url('#{$img}bg-slideshow-shadow.png') 50% 100% no-repeat;
+	.carousel-nav {
+		padding: 0;
+		text-align: center;
+		width: 940px;
+		margin: 0 auto;
+		position: relative;
+		a {
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 40px;
+			height: 36px;
+			text-indent: 80px;
+			overflow: hidden;
+			line-height: 80px;
+			background-image: url('#{$sprite}');
+			background-color: transparent;
+			background-repeat: no-repeat;
+			z-index: 100;
+			&.pause {
+				left: 50%;
+				top: 0;
+				margin: -50px 0 0 -30px;
+				width: 60px;
+				background-image: url('#{$sprite}');
+				background-position: -360px -640px;
+				&.paused {
+					background-image: url('#{$sprite}');
+					background-position: -430px -640px;
+				}
+			}
+			&.prev {
+				left: 10px;
+				height: 40px;
+				margin-top: -350px;
+				background-position: 0 -720px;
+				&:hover {
+					background-position: 0 -760px;
+				}
+			}
+			&.next {
+				right: 10px;
+				height: 40px;
+				margin-top: -350px;
+				background-position: -40px -720px;
+				&:hover {
+					background-position: -40px -760px;
+				}
+			}
+		}
+	}
+}
+
+
+.carousel {
+	position: relative;
+	padding: 0 0 20px 0;
+	height: 660px;
+	overflow: hidden;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		li {
+			margin: 0;
+			padding: 0;
+			height: 660px;
+			width: 100%;
+			overflow: hidden;
+			& > div {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 660px;
+				& > div {
+					position: absolute;
+				}
+				.banner-text {
+					color: $white;
+					text-align: center;
+					height: 230px;
+					width: 230px;
+					padding: 40px 20px 0 20px;
+					top: 40px;
+					left: 70%;
+					font-size: 20px;
+					@include radius(135px);
+					@include opacity(0);
+					@include transition-dur(2s);
+					h3 {
+						color: $white;
+						padding: 0 28px;
+						font-size: 34px;
+						margin: 0 0 15px 0;
+					}
+					.banner-logo {
+						text-align: center;
+						height: 80px;
+						width: 80px;
+						padding: 20px;
+						position: absolute;
+						top: 0;
+						left: 0;
+						margin: -20px 0 0 -60px;
+						@include radius(60px);
+					}
+					.case-study {
+						width: 80px;
+						height: 80px;
+						padding: 0;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						margin: 0 0 104px -55px;
+						text-align: center;
+						a {
+							color: $white;
+							display: block;
+							width: 60px;
+							height: 44px;
+							padding: 18px 10px;
+							line-height: 20px;
+							text-decoration: none;
+							@include radius(40px);
+						}
+					}
+				}
+			}
+		}
+		.item-1 {
+			background: $white url('#{$img}carousel/optima/background.jpg') center top no-repeat;
+			@include opacity(0);
+		    @include transition-dur(1s);
+			.optiman {
+				width: 225px;
+				height: 400px;
+				top: 50px;
+				left: 50%;
+				margin: 0 0 0 -460px;
+				background: url('#{$img}carousel/optima/optiman.png') center top no-repeat;
+				@include rotate(200deg, 100% 100%);
+				@include transition-dur(2s);
+			}
+			.computer {
+				width: 542px;
+				height: 344px;
+				padding: 28px 27px 29px 27px;
+				top: 100%;
+				left: 50%;
+				margin: 0 0 0 -306px;
+				background: url('#{$img}carousel/computer.png') center top no-repeat;
+			    @include transition-dur(1s);
+			    div {
+			    	width: 542px;
+			    	height: 344px;
+			    	background: url('#{$img}carousel/optima/sc-computer.jpg') center top no-repeat;
+			    }
+			}
+			.skyline {
+				width: 596px;
+				height: 356px;
+				bottom: 0;
+				left: 50%;
+				margin: 0 0 0 -306px;
+				background: url('#{$img}carousel/optima/skyline.png') center top no-repeat;
+			}
+			.tablet {
+				width: 174px;
+				height: 232px;
+				padding: 25px 34px 35px 32px;
+				left: 100%;
+				bottom: 115px;
+				background: url('#{$img}carousel/tablet.png') center top no-repeat;
+				margin: 0 0 0 64px;
+			    @include transition-dur(1.2s);
+			    div	{
+			    	width: 174px;
+			    	height: 232px;
+			    	background:  url('#{$img}carousel/optima/sc-tablet.jpg') center top no-repeat;
+			    }
+			}
+			.phone {
+				width: 106px;
+				height: 174px;
+				padding: 29px 19px 50px 19px;
+				left: 100%;
+				bottom: 80px;
+				margin: 0 0 0 166px;
+				background: url('#{$img}carousel/phone.png') center top no-repeat;
+			    @include transition-dur(1.4s);
+			    div {
+					width: 106px;
+					height: 174px;
+					background: url('#{$img}carousel/optima/sc-mobile.jpg') center top no-repeat;
+			    }
+			}
+			.banner-text {
+				background: #0078CE;
+				.banner-logo {
+					background: #0292F9;
+				}
+				.case-study a {
+					background: darken(#0292F9, 5%);
+					&:hover {
+						background: lighten(#0292F9, 5%);
+					}
+				}
+			}
+		}
+		.item-2 {
+			background: $white url('#{$img}carousel/arsenal/background.jpg') center top no-repeat;
+			@include opacity(0);
+		    @include transition-dur(1s);
+			.score {
+				bottom: 150px;
+				left: -357px;
+				width: 357px;
+				height: 72px;
+				background: url('#{$img}carousel/arsenal/score.png') center top no-repeat;
+				margin: 0 0 0 -320px;
+				@include transition-dur(1s);
+			}
+			.notepad {
+				top: 260px;
+				left: 100%;
+				width: 222px;
+				height: 287px;
+				background: url('#{$img}carousel/arsenal/notepad.png') center top no-repeat;
+				margin: 0 0 0 150px;
+				@include transition-dur(1s);
+			}
+			.dinosaur {
+				top: 80px;
+				left: -330px;
+				width: 329px;
+				height: 452px;
+				margin: 0 0 0 -520px;
+				background: url('#{$img}carousel/arsenal/dinosaur.png') center top no-repeat;
+				@include transition-dur(1.4s);
+			}
+			.banner-text {
+				background: #C92739;
+				.banner-logo {
+					background: #EC5F70;
+				}
+				.case-study a {
+					background: darken(#EC5F70, 5%);
+					&:hover {
+						background: lighten(#EC5F70, 5%);
+					}
+				}
+			}
+		}
+		.item-3 {
+			background: $white url('#{$img}carousel/jda/background.jpg') center top no-repeat;
+			@include opacity(0);
+		    @include transition-dur(1s);
+		    .cloud {
+		    	width: 256px;
+		    	height: 143px;
+		    	top: 100px;
+		    	left: 50%;
+		    	margin: 0 0 0 -600px;
+		    	background: url(#{$img}carousel/jda/cloud.png) center top no-repeat;
+			    @include transition-dur(6s);
+		    }
+		    .pelican {
+		    	width: 0;
+		    	height: 174px;
+		    	top: 100px;
+		    	left: 50%;
+		    	margin: 0 0 0 -253px;
+		    	overflow: hidden;
+		    	background: url(#{$img}carousel/jda/pelican.png) left top no-repeat;
+			    @include transition-dur(2s);
+		    }
+		    .lion {
+		    	width: 290px;
+		    	height: 240px;
+		    	top: 380px;
+		    	left: 50%;
+		    	margin: 0 0 0 -640px;
+		    	background: url(#{$img}carousel/jda/lion.png) center top no-repeat;
+			    @include transition-dur(1s);
+		    }
+		    .monkey {
+		    	width: 126px;
+		    	height: 203px;
+		    	top: 300px;
+		    	left: 50%;
+		    	margin: 0 0 0 400px;
+		    	background: url(#{$img}carousel/jda/monkey.png) center top no-repeat;
+			    @include transition-dur(1.5s);
+		    }
+			.banner-text {
+				background: #937339;
+				.banner-logo {
+					background: #B69558;
+				}
+				.case-study a {
+					background: darken(#B69558, 5%);
+					&:hover {
+						background: lighten(#B69558, 5%);
+					}
+				}
+			}
+		}
+		.item-4 {
+			background: $white url('#{$img}carousel/dmd/background.jpg') center top no-repeat;
+			@include opacity(0);
+		    @include transition-dur(1s);
+		    .computer {
+				width: 469px;
+				height: 298px;
+				padding: 24px 23px 113px 24px;
+				top: 29px;
+				left: 50%;
+				margin: 0 0 0 -400px;
+				background: url('#{$img}carousel/computer-sm.png') center top no-repeat;
+			    @include transition-dur(1s);
+			    div {
+			    	width: 469px;
+			    	height: 298px;
+			    	background: url('#{$img}carousel/dmd/sc-computer.jpg') center top no-repeat;
+			    }
+		    }
+			.phone {
+				width: 68px;
+				height: 113px;
+				padding: 20px 16px 32px 16px;
+				left: 50%;
+				bottom: 100%;
+				margin: 0 0 0 -49px;
+				background: url('#{$img}carousel/dmd/phone-bg.png') center top no-repeat;
+			    @include transition-dur(1.4s);
+			    div {
+					width: 68px;
+					height: 113px;
+					background: url('#{$img}carousel/dmd/sc-mobile.jpg') center top no-repeat;
+			    }
+			}
+			.tablet {
+				bottom: 100%;
+				left: 50%;
+			    width: 112px;
+			    height: 165px;
+				background: url('#{$img}carousel/dmd/nexus-bg.png') center top no-repeat;
+				margin: 0 0 0 -6px;
+				padding: 30px 34px 43px 30px;
+				@include transition-dur(1.2s);
+			    div	{
+			    	width: 112px;
+			    	height: 165px;
+			    	background:  url('#{$img}carousel/dmd/sc-tablet.jpg') center top no-repeat;
+			    }
+			}
+			.eiffel {
+				top: -200px;
+				left: 50%;
+				width: 189px;
+				height: 240px;
+				background: url('#{$img}carousel/dmd/eiffel.png') center top no-repeat;
+				margin: 0 0 0 100px;
+				@include transition-dur(1s);
+			}
+			.bigben {
+				top: -300px;
+				left: 50%;
+				width: 95px;
+				height: 177px;
+				background: url('#{$img}carousel/dmd/bigben.png') center top no-repeat;
+				margin: 0 0 0 210px;
+				@include transition-dur(1s);
+			}
+			.train {
+				bottom: 150px;
+				left: 20%;
+				width: 473px;
+				height: 117px;
+				margin: 0 0 0 30px;
+				background: url('#{$img}carousel/dmd/train.png') center top no-repeat;
+				@include transition-dur(1s);
+			}
+			.banner-text {
+				background: #DA9402;
+				.banner-logo {
+					margin: -20px 0 0 -80px;
+					background: #FCC659;
+				}
+				.case-study a {
+					background: darken(#FCC659, 5%);
+					&:hover {
+						background: lighten(#FCC659, 5%);
+					}
+				}
+			}
+		}
+		.item-5 {
+			background: $white url('#{$img}carousel/retireeasy/background.jpg') center top no-repeat;
+			@include opacity(0);
+		    @include transition-dur(1s);
+		    .graph {
+		    	width: 856px;
+		    	height: 0;
+				background: url('#{$img}carousel/retireeasy/graph.png') center top no-repeat;
+				bottom: 189px;
+				left: 50%;
+				margin: 0 0 0 -397px;
+			    @include transition-dur(1s);
+		    }
+		    .computer {
+				width: 522px;
+				height: 296px;
+				padding: 25px 25px 102px 25px;
+				top: 29px;
+				left: 50%;
+				margin: 0 0 0 -235px;
+				background: url('#{$img}carousel/computer-gen.png') center top no-repeat;
+			    @include transition-dur(1s);
+			    div {
+			    	width: 522px;
+			    	height: 296px;
+			    	background: url('#{$img}carousel/retireeasy/computer-screen.jpg') center top no-repeat;
+			    }
+		    }
+			.tablet {
+				bottom: 100%;
+				left: 50%;
+			    width: 262px;
+			    height: 156px;
+				background: url('#{$img}carousel/tablet-lands.png') center top no-repeat;
+				margin: 0 0 0 -380px;
+				padding: 16px 19px 36px 17px;
+				@include transition-dur(1.2s);
+			    div	{
+			    	width: 262px;
+			    	height: 156px;
+			    	background:  url('#{$img}carousel/retireeasy/tablet-screen.jpg') center top no-repeat;
+			    }
+			}
+			.banner-text {
+				background: #1C9C5F;
+				h3 {
+					padding: 0 20px;
+				}
+				.banner-logo {
+					margin: -20px 0 0 -80px;
+					background: #4CC38B;
+				}
+				.case-study a {
+					background: darken(#4CC38B, 5%);
+					&:hover {
+						background: lighten(#4CC38B, 5%);
+					}
+				}
+			}
+		}
+		.animate-in {
+			top: 0;
+			left: 0;
+			& > div {
+				.banner-text {
+					@include opacity(0);
+					@include transition-dur(2s);
+				}
+			}
+			.item-1 {
+				@include opacity(1);
+		    	@include transition-dur(1s);
+				.optiman {
+					@include rotate(0deg, 100% 100%);
+					@include transition-dur(2s);
+				}
+				.computer {
+					top: 139px;
+				    @include transition-dur(1s);
+				}
+				.tablet {
+					left: 50%;
+					@include transition-dur(1.2s);
+				}
+				.phone {
+					left: 50%;
+					@include transition-dur(1.4s);
+				}
+				.banner-text {
+					@include opacity(1);
+				}
+			}
+			.item-2 {
+				@include opacity(1);
+		    	@include transition-dur(1s);
+				.score {
+					left: 50%;
+					@include transition-dur(1s);
+				}
+				.notepad {
+					left: 50%;
+					@include transition-dur(1.2s);
+				}
+				.dinosaur {
+					left: 50%;
+					@include transition-dur(1.4s);
+				}
+				.banner-text {
+					@include opacity(1);
+				}
+			}
+			.item-3 {
+				@include opacity(1);
+		    	@include transition-dur(1s);
+				.cloud {
+					margin: 0 0 0 -500px;
+				}
+				.pelican {
+					top: 70px;
+					margin: 0 0 0 -359px;
+					width: 95px;
+				}
+				.lion {
+					margin: 0 0 0 -440px;
+				}
+				.monkey {
+					margin: 0 0 0 240px;
+				}
+				.banner-text {
+					@include opacity(1);
+				}		
+			}
+			.item-4 {
+				@include opacity(1);
+		    	@include transition-dur(1s);
+				.computer {
+					top: 130px;
+				    @include transition-dur(1s);
+				}
+				.phone {
+					bottom: 90px;
+					@include transition-dur(1s);
+				}
+				.tablet {
+					bottom: 95px;
+					@include transition-dur(1.1s);
+				}
+				.eiffel {
+					top: 330px;
+					@include transition-dur(1.2s);
+				}
+				.bigben {
+					top: 400px;
+					@include transition-dur(1.4s);
+				}
+				.train {
+					left: 50%;
+					@include transition-dur(2s);
+				}
+				.banner-text {
+					@include opacity(1);
+				}
+			}
+			.item-5 {
+				@include opacity(1);
+		    	@include transition-dur(1s);
+			    .graph {
+					height: 260px;
+				    @include transition-dur(1s);
+			    }
+				.computer {
+					top: 120px;
+				    @include transition-dur(1s);
+				}
+				.tablet {
+					bottom: 110px;
+					@include transition-dur(1.1s);
+				}
+				.banner-text {
+					@include opacity(1);
+				}
+			}
+		}
+	}
+}
+
+
+// Footer
+.home {
+	#wrap {
+		background-image: none;
+	}
+	.foot-wrap {
+		background: $white url('#{$img}page-arrow-home.png') center bottom no-repeat;
+	}
+	.foot {
+		background: $white url('#{$img}page-arrow-home.png') center top no-repeat;
+		color: $text;
+	}
+	.home-inverted {
+		h2, h3 {
+			color: $white;
+		}
+	}
+	.foot-start-project {
+		h3 {
+			color: $blue;
+			text-shadow: none;
+		}
+	}
+	.ruler-blue {
+		border-color: $gray_lt;
+	}
+	.foot-cont {
+		color: $text;
+		h3 {
+			color: $blue;
+		}
+		h4 {
+			color: $title;
+		}
+		a {
+			color: $title;
+		}
+	}
+	.end {
+		color: $text;
+		a {
+			color: $text;
+			&.pagetop {
+				&::before {
+					background: url('#{$sprite}') -504px -616px no-repeat;;
+				}
+			}
+		}
+	}
+
+	.foot-social {
+		a {
+			background-color: $gray_bg;
+			&.lnk-facebook {
+				background-position: 0 -440px;
+				&:hover {
+					background-position: 0 -500px;
+				}
+			}
+			&.lnk-twitter {
+				background-position: -60px -440px;
+				&:hover {
+					background-position: -60px -500px;
+				}
+			}
+			&.lnk-linkedin {
+				background-position: -120px -440px;
+				&:hover {
+					background-position: -120px -500px;
+				}
+			}
+			&.lnk-meetup {
+				background-position: -180px -440px;
+				&:hover {
+					background-position: -180px -500px;
+				}
+			}
+			&.lnk-youtube {
+				background-position: -240px -440px;
+				&:hover {
+					background-position: -240px -500px;
+				}
+			}
+			&.lnk-flickr {
+				background-position: -300px -440px;
+				&:hover {
+					background-position: -300px -500px;
+				}
+			}
+			&.lnk-github {
+				background-position: -360px -440px;
+				&:hover {
+					background-position: -360px -500px;
+				}
+			}
+			&.lnk-bitbucket {
+				background-position: -420px -440px;
+				&:hover {
+					background-position: -420px -500px;
+				}
+			}
+			&.lnk-lastfn {
+				background-position: -480px -440px;
+				&:hover {
+					background-position: -480px -500px;
+				}
+			}
+			&.lnk-stackover {
+				background-position: -540px -440px;
+				&:hover {
+					background-position: -540px -500px;
+				}
+			}
+		}
+	}
+}
+
+// High definition displays
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) { 
+	.home {
+		.foot {
+			background: url('#{$img}page-arrow-home-hd.png') 50% 0 no-repeat;
+			background-size: 2400px 108px;
+		}
+	}
+}

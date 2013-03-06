@@ -1,0 +1,24 @@
+/*
+ * Hoisin sauce
+ * CSS Framework boilerplate
+ * Create your own grids, plugin anything
+ * Version: 1.0
+ * 
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+
+
+@import "vars";
+@import "mixins";
+
+// Only styles common for all screen sizes
+body {
+	color: $text;
+	background: $white;
+}

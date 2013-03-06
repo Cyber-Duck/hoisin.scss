@@ -1,0 +1,38 @@
+// Contact page
+.contact-details {
+	padding: 10px 20px 20px 20px;
+	article {
+		margin: 0 0 20px 0;
+	}
+	address {
+		margin: 0;
+	}
+}
+.location {
+	display: none;
+}
+.map {
+	display: none;
+}
+
+.form {
+	margin: 0;
+	padding: 20px 0;
+	.field {
+		margin: 0 0 10px 0;
+	}
+	.field-error {
+		input, textarea {
+			border-color: $error;
+		}
+		.field-info {
+			color: $error;
+		}
+	}
+	legend {
+		display: none;
+	}
+	textarea {
+		margin: 0 0 10px 0;
+	}
+}
