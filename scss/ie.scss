@@ -1,7 +1,8 @@
 @import "vars";
 @import "mixins";
 
-// Grid system
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
 $wrap: $col * 12 + $gutter * 11;
 @for $i from 2 through 12 {
     .col#{$i} {
@@ -23,20 +24,22 @@ $wrap: $col * 12 + $gutter * 11;
 .container {
 	width: $wrap + $gutter;
 	margin: 0 auto;
-	padding-top: 1px;
+}
+.colr {
+    float: right;
+    margin: 0 $gutter/2;
+}
+.alpha {
+	margin-left: 0;
+}
+.omega {
+	margin-right: 0;
+}
+.clear {
+    clear: both;
 }
 
-// Large desktop
-@media only screen and (min-width: 1360px) and (min-device-width: 1360px) {
-
-	@import "large";
-
-}
-
-
-// High definition displays
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) {
-
-	@import "hd";
-
-}
+// Import all sections and common files from desk folder
+@import "desk/home";
+@import "desk/nav";
+@import "desk/contact";

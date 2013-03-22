@@ -1,0 +1,23 @@
+/*
+ * Hoisin sauce
+ * CSS Framework boilerplate
+ * Create your own grids, plugin anything
+ * Version: 0.9
+ *
+ */
+body {
+  color: #666666;
+  background: white; }
+
+.colr {
+  float: right;
+  margin: 0 10px; }
+
+.alpha {
+  margin-left: 0; }
+
+.omega {
+  margin-right: 0; }
+
+.clear {
+  clear: both; }
