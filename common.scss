@@ -2,14 +2,7 @@
  * Hoisin sauce
  * CSS Framework boilerplate
  * Create your own grids, plugin anything
- * Version: 1.0
- * 
- *
- *
- *
- *
- *
- *
+ * Version: 0.9
  *
  */
 
@@ -21,4 +14,20 @@
 body {
 	color: $text;
 	background: $white;
+}
+
+
+// Common utilities
+.colr {
+    float: right;
+    margin: 0 $gutter/2;
+}
+.alpha {
+	margin-left: 0;
+}
+.omega {
+	margin-right: 0;
+}
+.clear {
+    clear: both;
 }

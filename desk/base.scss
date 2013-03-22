@@ -25,19 +25,6 @@ $wrap: $col * 12 + $gutter * 11;
 	margin: 0 auto;
 	padding-top: 1px;
 }
-.colr {
-    float: right;
-    margin: 0 $gutter/2 $vgrid $gutter/2;
-}
-.alpha {
-	margin-left: 0;
-}
-.omega {
-	margin-right: 0;
-}
-.clear {
-    clear: both;
-}
 
 // Large desktop
 @media only screen and (min-width: 1360px) and (min-device-width: 1360px) {
