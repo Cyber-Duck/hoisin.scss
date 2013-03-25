@@ -1,1 +1,26 @@
 // Large desktop styles
+$col:			70px;
+$gutter:		30px;
+
+// Grid system
+$wrap: $col * 12 + $gutter * 11;
+@for $i from 2 through 12 {
+    .col#{$i} {
+        width: $col * $i + $gutter * $i - $gutter;
+        float: left;
+        margin: 0 $gutter/2;
+    }
+}
+@for $i from 1 through 10 {
+    .pre#{$i} {
+        padding-left: $col * $i + $gutter * $i;
+    }
+}
+@for $i from 1 through 10 {
+    .suf#{$i} {
+        padding-right: $col * $i + $gutter * $i;
+    }
+}
+.container {
+	width: $wrap + $gutter;
+}

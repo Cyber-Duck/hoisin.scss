@@ -10,12 +10,12 @@ $wrap: $col * 12 + $gutter * 11;
         margin: 0 $gutter/2;
     }
 }
-@for $i from 1 through 11 {
+@for $i from 1 through 10 {
     .pre#{$i} {
         padding-left: $col * $i + $gutter * $i;
     }
 }
-@for $i from 1 through 11 {
+@for $i from 1 through 10 {
     .suf#{$i} {
         padding-right: $col * $i + $gutter * $i;
     }
@@ -24,6 +24,10 @@ $wrap: $col * 12 + $gutter * 11;
 	width: $wrap + $gutter;
 	margin: 0 auto;
 	padding-top: 1px;
+    &::after {
+        content: " ";
+        clear: both;
+    }
 }
 
 // Import section files
