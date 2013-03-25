@@ -9,7 +9,7 @@ We did not include a reset since we believe they are not necessary, we encourage
 Open the _vars.scss file and add your variables to it. You can add any variables you will be using like colors, font files, sizes, etc.
 
 ### Grid
-By defaul we use a 12 column grid with 60px columns and 20px gutters. The spans have simple names like `".col4"`. there are helper classes like `".colr"` to pull a span to the right, and `".pre1"` to `".pre11"` as well as `".suf1"1 to `".suf10"` for offset spans.
+By defaul we use a 12 column grid with 60px columns and 20px gutters. The spans have simple names like `".col4"`. There are helper classes like `".colr"` to pull a span to the right, and `".pre1"` to `".pre11"` as well as `".suf1"` to `".suf10"` for offset spans.
 
 Tablet and mobile spans can be altered by using extra helper classes depending on the project and the requirements. Tablet and phone base stylesheets include helper classes for full, half and third (widths) which override default column behaviour.
 
