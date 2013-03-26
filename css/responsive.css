@@ -319,19 +319,42 @@
     width: 100%;
   }
 
-  .col12, .col11, .col10, .col9, .col8, .col7, .full-tab {
+  .col12, .col11, .col10, .col9, .col8, .col7 {
     width: 96%;
     margin: 0 2%;
   }
 
-  .col6, .col5, .col4, .col3, .half-tab {
+  .col6, .col5, .col4, .col3 {
     width: 46%;
     float: left;
     margin: 0 2%;
   }
 
-  .col2, .third-tab {
+  .col2 {
     width: 29%;
+    float: left;
+    margin: 0 2.1%;
+  }
+
+  .full-tab {
+    width: 96%;
+    margin: 0 2%;
+  }
+
+  .half-tab {
+    width: 46%;
+    float: left;
+    margin: 0 2%;
+  }
+
+  .one-third-tab {
+    width: 29%;
+    float: left;
+    margin: 0 2.1%;
+  }
+
+  .two-third-tab {
+    width: 62%;
     float: left;
     margin: 0 2.1%;
   }
@@ -354,12 +377,23 @@
     width: 100%;
   }
 
-  .col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3, .full-pho {
+  .col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3 {
     width: 92%;
     margin: 0 4% 20px 4%;
   }
 
-  .col2, .half-pho {
+  .col2 {
+    width: 42%;
+    float: left;
+    margin: 0 4%;
+  }
+
+  .full-pho {
+    width: 92%;
+    margin: 0 4% 20px 4%;
+  }
+
+  .half-pho {
     width: 42%;
     float: left;
     margin: 0 4%;
