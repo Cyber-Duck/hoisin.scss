@@ -11,7 +11,18 @@ Open the _vars.scss file and add your variables to it. You can add any variables
 ### Grid
 By defaul we use a 12 column grid with 60px columns and 20px gutters. The spans have simple names like `".col4"`. There are helper classes like `".colr"` to pull a span to the right, and `".pre1"` to `".pre11"` as well as `".suf1"` to `".suf10"` for offset spans.
 
-Tablet and mobile spans can be altered by using extra helper classes depending on the layout requirements, we've included classes for full, half one third and two thirds (widths) which override default column behaviour.
+Tablet and mobile spans can be altered by using extra helper classes depending on the layout requirements, we've included classes for full, half one third and two thirds (widths) which override default column behaviour. We also added a `".clear"` helper class for browsers that can't clear themselves out.
+
+Example of a typical layout:
+
+	&lt;div class="container"&gt;
+	    &lt;div class="col8 two-third-tab"&gt;
+	    	&lt;p&gt;Your content here&lt;/p&gt;
+	    &lt;/div&gt;
+	    &lt;div class="col4 one-third-tab"&gt;
+	    	&lt;p&gt;Your sidebar here&lt;/p&gt;
+	    &lt;/div&gt;	    
+	&lt;/div&gt;
 
 ### File structure
 We advise to create one file for each individual section / size and place it in ts respective folder. All files will compile to two main stylesheets and a IE fallback stylesheet that should include all desktop size styles.
