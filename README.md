@@ -15,14 +15,14 @@ Tablet and mobile spans can be altered by using extra helper classes depending o
 
 Example of a typical layout:
 
-	&lt;div class="container"&gt;
-	    &lt;div class="col8 two-third-tab"&gt;
-	    	&lt;p&gt;Your content here&lt;/p&gt;
-	    &lt;/div&gt;
-	    &lt;div class="col4 one-third-tab"&gt;
-	    	&lt;p&gt;Your sidebar here&lt;/p&gt;
-	    &lt;/div&gt;	    
-	&lt;/div&gt;
+	<div class="container">
+	    <div class="col8 two-third-tab">
+	    	<p>Your content here</p>
+	    </div>
+	    <div class="col4 one-third-tab">
+	    	<p>Your sidebar here</p>
+	    </div>	    
+	<div>
 
 ### File structure
 We advise to create one file for each individual section / size and place it in ts respective folder. All files will compile to two main stylesheets and a IE fallback stylesheet that should include all desktop size styles.
