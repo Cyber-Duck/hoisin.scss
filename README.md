@@ -9,11 +9,12 @@ We did not include a reset since we believe they are not necessary, we encourage
 Open the _vars.scss file and add your variables to it, including the size of your base grid. You can add any variables you will be using like colors, font files, sizes, etc.
 
 	// Grid
-	$col: 				60px; // Width of column
+	$col-qty: 			12;   // Amount of columns
+	$col-width: 		60px; // Width of column
 	$gutter:			20px; // Width of gutters
 
 ### Grid
-By defaul we use a 12 column grid with 60px columns and 20px gutters. The spans have simple names like `".col4"`. There are helper classes like `".colr"` to pull a span to the right, and `".pre1"` to `".pre10"` as well as `".suf1"` to `".suf10"` for offset spans.
+By default we use a 12 column grid with 60px columns and 20px gutters. The spans have simple names like `".col4"`. There are helper classes like `".colr"` to pull a span to the right, and `".pre1"` to `".pre10"` as well as `".suf1"` to `".suf10"` for offset spans.
 
 Tablet and mobile spans can be altered by using extra helper classes depending on the layout requirements, we've included classes for full, half one third and two thirds (widths) which override default column behaviour. We also added a `".clear"` helper class for browsers that can't clear themselves out.
 

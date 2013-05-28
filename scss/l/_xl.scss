@@ -1,24 +1,24 @@
 // Large desktop styles
-$col:			70px;
+$col-width:		70px;
 $gutter:		30px;
 
 // Grid system
-$wrap: $col * 12 + $gutter * 11;
+$wrap: $col-width * 12 + $gutter * 11;
 @for $i from 2 through 12 {
     .col#{$i} {
-        width: $col * $i + $gutter * $i - $gutter;
+        width: $col-width * $i + $gutter * $i - $gutter;
         float: left;
         margin: 0 $gutter/2;
     }
 }
 @for $i from 1 through 10 {
     .pre#{$i} {
-        padding-left: $col * $i + $gutter * $i;
+        padding-left: $col-width * $i + $gutter * $i;
     }
 }
 @for $i from 1 through 10 {
     .suf#{$i} {
-        padding-right: $col * $i + $gutter * $i;
+        padding-right: $col-width * $i + $gutter * $i;
     }
 }
 .container {

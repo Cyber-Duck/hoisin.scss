@@ -5,9 +5,20 @@
 	overflow: hidden;
 	width: 100%;
 }
+.container {
+	width: 100%;
+    &:after {
+        content: " ";
+        clear: both;
+    }
+}
 .col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3 {
 	width: 92%;
-	margin: 0 4% 20px 4%;
+	margin: 0 4%;
+	.col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3 {
+		width: 100%;
+		margin: 0;
+	}
 }
 .col2 {
 	width: 42%;
@@ -16,19 +27,12 @@
 }
 .full-pho {
 	width: 92%;
-	margin: 0 4% 20px 4%;
+	margin: 0 4%;
 }
 .half-pho {
 	width: 42%;
 	float: left;
 	margin: 0 4%;
-}
-.container {
-	width: 100%;
-    &::after {
-        content: " ";
-        clear: both;
-    }
 }
 
 body {

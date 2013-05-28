@@ -7,22 +7,17 @@
  */
 body {
   color: black;
-  background: white;
-}
+  background: white; }
 
 .colr {
   float: right;
-  margin: 0 10px;
-}
+  margin: 0 10px; }
 
 .alpha {
-  margin-left: 0;
-}
+  margin-left: 0; }
 
 .omega {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 .clear {
-  clear: both;
-}
+  clear: both; }

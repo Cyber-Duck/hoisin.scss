@@ -11,16 +11,16 @@
 
 @media only screen and (min-width: 1024px) {
 
-	@import "desk/base";
+	@import "l/base";
 
 }
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
 
-	@import "tablet/base";
+	@import "m/base";
 
 }
 @media only screen and (min-width: 120px) and (max-width: 599px) {
 
-	@import "phone/base";
+	@import "s/base";
 
 }
