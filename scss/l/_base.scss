@@ -28,12 +28,6 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
         padding-right: ($col-width * $i) + ($gutter * $i);
     }
 }
-.alpha {
-    margin-left: 0; 
-}
-.omega {
-    margin-right: 0;
-}
 
 // Import section files
 @import "home";
