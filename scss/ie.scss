@@ -27,6 +27,6 @@ $wrap: $col-width * $col-qty + $gutter * ($col-qty - 1);
 }
 
 // Import all sections and common files from desk folder
-@import "l/home";
-@import "l/nav";
-@import "l/contact";
+@import "large/home";
+@import "large/nav";
+@import "large/contact";
