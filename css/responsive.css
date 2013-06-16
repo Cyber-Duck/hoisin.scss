@@ -5,7 +5,7 @@
  * Version: 0.9
  *
  */
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .container {
     width: 960px;
     margin: 0 auto;
@@ -160,6 +160,23 @@
   .suf10 {
     padding-right: 800px;
   }
+
+  .colr {
+    float: right;
+    margin: 0 10px;
+  }
+
+  .alpha {
+    margin-left: 0;
+  }
+
+  .omega {
+    margin-right: 0;
+  }
+
+  .clear {
+    clear: both;
+  }
 }
 @media only screen and (min-width: 1024px) and (min-width: 1360px) and (min-device-width: 1360px) {
   .col2 {
@@ -311,8 +328,25 @@
   .container {
     width: 1200px;
   }
+
+  .colr {
+    float: right;
+    margin: 0 15px;
+  }
+
+  .alpha {
+    margin-left: 0;
+  }
+
+  .omega {
+    margin-right: 0;
+  }
+
+  .clear {
+    clear: both;
+  }
 }
-@media only screen and (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .wrap {
     overflow: hidden;
     width: 100%;
@@ -370,11 +404,28 @@
     margin: 0 2.1%;
   }
 
+  .colr {
+    float: right;
+    margin: 0 10px;
+  }
+
+  .alpha {
+    margin-left: 0;
+  }
+
+  .omega {
+    margin-right: 0;
+  }
+
+  .clear {
+    clear: both;
+  }
+
   .form {
     margin: 0 0 20px 0;
   }
 }
-@media only screen and (min-width: 120px) and (max-width: 599px) {
+@media (min-width: 120px) and (max-width: 599px) {
   .wrap {
     overflow: hidden;
     width: 100%;
