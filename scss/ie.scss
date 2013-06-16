@@ -26,6 +26,21 @@ $wrap: $col-width * $col-qty + $gutter * ($col-qty - 1);
     }
 }
 
+// Grid utilities
+.colr {
+    float: right;
+    margin: 0 $gutter/2;
+}
+.alpha {
+    margin-left: 0;
+}
+.omega {
+    margin-right: 0;
+}
+.clear {
+    clear: both;
+}
+
 // Import all sections and common files from desk folder
 @import "large/home";
 @import "large/nav";

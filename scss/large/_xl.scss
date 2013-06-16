@@ -24,3 +24,18 @@ $wrap: $col-width * 12 + $gutter * 11;
 .container {
 	width: $wrap + $gutter;
 }
+
+// Grid utilities
+.colr {
+    float: right;
+    margin: 0 $gutter/2;
+}
+.alpha {
+    margin-left: 0;
+}
+.omega {
+    margin-right: 0;
+}
+.clear {
+    clear: both;
+}

@@ -50,6 +50,21 @@
 	margin: 0 2.1%;
 }
 
+// Grid utilities
+.colr {
+    float: right;
+    margin: 0 $gutter/2;
+}
+.alpha {
+	margin-left: 0;
+}
+.omega {
+	margin-right: 0;
+}
+.clear {
+    clear: both;
+}
+
 @import "nav";
 @import "home";
 @import "contact";
