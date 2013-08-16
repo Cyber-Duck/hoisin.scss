@@ -9,17 +9,17 @@
 @import "vars";
 @import "mixins";
 
-@media (min-width: $large) {
+@media (min-width: $breakpoint-large) {
 
 	@import "large/base";
 
 }
-@media (min-width: $medium) and (max-width: ($large - 1)) {
+@media (min-width: $breakpoint-medium) and (max-width: ($breakpoint-large - 1)) {
 
 	@import "medium/base";
 
 }
-@media (min-width: $small) and (max-width: ($medium - 1)) {
+@media (min-width: $breakpoint-small) and (max-width: ($breakpoint-medium - 1)) {
 
 	@import "small/base";
 

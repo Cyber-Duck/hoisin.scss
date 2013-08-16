@@ -9,13 +9,14 @@ We did not include a reset since we believe they are not necessary, we encourage
 Open the _vars.scss file and add your variables to it, including the size of your base grid. You can add any variables you will be using like colors, font files, sizes, etc.
 
 	// Grid
-	$col-qty: 			12;   // Amount of columns
-	$col-width: 		60px; // Width of column
-	$gutter:			20px; // Width of gutters
+	$col-qty: 				12;   // Amount of columns
+	$col-width: 			60px; // Width of column
+	$gutter:				20px; // Width of gutters
 
-	$large: 			1024px;
-	$medium: 			600px;
-	$small: 			240px;
+	// Breakpoints
+	$breakpoint-large: 		1024px;
+	$breakpoint-medium: 	600px;
+	$breakpoint-small: 		240px;
 
 ### Grid
 By default we use a 12 column grid with 60px columns and 20px gutters. The spans have simple names like `".col4"`. There are helper classes like `".colr"` to pull a span to the right, and `".pre1"` to `".pre10"` as well as `".suf1"` to `".suf10"` for offset spans.
@@ -42,6 +43,5 @@ See index.html file for more examples.
 We have included a mixins file with all common mixins we use everyday. This file doesn't output anything by itself, so it's safe to include in every file so the mixins are always available.
 
 ### File structure
-We advise to create one file for each individual section / size and place it in its respective folder. All files will compile to two main stylesheets and a IE fallback stylesheet that should include all desktop size styles.
+We advise to create one file for each individual section / breakpoint and place it in its respective folder then use includes in the base files for each breakpoint. All files will compile to the main stylesheets and a IE fallback stylesheet that should include all desktop size styles.
 
-To keep it organised, you can add one file for each section, and add common styles for each device to the base.scss file of each device folder. Common styles across the site should go in styles.scss.
