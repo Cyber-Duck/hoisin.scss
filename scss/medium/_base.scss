@@ -20,6 +20,7 @@
 	.col12, .col11, .col10, .col9, .col8, .col7 {
 		width: 100%;
 		margin: 0;
+		padding: 0;
 	}
 }
 .col6, .col5, .col4, .col3 {
@@ -40,28 +41,24 @@
 	width: 100%;
 	margin: 0;
 	padding: 0 10px;
-	@include box-sizing(border-box);
 }
 .half-tab {
 	width: 50%;
 	float: left;
 	margin: 0;
 	padding: 0 10px;
-	@include box-sizing(border-box);
 }
 .one-third-tab {
 	width: 33.33%;
 	float: left;
 	margin: 0;
 	padding: 0 10px;
-	@include box-sizing(border-box);
 }
 .two-third-tab {
 	width: 66.66%;
 	float: left;
 	margin: 0;
 	padding: 0 10px;
-	@include box-sizing(border-box);
 }
 
 // Grid utilities
