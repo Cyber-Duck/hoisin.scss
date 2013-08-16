@@ -9,17 +9,17 @@
 @import "vars";
 @import "mixins";
 
-@media (min-width: 1024px) {
+@media (min-width: $large) {
 
 	@import "large/base";
 
 }
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: $medium) and (max-width: ($large - 1)) {
 
 	@import "medium/base";
 
 }
-@media (min-width: 120px) and (max-width: 599px) {
+@media (min-width: $small) and (max-width: ($medium - 1)) {
 
 	@import "small/base";
 

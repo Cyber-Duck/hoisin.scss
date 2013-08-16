@@ -448,7 +448,7 @@
     margin: 0 0 20px 0;
   }
 }
-@media (min-width: 120px) and (max-width: 599px) {
+@media (min-width: 240px) and (max-width: 599px) {
   .wrap {
     overflow: hidden;
     width: 100%;
@@ -486,6 +486,10 @@
     width: 42%;
     float: left;
     margin: 0 4%;
+  }
+
+  .clear {
+    clear: both;
   }
 
   body {
