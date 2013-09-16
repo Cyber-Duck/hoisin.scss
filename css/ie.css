@@ -1,186 +1,78 @@
-/*
- * Hoisin sauce
- * CSS Framework boilerplate
- * Create your own grids, plugin anything
- * Version: 0.9
- *
- */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
-  display: block;
-}
+/* Hoisin sauce CSS Framework boilerplate Create your own grids, plugin anything Version: 0.9  */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 
-.container {
-  width: 960px;
-  margin: 0 auto;
-}
+.container { width: 960px; margin: 0 auto; }
 
-.col2 {
-  width: 140px;
-  float: left;
-  margin: 0 10px;
-}
+.col2 { width: 140px; float: left; margin: 0 10px; }
 
-.col3 {
-  width: 220px;
-  float: left;
-  margin: 0 10px;
-}
+.col3 { width: 220px; float: left; margin: 0 10px; }
 
-.col4 {
-  width: 300px;
-  float: left;
-  margin: 0 10px;
-}
+.col4 { width: 300px; float: left; margin: 0 10px; }
 
-.col5 {
-  width: 380px;
-  float: left;
-  margin: 0 10px;
-}
+.col5 { width: 380px; float: left; margin: 0 10px; }
 
-.col6 {
-  width: 460px;
-  float: left;
-  margin: 0 10px;
-}
+.col6 { width: 460px; float: left; margin: 0 10px; }
 
-.col7 {
-  width: 540px;
-  float: left;
-  margin: 0 10px;
-}
+.col7 { width: 540px; float: left; margin: 0 10px; }
 
-.col8 {
-  width: 620px;
-  float: left;
-  margin: 0 10px;
-}
+.col8 { width: 620px; float: left; margin: 0 10px; }
 
-.col9 {
-  width: 700px;
-  float: left;
-  margin: 0 10px;
-}
+.col9 { width: 700px; float: left; margin: 0 10px; }
 
-.col10 {
-  width: 780px;
-  float: left;
-  margin: 0 10px;
-}
+.col10 { width: 780px; float: left; margin: 0 10px; }
 
-.col11 {
-  width: 860px;
-  float: left;
-  margin: 0 10px;
-}
+.col11 { width: 860px; float: left; margin: 0 10px; }
 
-.col12 {
-  width: 940px;
-  float: left;
-  margin: 0 10px;
-}
+.col12 { width: 940px; float: left; margin: 0 10px; }
 
-.pre1 {
-  padding-left: 80px;
-}
+.pre1 { padding-left: 80px; }
 
-.pre2 {
-  padding-left: 160px;
-}
+.pre2 { padding-left: 160px; }
 
-.pre3 {
-  padding-left: 240px;
-}
+.pre3 { padding-left: 240px; }
 
-.pre4 {
-  padding-left: 320px;
-}
+.pre4 { padding-left: 320px; }
 
-.pre5 {
-  padding-left: 400px;
-}
+.pre5 { padding-left: 400px; }
 
-.pre6 {
-  padding-left: 480px;
-}
+.pre6 { padding-left: 480px; }
 
-.pre7 {
-  padding-left: 560px;
-}
+.pre7 { padding-left: 560px; }
 
-.pre8 {
-  padding-left: 640px;
-}
+.pre8 { padding-left: 640px; }
 
-.pre9 {
-  padding-left: 720px;
-}
+.pre9 { padding-left: 720px; }
 
-.pre10 {
-  padding-left: 800px;
-}
+.pre10 { padding-left: 800px; }
 
-.pre11 {
-  padding-left: 880px;
-}
+.pre11 { padding-left: 880px; }
 
-.suf1 {
-  padding-right: 80px;
-}
+.suf1 { padding-right: 80px; }
 
-.suf2 {
-  padding-right: 160px;
-}
+.suf2 { padding-right: 160px; }
 
-.suf3 {
-  padding-right: 240px;
-}
+.suf3 { padding-right: 240px; }
 
-.suf4 {
-  padding-right: 320px;
-}
+.suf4 { padding-right: 320px; }
 
-.suf5 {
-  padding-right: 400px;
-}
+.suf5 { padding-right: 400px; }
 
-.suf6 {
-  padding-right: 480px;
-}
+.suf6 { padding-right: 480px; }
 
-.suf7 {
-  padding-right: 560px;
-}
+.suf7 { padding-right: 560px; }
 
-.suf8 {
-  padding-right: 640px;
-}
+.suf8 { padding-right: 640px; }
 
-.suf9 {
-  padding-right: 720px;
-}
+.suf9 { padding-right: 720px; }
 
-.suf10 {
-  padding-right: 800px;
-}
+.suf10 { padding-right: 800px; }
 
-.suf11 {
-  padding-right: 880px;
-}
+.suf11 { padding-right: 880px; }
 
-.colr {
-  float: right;
-  margin: 0 10px;
-}
+.colr { float: right; margin: 0 10px; }
 
-.alpha {
-  margin-left: 0;
-}
+.alpha { margin-left: 0; }
 
-.omega {
-  margin-right: 0;
-}
+.omega { margin-right: 0; }
 
-.clear {
-  clear: both;
-}
+.clear { clear: both; }

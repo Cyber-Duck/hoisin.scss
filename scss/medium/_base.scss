@@ -37,31 +37,23 @@
 	padding: 0 10px;
 	@include box-sizing(border-box);
 }
-.full-tab {
+.full-medium {
 	width: 100%;
-	margin: 0;
-	padding: 0 10px;
 }
-.half-tab {
+.half-medium {
 	width: 50%;
 	float: left;
-	margin: 0;
-	padding: 0 10px;
 }
-.one-third-tab {
+.one-third-medium {
 	width: 33.33%;
 	float: left;
-	margin: 0;
-	padding: 0 10px;
 }
-.two-third-tab {
+.two-thirds-medium {
 	width: 66.66%;
 	float: left;
-	margin: 0;
-	padding: 0 10px;
 }
 
-// Grid utilities
+// GRID UTILITIES
 .colr {
     float: right;
     margin: 0 $gutter/2;
