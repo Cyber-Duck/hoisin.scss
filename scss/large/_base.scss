@@ -20,12 +20,12 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
 }
 @for $i from 1 through ($col-qty - 2) {
     .pre#{$i} {
-        padding-left: ($col-width * $i) + ($gutter * $i);
+        margin-left: ($col-width * $i) + ($gutter * $i);
     }
 }
 @for $i from 1 through ($col-qty - 2) {
     .suf#{$i} {
-        padding-right: ($col-width * $i) + ($gutter * $i);
+        margin-right: ($col-width * $i) + ($gutter * $i);
     }
 }
 
