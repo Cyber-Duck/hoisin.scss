@@ -1,0 +1,34 @@
+{
+  "name": "hoisin.scss",
+  "title": "Hoisin.scss",
+  "description": "A simple responsive mini framework to kick start your project.",
+  "version": "0.9.3",
+  "homepage": "https://github.com/Cyber-Duck/hoisin.scss",
+  "author": {
+    "name": "Ramon Lapenta",
+    "url": "http://www.cyber-duck.co.uk/about/ramon-lapenta"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cyber-Duck/hoisin.scss"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "responsive",
+    "framework",
+    "grid"
+  ],
+  "bugs": {
+    "url": "https://github.com/Cyber-Duck/hoisin.scss/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "hhttps://raw.github.com/Cyber-Duck/hoisin.scss/master/LICENSE.txt"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {}
+}
