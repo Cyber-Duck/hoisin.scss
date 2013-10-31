@@ -1,8 +1,10 @@
 /*
- * Hoisin sauce
- * CSS Framework boilerplate
+ * Hoisin.scss
+ * CSS responsive framework boilerplate
  * Create your own grids, plugin anything
- * Version: 0.9
+ * Version: 0.9.4
+ * Created by: Cyber-Duck Ltd <info@cyber-duck.co.uk>,
+ *             Ramon Lapenta <me@ramonlapenta.com>
  *
  */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
@@ -10,167 +12,167 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 }
 
 .container {
-  width: 960px;
+  width: 1080px;
   margin: 0 auto;
 }
 
 .col2 {
   width: 140px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .col3 {
-  width: 220px;
+  width: 230px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .col4 {
-  width: 300px;
+  width: 320px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .col5 {
-  width: 380px;
+  width: 410px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .col6 {
-  width: 460px;
+  width: 500px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .col7 {
-  width: 540px;
+  width: 590px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .col8 {
-  width: 620px;
+  width: 680px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .col9 {
-  width: 700px;
+  width: 770px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .col10 {
-  width: 780px;
+  width: 860px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .col11 {
-  width: 860px;
+  width: 950px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .col12 {
-  width: 940px;
+  width: 1040px;
   float: left;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .pre1 {
-  padding-left: 80px;
+  padding-left: 90px;
 }
 
 .pre2 {
-  padding-left: 160px;
+  padding-left: 180px;
 }
 
 .pre3 {
-  padding-left: 240px;
+  padding-left: 270px;
 }
 
 .pre4 {
-  padding-left: 320px;
+  padding-left: 360px;
 }
 
 .pre5 {
-  padding-left: 400px;
+  padding-left: 450px;
 }
 
 .pre6 {
-  padding-left: 480px;
+  padding-left: 540px;
 }
 
 .pre7 {
-  padding-left: 560px;
+  padding-left: 630px;
 }
 
 .pre8 {
-  padding-left: 640px;
-}
-
-.pre9 {
   padding-left: 720px;
 }
 
+.pre9 {
+  padding-left: 810px;
+}
+
 .pre10 {
-  padding-left: 800px;
+  padding-left: 900px;
 }
 
 .pre11 {
-  padding-left: 880px;
+  padding-left: 990px;
 }
 
 .suf1 {
-  padding-right: 80px;
+  padding-right: 90px;
 }
 
 .suf2 {
-  padding-right: 160px;
+  padding-right: 180px;
 }
 
 .suf3 {
-  padding-right: 240px;
+  padding-right: 270px;
 }
 
 .suf4 {
-  padding-right: 320px;
+  padding-right: 360px;
 }
 
 .suf5 {
-  padding-right: 400px;
+  padding-right: 450px;
 }
 
 .suf6 {
-  padding-right: 480px;
+  padding-right: 540px;
 }
 
 .suf7 {
-  padding-right: 560px;
+  padding-right: 630px;
 }
 
 .suf8 {
-  padding-right: 640px;
-}
-
-.suf9 {
   padding-right: 720px;
 }
 
+.suf9 {
+  padding-right: 810px;
+}
+
 .suf10 {
-  padding-right: 800px;
+  padding-right: 900px;
 }
 
 .suf11 {
-  padding-right: 880px;
+  padding-right: 990px;
 }
 
 .colr {
   float: right;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .alpha {

@@ -2,6 +2,8 @@
 @import "mixins";
 
 // Grid system
+
+// First we define the size of the container
 $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
 .container {
     width: $wrap + $gutter;
@@ -11,11 +13,27 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
         clear: both;
     }
 }
+
+// Generate a common style for all spans
+%base-col {
+    float: left;
+    margin: 0 $gutter/2;
+}
+@mixin cols {
+  @for $i from 1 through $col-qty {
+  .col#{$i} { @extend %base-col; }
+  }
+}
+// Output the common span styles
+@include cols;
+
+// Define widths for each span
+.col#{$col-qty} {
+    margin: 0 $gutter/2;
+}
 @for $i from 2 through $col-qty {
     .col#{$i} {
         width: ($col-width * $i) + ($gutter * $i) - $gutter;
-        float: left;
-        margin: 0 $gutter/2;
     }
 }
 @for $i from 1 through ($col-qty - 2) {
@@ -29,7 +47,7 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
     }
 }
 
-// Grid utilities
+// Additional grid utilities
 .colr {
     float: right;
     margin: 0 $gutter/2;

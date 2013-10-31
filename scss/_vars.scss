@@ -1,4 +1,4 @@
-// COLOURS
+// Colours
 $highlight:				#FA9200;
 
 $error:             	#FF0000;
@@ -19,24 +19,28 @@ $text:              	#000;
 $title:					#000;
 
 
-// GRID
+// Grid
 $col-qty:				12;
-$col-width: 			60px;
-$gutter:				20px;
+$col-width: 			50px;
+$gutter:				40px;
+
+// Large desktop grid
+$xl-col-width: 			70px;
+$xl-gutter:				30px;
 
 
-// BREAKPOINTS
+// Breakpoints
 $breakpoint-large: 		1024px;
 $breakpoint-medium: 	600px;
 $breakpoint-small: 		240px;
 
 
-// IMAGES
+// Paths
 $img: 		    		"../img/";
 $sprite: 		    	"../img/sprite.png";
 $font_dir: 		    	"../fonts/";
 
 	
-// TYPOGRAPHY
+// Typography
 $body_font: 			sans-serif;
 $title_font: 			serif;
