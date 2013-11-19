@@ -9,21 +9,22 @@
  */
 @media (min-width: 1024px) {
   .container {
-    width: 1080px;
+    width: 960px;
     margin: 0 auto;
   }
   .container:after {
     content: " ";
     clear: both;
+    display: block;
   }
 
   .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
     float: left;
-    margin: 0 20px;
+    margin: 0 10px;
   }
 
   .col12 {
-    margin: 0 20px;
+    margin: 0 10px;
   }
 
   .col2 {
@@ -31,128 +32,128 @@
   }
 
   .col3 {
-    width: 230px;
+    width: 220px;
   }
 
   .col4 {
-    width: 320px;
+    width: 300px;
   }
 
   .col5 {
-    width: 410px;
+    width: 380px;
   }
 
   .col6 {
-    width: 500px;
+    width: 460px;
   }
 
   .col7 {
-    width: 590px;
+    width: 540px;
   }
 
   .col8 {
-    width: 680px;
+    width: 620px;
   }
 
   .col9 {
-    width: 770px;
+    width: 700px;
   }
 
   .col10 {
-    width: 860px;
+    width: 780px;
   }
 
   .col11 {
-    width: 950px;
+    width: 860px;
   }
 
   .col12 {
-    width: 1040px;
+    width: 940px;
   }
 
   .pre1 {
-    margin-left: 90px;
+    margin-left: 80px;
   }
 
   .pre2 {
-    margin-left: 180px;
+    margin-left: 160px;
   }
 
   .pre3 {
-    margin-left: 270px;
+    margin-left: 240px;
   }
 
   .pre4 {
-    margin-left: 360px;
+    margin-left: 320px;
   }
 
   .pre5 {
-    margin-left: 450px;
+    margin-left: 400px;
   }
 
   .pre6 {
-    margin-left: 540px;
+    margin-left: 480px;
   }
 
   .pre7 {
-    margin-left: 630px;
+    margin-left: 560px;
   }
 
   .pre8 {
-    margin-left: 720px;
+    margin-left: 640px;
   }
 
   .pre9 {
-    margin-left: 810px;
+    margin-left: 720px;
   }
 
   .pre10 {
-    margin-left: 900px;
+    margin-left: 800px;
   }
 
   .suf1 {
-    margin-right: 90px;
+    margin-right: 80px;
   }
 
   .suf2 {
-    margin-right: 180px;
+    margin-right: 160px;
   }
 
   .suf3 {
-    margin-right: 270px;
+    margin-right: 240px;
   }
 
   .suf4 {
-    margin-right: 360px;
+    margin-right: 320px;
   }
 
   .suf5 {
-    margin-right: 450px;
+    margin-right: 400px;
   }
 
   .suf6 {
-    margin-right: 540px;
+    margin-right: 480px;
   }
 
   .suf7 {
-    margin-right: 630px;
+    margin-right: 560px;
   }
 
   .suf8 {
-    margin-right: 720px;
+    margin-right: 640px;
   }
 
   .suf9 {
-    margin-right: 810px;
+    margin-right: 720px;
   }
 
   .suf10 {
-    margin-right: 900px;
+    margin-right: 800px;
   }
 
   .colr {
     float: right;
-    margin: 0 20px;
+    margin: 0 10px;
   }
 
   .alpha {
@@ -175,6 +176,7 @@
 
   .col12 {
     margin: 0 15px;
+    width: 1170px;
   }
 
   .col2 {
@@ -330,6 +332,7 @@
   .container::after {
     content: " ";
     clear: both;
+    display: block;
   }
 
   .col12, .col11, .col10, .col9, .col8, .col7 {
@@ -393,7 +396,7 @@
 
   .colr {
     float: right;
-    margin: 0 20px;
+    margin: 0 10px;
   }
 
   .alpha {
@@ -424,6 +427,7 @@
   .container:after {
     content: " ";
     clear: both;
+    display: block;
   }
 
   .col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3 {

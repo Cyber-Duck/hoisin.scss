@@ -11,6 +11,7 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
     &:after {
         content: " ";
         clear: both;
+        display: block;
     }
 }
 

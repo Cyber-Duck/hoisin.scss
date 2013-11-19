@@ -16,6 +16,7 @@ $wrap: $xl-col-width * 12 + $xl-gutter * 11;
 // Define widths for each span
 .col#{$col-qty} {
     margin: 0 $xl-gutter/2; // Full width, doesn't need float
+    width: ($xl-col-width * $col-qty) + ($xl-gutter * $col-qty) - $xl-gutter;
 }
 @for $i from 2 to $col-qty {
     .col#{$i} {
