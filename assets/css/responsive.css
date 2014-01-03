@@ -175,6 +175,7 @@
   h2 {
     font-size: 48px;
     color: #d8531e;
+    font-weight: 300;
     line-height: 48px;
     margin: 0;
     padding: 24px 0;
@@ -183,6 +184,7 @@
   h3 {
     font-size: 36px;
     color: #333333;
+    font-weight: 300;
     line-height: 36px;
     margin: 0;
     padding: 12px 0;
@@ -246,6 +248,9 @@
   }
   .menu a:hover {
     color: #d8531e;
+  }
+  .menu a i {
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-width: 1360px) and (min-device-width: 1360px) {

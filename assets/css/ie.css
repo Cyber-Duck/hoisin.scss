@@ -1,54 +1,319 @@
 /*
-Syntax error: File to import not found or unreadable: large/nav.
-              Load paths:
-                C:/Server/hoisin.scss/assets
-                C:/Server/hoisin.scss/assets/scss
-        on line 48 of scss/ie.scss
+ * Hoisin.scss
+ * CSS responsive framework boilerplate
+ * Create your own grids, plugin anything
+ * Version: 0.9.6
+ * Created by: Cyber-Duck Ltd <info@cyber-duck.co.uk>,
+ *             Ramon Lapenta <me@ramonlapenta.com>
+ *
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
 
-43:     clear: both;
-44: }
-45: 
-46: // Import all sections and common files from desk folder
-47: @import "large/home";
-48: @import "large/nav";
-49: @import "large/contact";
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
 
-Backtrace:
-scss/ie.scss:48
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/perform.rb:218:in `visit_import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/engine.rb:265:in `render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/plugin/compiler.rb:309:in `update_stylesheet'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/plugin/compiler.rb:182:in `block in update_stylesheets'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/plugin/compiler.rb:179:in `each'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/plugin/compiler.rb:179:in `update_stylesheets'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.alpha.184/lib/sass/plugin/compiler.rb:262:in `block in watch'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `call'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `on_change'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-0.7.3/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-0.7.3/lib/listen/adapters/polling.rb:56:in `call'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-0.7.3/lib/listen/adapters/polling.rb:56:in `poll'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-0.7.3/lib/listen/adapters/polling.rb:32:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: large/nav.\A               Load paths:\A                 C:/Server/hoisin.scss/assets\A                 C:/Server/hoisin.scss/assets/scss\A         on line 48 of scss/ie.scss\A \A 43:     clear: both;\A 44: }\A 45: \A 46: // Import all sections and common files from desk folder\A 47: @import \"large/home\";\A 48: @import \"large/nav\";\A 49: @import \"large/contact\";"; }
+.col2 {
+  width: 140px;
+  float: left;
+  margin: 0 10px;
+}
+
+.col3 {
+  width: 220px;
+  float: left;
+  margin: 0 10px;
+}
+
+.col4 {
+  width: 300px;
+  float: left;
+  margin: 0 10px;
+}
+
+.col5 {
+  width: 380px;
+  float: left;
+  margin: 0 10px;
+}
+
+.col6 {
+  width: 460px;
+  float: left;
+  margin: 0 10px;
+}
+
+.col7 {
+  width: 540px;
+  float: left;
+  margin: 0 10px;
+}
+
+.col8 {
+  width: 620px;
+  float: left;
+  margin: 0 10px;
+}
+
+.col9 {
+  width: 700px;
+  float: left;
+  margin: 0 10px;
+}
+
+.col10 {
+  width: 780px;
+  float: left;
+  margin: 0 10px;
+}
+
+.col11 {
+  width: 860px;
+  float: left;
+  margin: 0 10px;
+}
+
+.col12 {
+  width: 940px;
+  float: left;
+  margin: 0 10px;
+}
+
+.pre1 {
+  padding-left: 80px;
+}
+
+.pre2 {
+  padding-left: 160px;
+}
+
+.pre3 {
+  padding-left: 240px;
+}
+
+.pre4 {
+  padding-left: 320px;
+}
+
+.pre5 {
+  padding-left: 400px;
+}
+
+.pre6 {
+  padding-left: 480px;
+}
+
+.pre7 {
+  padding-left: 560px;
+}
+
+.pre8 {
+  padding-left: 640px;
+}
+
+.pre9 {
+  padding-left: 720px;
+}
+
+.pre10 {
+  padding-left: 800px;
+}
+
+.pre11 {
+  padding-left: 880px;
+}
+
+.suf1 {
+  padding-right: 80px;
+}
+
+.suf2 {
+  padding-right: 160px;
+}
+
+.suf3 {
+  padding-right: 240px;
+}
+
+.suf4 {
+  padding-right: 320px;
+}
+
+.suf5 {
+  padding-right: 400px;
+}
+
+.suf6 {
+  padding-right: 480px;
+}
+
+.suf7 {
+  padding-right: 560px;
+}
+
+.suf8 {
+  padding-right: 640px;
+}
+
+.suf9 {
+  padding-right: 720px;
+}
+
+.suf10 {
+  padding-right: 800px;
+}
+
+.suf11 {
+  padding-right: 880px;
+}
+
+.colr {
+  float: right;
+  margin: 0 10px;
+}
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.content {
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 48px;
+  color: #d8531e;
+  font-weight: 300;
+  line-height: 48px;
+  margin: 0;
+  padding: 24px 0;
+}
+
+h3 {
+  font-size: 36px;
+  color: #333333;
+  font-weight: 300;
+  line-height: 36px;
+  margin: 0;
+  padding: 12px 0;
+}
+
+p {
+  margin: 0 0 24px 0;
+}
+
+.head {
+  height: 300px;
+  color: white;
+  background-color: #10222e;
+  background-image: url("../img/bg-large-head.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 240px;
+  height: 50px;
+  margin: 90px auto 0 auto;
+}
+.logo h1 {
+  margin: 0;
+}
+.logo a {
+  display: block;
+  width: 240px;
+  height: 50px;
+  text-indent: 300px;
+  overflow: hidden;
+  background-image: url("../img/logo.png");
+  background-size: 240px 50px;
+}
+
+.menu-wrap {
+  height: 50px;
+  border-bottom: 1px solid #64a2c7;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.menu li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  color: #64a2c7;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 20px;
+  line-height: 30px;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #d8531e;
+}
+.menu a i {
+  font-size: 14px;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'hoisin';
+  font-style: normal;
+  font-weight: normal;
+  /* fix buttons height */
+  line-height: 1em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+}
+
+.icon-ok-outline {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe806;&nbsp;');
+}
+
+.icon-cancel-outline {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe805;&nbsp;');
+}
+
+.icon-minus-outline {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;');
+}
+
+.icon-home-outline {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;');
+}
+
+.icon-download-outline {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;');
+}
+
+.icon-doc-text {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;');
+}
+
+.icon-menu-outline {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;');
+}
+
+.icon-facebook-circled {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe808;&nbsp;');
+}
+
+.icon-twitter-circled {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe807;&nbsp;');
+}
