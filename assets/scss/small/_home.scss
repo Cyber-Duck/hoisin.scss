@@ -1,1 +1,27 @@
 // Home page
+body {
+	font-size: 16px;
+}
+.content {
+	padding: 40px 0;
+}
+h2 {
+	font-size: 24px;
+	color: $highlight;
+	font-weight: 300;
+	line-height: 24px;
+	margin: 0;
+	padding: 12px 0;
+}
+
+h3 {
+	font-size: 21px;
+	color: $title;
+	font-weight: 300;
+	line-height: 21px;
+	margin: 0;
+	padding: 12px 0;
+}
+p {
+	margin: 0 0 21px 0;
+}

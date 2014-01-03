@@ -187,6 +187,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   clear: both;
 }
 
+body {
+  padding-top: 50px;
+}
+
 .content {
   padding: 40px 0;
 }
@@ -216,16 +220,48 @@ p {
 .head {
   height: 300px;
   color: white;
+  position: relative;
   background-color: #10222e;
   background-image: url("../img/bg-large-head.jpg");
-  background-position: 50% 0;
+  background-position: 50% 50px;
+  background-attachment: fixed;
   background-repeat: no-repeat;
+}
+.head:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.head:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid white;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .logo {
   width: 240px;
   height: 50px;
-  margin: 90px auto 0 auto;
+  margin: 105px auto 0 auto;
 }
 .logo h1 {
   margin: 0;
@@ -242,7 +278,15 @@ p {
 
 .menu-wrap {
   height: 50px;
-  border-bottom: 1px solid #64a2c7;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #3a7ca7;
+}
+
+.btn-menu {
+  display: none;
 }
 
 .menu ul {

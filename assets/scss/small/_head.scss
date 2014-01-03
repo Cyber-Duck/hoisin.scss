@@ -1,0 +1,107 @@
+// Navigation
+// Main navigation
+.head {
+	color: $white;
+	position: relative;
+	min-height: 50px;
+	background: {
+		color: $blue_dk;
+		image: url("#{$img}bg-large-head.jpg");
+		position: 50% 0;
+		attachment: fixed;
+		repeat: no-repeat;
+	}
+}
+.logo {
+	width: 120px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	left: 2%;
+	h1 {
+		margin: 0;
+	}
+	a {
+		display: block;
+		width: 120px;
+		height: 46px;
+		text-indent: 300px;
+		overflow: hidden;
+		background: {
+			image: url("#{$img}logo.png");
+			size: 120px 25px;
+			position: 50%;
+			repeat: no-repeat;
+		}
+	}
+}
+
+.menu-wrap {
+	width: 100%;
+	&.closed {
+		.btn-menu {
+			.icon-minus-outline {
+				display: none;
+			}
+			.icon-menu-outline {
+				display: inline;
+			}
+		}
+		.menu {
+			height: 0;
+			@include transition(all 250ms ease-out);
+		}
+	}
+}
+.btn-menu {
+	display: block;
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin: 4px;
+	line-height: 40px;
+	text-align: center;
+	color: $blue;
+	.icon-menu-outline {
+		display: none;
+	}
+}
+.menu {
+	overflow: hidden;
+	height: 171px;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+	@include transition(all 250ms ease-out);
+	ul {
+		background-color: $white;
+		border-bottom: 1px solid $blue;
+		margin: 0;
+		padding: 0;
+		height: 170px;
+		overflow: hidden;
+		list-style: none;
+	}
+	li {
+		display: block;
+		margin: 0;
+		padding: 0;
+		width: 50%;
+		@include box-sizing();
+	}
+	a {
+		color: $blue_lt;
+		font-size: 16px;
+		text-transform: uppercase;
+		display: block;
+		padding: 10px 20px;
+		line-height: 20px;
+		text-decoration: none;
+		&:hover {
+			color: $highlight;
+		}
+		i {
+			font-size: 14px;
+		}
+	}
+}

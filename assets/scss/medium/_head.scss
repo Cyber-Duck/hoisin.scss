@@ -1,6 +1,7 @@
 // Main navigation
 .head {
-	height: 300px;
+	height: 140px;
+	padding: 10px 0;
 	color: $white;
 	position: relative;
 	background: {
@@ -17,8 +18,8 @@
 		bottom: 0;
 		left: 0;
 		width: 50%;
-		border-right: 20px solid transparent;
-		border-bottom: 20px solid $white;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid $white;
 		@include box-sizing();
 	}
 	&:after {
@@ -28,15 +29,15 @@
 		bottom: 0;
 		right: 0;
 		width: 50%;
-		border-left: 20px solid transparent;
-		border-bottom: 20px solid $white;
+		border-left: 10px solid transparent;
+		border-bottom: 10px solid $white;
 		@include box-sizing();
 	}
 }
 .logo {
 	width: 240px;
 	height: 50px;
-	margin: 105px auto 0 auto;
+	margin: 38px auto 0 auto;
 	h1 {
 		margin: 0;
 	}
@@ -81,7 +82,7 @@
 		font-size: 16px;
 		text-transform: uppercase;
 		display: block;
-		padding: 10px 20px;
+		padding: 10px;
 		line-height: 30px;
 		text-decoration: none;
 		&:hover {

@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
-    // Code here
+    $('.btn-menu').on('click', function(e){
+    	e.preventDefault();
+    	$('.menu-wrap').toggleClass('closed');
+    });
 
 });

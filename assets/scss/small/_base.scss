@@ -6,7 +6,8 @@
 	width: 100%;
 }
 .container {
-	width: 100%;
+	width: 96%;
+	margin: 0 auto;
     &:after {
         content: " ";
         clear: both;
@@ -48,11 +49,8 @@
     clear: both;
 }
 
-body {
-	font-size: 16px;
-}
 
-@import "nav";
+@import "head";
 @import "home";
 @import "contact";
 
