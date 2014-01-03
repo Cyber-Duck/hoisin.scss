@@ -1,0 +1,38 @@
+@import "version";
+
+@import "vars";
+@import "mixins";
+
+// Only styles common for all screen sizes
+body {
+	color: $text;
+	margin: 0;
+	padding: 0;
+	font-family: $body_font;
+	font-size: 18px;
+	font-weight: 300;
+	background: $white;
+}
+
+pre {
+	padding: 20px;
+	font-size: 20px;
+	background-color: $pre;
+}
+
+.foot {
+	padding: 40px 0;
+	background: $blue_dk;
+	color: $white;
+	font-size: 16px;
+	a {
+		color: $highlight;
+	}
+}
+
+.warning {
+	background-color: $warning_bg;
+	border: 1px solid $warning;
+	padding: 10px;
+	border-radius: 10px;
+}
