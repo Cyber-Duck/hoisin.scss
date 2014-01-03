@@ -1,0 +1,60 @@
+// Main navigation
+.head {
+	height: 300px;
+	color: $white;
+	background: {
+		color: $blue_dk;
+		image: url("#{$img}bg-large-head.jpg");
+		position: 50% 0;
+		repeat: no-repeat;
+	}
+}
+.logo {
+	width: 240px;
+	height: 50px;
+	margin: 90px auto 0 auto;
+	h1 {
+		margin: 0;
+	}
+	a {
+		display: block;
+		width: 240px;
+		height: 50px;
+		text-indent: 300px;
+		overflow: hidden;
+		background: {
+			image: url("#{$img}logo.png");
+			size: 240px 50px;
+		}
+	}
+}
+
+.menu-wrap {
+	height: 50px;
+	border-bottom: 1px solid $blue_lt;
+}
+.menu {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		color: $blue_lt;
+		font-size: 16px;
+		text-transform: uppercase;
+		display: block;
+		padding: 10px 20px;
+		line-height: 30px;
+		text-decoration: none;
+		&:hover {
+			color: $highlight;
+		}
+	}
+}

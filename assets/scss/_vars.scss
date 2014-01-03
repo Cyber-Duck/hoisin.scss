@@ -1,0 +1,52 @@
+// Colours
+$highlight:				#D8531E;
+
+$blue_lt: 				#64A2C7;
+$blue: 					#3A7CA7;
+$blue_dk: 				#10222E;
+
+$pre: 					#F8F8F8;
+
+$error:             	#FF0000;
+$error_bg: 		    	#FFE5E5;
+
+$success: 		    	#339900;
+$success_bg: 	    	#EAF5E5;
+
+$info: 			    	#3399FF;
+$info_bg: 		    	#EAF5FF;
+
+$warning: 				#FFFF00;
+$warning_bg: 			#FFFFE5;
+
+$black:             	#000;
+$white:             	#fff;
+$text:              	#666;
+$title:					#333;
+
+
+// Grid
+$col-qty:				12;
+$col-width: 			60px;
+$gutter:				20px;
+
+// Large desktop grid
+$xl-col-width: 			70px;
+$xl-gutter:				30px;
+
+
+// Breakpoints
+$breakpoint-large: 		1024px;
+$breakpoint-medium: 	600px;
+$breakpoint-small: 		240px;
+
+
+// Paths
+$img: 		    		"../img/";
+$sprite: 		    	"../img/sprite.png";
+$font_dir: 		    	"../fonts/";
+
+	
+// Typography
+$body_font: 			"Roboto Condensed", sans-serif;
+$title_font: 			$body_font;
