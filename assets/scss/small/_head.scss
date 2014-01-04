@@ -68,7 +68,7 @@
 }
 .menu {
 	overflow: hidden;
-	height: 171px;
+	height: 173px;
 	width: 100%;
 	padding: 0;
 	overflow: hidden;
@@ -76,9 +76,10 @@
 	ul {
 		background-color: $white;
 		border-bottom: 1px solid $blue;
-		margin: 0;
+		margin: 2px 0 0 0;
 		padding: 0;
 		height: 170px;
+		width: 100%;
 		overflow: hidden;
 		list-style: none;
 	}
@@ -86,7 +87,7 @@
 		display: block;
 		margin: 0;
 		padding: 0;
-		width: 50%;
+		width: 100%;
 		@include box-sizing();
 	}
 	a {

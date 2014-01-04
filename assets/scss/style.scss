@@ -14,11 +14,39 @@ body {
 	font-weight: 300;
 	background: $white;
 }
-
+h2 {
+	color: $highlight;
+	font-weight: 300;
+	margin: 0;
+}
+h3 {
+	color: $title;
+	font-weight: 300;
+	margin: 0;
+}
+p {
+	margin: 0 0 21px 0;
+}
+a {
+	color: $highlight;
+}
 pre {
 	padding: 20px;
 	font-size: 20px;
 	background-color: $pre;
+}
+
+.btn {
+	display: inline-block;
+	padding: 5px 10px 6px 10px;
+	background-color: $blue;
+	color: $white;
+	text-decoration: none;
+	border-radius: 4px;
+	@include box-sizing();
+	&:hover {
+		background-color: darken($blue, 5%);
+	}
 }
 
 .foot {
@@ -26,9 +54,6 @@ pre {
 	background: $blue_dk;
 	color: $white;
 	font-size: 16px;
-	a {
-		color: $highlight;
-	}
 }
 
 .warning {

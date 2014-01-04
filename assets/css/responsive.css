@@ -178,19 +178,13 @@
 
   h2 {
     font-size: 48px;
-    color: #d8531e;
-    font-weight: 300;
     line-height: 48px;
-    margin: 0;
     padding: 24px 0;
   }
 
   h3 {
     font-size: 36px;
-    color: #333333;
-    font-weight: 300;
     line-height: 36px;
-    margin: 0;
     padding: 12px 0;
   }
 
@@ -651,19 +645,13 @@
 
   h2 {
     font-size: 36px;
-    color: #d8531e;
-    font-weight: 300;
     line-height: 36px;
-    margin: 0;
     padding: 24px 0;
   }
 
   h3 {
     font-size: 24px;
-    color: #333333;
-    font-weight: 300;
     line-height: 24px;
-    margin: 0;
     padding: 12px 0;
   }
 
@@ -812,7 +800,7 @@
 
   .menu {
     overflow: hidden;
-    height: 171px;
+    height: 173px;
     width: 100%;
     padding: 0;
     overflow: hidden;
@@ -824,9 +812,10 @@
   .menu ul {
     background-color: white;
     border-bottom: 1px solid #3a7ca7;
-    margin: 0;
+    margin: 2px 0 0 0;
     padding: 0;
     height: 170px;
+    width: 100%;
     overflow: hidden;
     list-style: none;
   }
@@ -834,7 +823,7 @@
     display: block;
     margin: 0;
     padding: 0;
-    width: 50%;
+    width: 100%;
     box-sizing: border-box;
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -862,28 +851,28 @@
   }
 
   .content {
-    padding: 40px 0;
+    padding: 20px 0 40px 0;
   }
 
   h2 {
     font-size: 24px;
-    color: #d8531e;
-    font-weight: 300;
     line-height: 24px;
-    margin: 0;
     padding: 12px 0;
   }
 
   h3 {
     font-size: 21px;
-    color: #333333;
-    font-weight: 300;
     line-height: 21px;
-    margin: 0;
     padding: 12px 0;
   }
 
   p {
     margin: 0 0 21px 0;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 0 0 5px 0;
+    text-align: center;
   }
 }

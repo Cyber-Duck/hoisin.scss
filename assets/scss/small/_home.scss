@@ -3,25 +3,24 @@ body {
 	font-size: 16px;
 }
 .content {
-	padding: 40px 0;
+	padding: 20px 0 40px 0;
 }
 h2 {
 	font-size: 24px;
-	color: $highlight;
-	font-weight: 300;
 	line-height: 24px;
-	margin: 0;
 	padding: 12px 0;
 }
 
 h3 {
 	font-size: 21px;
-	color: $title;
-	font-weight: 300;
 	line-height: 21px;
-	margin: 0;
 	padding: 12px 0;
 }
 p {
 	margin: 0 0 21px 0;
+}
+.btn {
+	width: 100%;
+	margin: 0 0 5px 0;
+	text-align: center;
 }
