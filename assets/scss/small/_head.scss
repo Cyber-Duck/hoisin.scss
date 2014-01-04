@@ -6,10 +6,11 @@
 	min-height: 50px;
 	background: {
 		color: $blue_dk;
-		image: url("#{$img}bg-large-head.jpg");
-		position: 50% 0;
+		image: url("#{$img}bg-head.png");
+		position: 0 0;
 		attachment: fixed;
-		repeat: no-repeat;
+		repeat: repeat;
+		size: 178px 135px;
 	}
 }
 .logo {
@@ -33,6 +34,9 @@
 			position: 50%;
 			repeat: no-repeat;
 		}
+	}
+	p {
+		display: none;
 	}
 }
 
@@ -91,7 +95,7 @@
 		@include box-sizing();
 	}
 	a {
-		color: $blue_lt;
+		color: $blue;
 		font-size: 16px;
 		text-transform: uppercase;
 		display: block;

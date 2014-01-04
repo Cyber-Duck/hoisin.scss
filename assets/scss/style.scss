@@ -49,6 +49,11 @@ pre {
 	}
 }
 
+// Content
+.content {
+	border-bottom: 1px dotted $blue_lt;
+}
+
 .foot {
 	padding: 40px 0;
 	background: $blue_dk;

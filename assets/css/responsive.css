@@ -193,14 +193,15 @@
   }
 
   .head {
-    height: 300px;
+    height: 220px;
     color: white;
     position: relative;
     background-color: #10222e;
-    background-image: url("../img/bg-large-head.jpg");
-    background-position: 50% 50px;
+    background-image: url("../img/bg-head.png");
+    background-position: 0 0;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-size: 178px 135px;
   }
   .head:before {
     content: "";
@@ -234,12 +235,12 @@
   }
 
   .logo {
-    width: 240px;
-    height: 50px;
-    margin: 105px auto 0 auto;
+    padding: 10px 0;
   }
   .logo h1 {
-    margin: 0;
+    margin: 25px auto 10px auto;
+    width: 240px;
+    height: 50px;
   }
   .logo a {
     display: block;
@@ -249,6 +250,12 @@
     overflow: hidden;
     background-image: url("../img/logo.png");
     background-size: 240px 50px;
+  }
+  .logo p {
+    font-size: 21px;
+    color: #89b8d5;
+    text-align: center;
+    margin: 0 25%;
   }
 
   .menu-wrap {
@@ -276,7 +283,7 @@
     padding: 0;
   }
   .menu a {
-    color: #64a2c7;
+    color: #3a7ca7;
     font-size: 16px;
     text-transform: uppercase;
     display: block;
@@ -540,10 +547,11 @@
     color: white;
     position: relative;
     background-color: #10222e;
-    background-image: url("../img/bg-large-head.jpg");
-    background-position: 50% 50px;
+    background-image: url("../img/bg-head.png");
+    background-position: 0 0;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-size: 178px 135px;
   }
   .head:before {
     content: "";
@@ -577,12 +585,12 @@
   }
 
   .logo {
-    width: 240px;
-    height: 50px;
-    margin: 38px auto 0 auto;
+    padding: 5px 0;
   }
   .logo h1 {
-    margin: 0;
+    width: 240px;
+    height: 50px;
+    margin: 10px auto 0 auto;
   }
   .logo a {
     display: block;
@@ -592,6 +600,12 @@
     overflow: hidden;
     background-image: url("../img/logo.png");
     background-size: 240px 50px;
+  }
+  .logo p {
+    font-size: 18px;
+    color: #89b8d5;
+    text-align: center;
+    margin: 0 25%;
   }
 
   .menu-wrap {
@@ -619,7 +633,7 @@
     padding: 0;
   }
   .menu a {
-    color: #64a2c7;
+    color: #3a7ca7;
     font-size: 16px;
     text-transform: uppercase;
     display: block;
@@ -739,10 +753,11 @@
     position: relative;
     min-height: 50px;
     background-color: #10222e;
-    background-image: url("../img/bg-large-head.jpg");
-    background-position: 50% 0;
+    background-image: url("../img/bg-head.png");
+    background-position: 0 0;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-size: 178px 135px;
   }
 
   .logo {
@@ -765,6 +780,9 @@
     background-size: 120px 25px;
     background-position: 50%;
     background-repeat: no-repeat;
+  }
+  .logo p {
+    display: none;
   }
 
   .menu-wrap {
@@ -831,7 +849,7 @@
     -webkit-box-sizing: border-box;
   }
   .menu a {
-    color: #64a2c7;
+    color: #3a7ca7;
     font-size: 16px;
     text-transform: uppercase;
     display: block;

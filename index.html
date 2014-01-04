@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cyber-Duck Ltd">
+    <meta name="robots" content="all">
+    <meta name="description" content="A simple responsive front end mini framework written in Sass to kick start your web project.">
+    <meta name="keywords" content="Hoisin, sass, scss, responsive, grid, grid system, rwd, framework, css, front end">
+
 	<title>Hoisin.scss by Cyber-Duck</title>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -32,6 +38,7 @@
 				<div class="col12">
 					<div class="logo">
 						<h1><a href="/">Hoisin.scss</a></h1>
+						<p>A simple responsive front end mini framework written in Sass to kick start your web project</p>
 					</div>
 				</div>
 			</div>
@@ -39,15 +46,26 @@
 
 	</div>
 
-	<section class="content">
+	<section class="content" id="about">
 		<div class="container">
 			<div class="col12">
-				<h2 id="about">About Hoisin.scss</h2>
-				<p>A simple responsive mini framework to kick start your project, written in Sass. Please note that this project does not include any predefined styling or premade components. We aim to create an organised base from you can create your own library instead of a one-size-fits-all solution.</p>
-
-				<p>We did not include a reset since we believe they are not necessary, we encourage you to define the styles you need for your project, and leave the unstyled elements to the browser.</p>
-
-				<h2 id="documentation">Documentation</h2>
+				<h2>About Hoisin.scss</h2>
+			</div>
+			<div class="col6">
+				<p>Hoisin is a very simple responsive front end mini framework made to kick start your web project, written in Sass.</p>
+				<p>This framework was created as an alternative to more complex and bloated front end frameworks, with a focus on organisation, speed and flexibility. Its grid system will allow you to create complex layouts easily and the file structure will help you stay organised when coding large and complex websites.</p>
+				<p>Hoisin doesn't have any dependencies, you only need Sass installed to be able to compile your changes.</p>
+			</div>
+			<div class="col6">
+				<p>Please note that this framework does not include predefined styles for components like forms, widgets or buttons. We aim to create an organised base from which you can create your own library instead of a one-size-fits-all solution.</p>
+				<p>We also did not include a reset or normalise since we believe they are not necessary, we encourage you to define the styles you need for your project, and leave the non styled elements to the browser. In the case that you still need to use a normalise, just include it at the top of the main stylesheet, but make sure you edit this file to fit your project.</p>
+			</div>
+		</div>
+	</section>
+	<section class="content" id="documentation">
+		<div class="container">
+			<div class="col12">
+				<h2>Documentation</h2>
 
 				<p>Open the <code>_vars.scss</code> file and add your variables to it, including the size of your base grid. You can add any variables you will be using like colors, font files, sizes, etc.</p>
 

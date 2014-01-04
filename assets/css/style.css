@@ -153,6 +153,10 @@ pre {
   background-color: #336e94;
 }
 
+.content {
+  border-bottom: 1px dotted #64a2c7;
+}
+
 .foot {
   padding: 40px 0;
   background: #10222e;

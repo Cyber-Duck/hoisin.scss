@@ -6,10 +6,11 @@
 	position: relative;
 	background: {
 		color: $blue_dk;
-		image: url("#{$img}bg-large-head.jpg");
-		position: 50% 50px;
+		image: url("#{$img}bg-head.png");
+		position: 0 0;
 		attachment: fixed;
-		repeat: no-repeat;
+		repeat: repeat;
+		size: 178px 135px;
 	}
 	&:before {
 		content: "";
@@ -35,11 +36,11 @@
 	}
 }
 .logo {
-	width: 240px;
-	height: 50px;
-	margin: 38px auto 0 auto;
+	padding: 5px 0;
 	h1 {
-		margin: 0;
+		width: 240px;
+		height: 50px;
+		margin: 10px auto 0 auto;
 	}
 	a {
 		display: block;
@@ -51,6 +52,12 @@
 			image: url("#{$img}logo.png");
 			size: 240px 50px;
 		}
+	}
+	p {
+		font-size: 18px;
+		color: lighten($blue_lt, 10%);
+		text-align: center;
+		margin: 0 25%;
 	}
 }
 
@@ -78,7 +85,7 @@
 		padding: 0;
 	}
 	a {
-		color: $blue_lt;
+		color: $blue;
 		font-size: 16px;
 		text-transform: uppercase;
 		display: block;
