@@ -12,8 +12,7 @@
   src: url("../font/h.eot?48591040");
   src: url("../font/h.eot?48591040#iefix") format("embedded-opentype"), url("../font/h.woff?48591040") format("woff"), url("../font/h.ttf?48591040") format("truetype"), url("../font/h.svg?48591040#h") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -47,57 +46,46 @@
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
 .icon-ok-outline:before {
-  content: '\e806';
-}
+  content: '\e806'; }
 
 /* '' */
 .icon-cancel-outline:before {
-  content: '\e805';
-}
+  content: '\e805'; }
 
 /* '' */
 .icon-minus-outline:before {
-  content: '\e803';
-}
+  content: '\e803'; }
 
 /* '' */
 .icon-home-outline:before {
-  content: '\e804';
-}
+  content: '\e804'; }
 
 /* '' */
 .icon-download-outline:before {
-  content: '\e802';
-}
+  content: '\e802'; }
 
 /* '' */
 .icon-doc-text:before {
-  content: '\e801';
-}
+  content: '\e801'; }
 
 /* '' */
 .icon-menu-outline:before {
-  content: '\e800';
-}
+  content: '\e800'; }
 
 /* '' */
 .icon-facebook-circled:before {
-  content: '\e808';
-}
+  content: '\e808'; }
 
 /* '' */
 .icon-github-circled:before {
-  content: '\e809';
-}
+  content: '\e809'; }
 
 /* '' */
 .icon-twitter-circled:before {
-  content: '\e807';
-}
+  content: '\e807'; }
 
 /* '' */
 body {
@@ -107,34 +95,33 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  background: white;
-}
+  background: white; }
 
 h2 {
   color: #d8531e;
   font-weight: 300;
-  margin: 0;
-}
+  margin: 0; }
 
 h3 {
   color: #333333;
   font-weight: 300;
-  margin: 0;
-}
+  margin: 0; }
 
 p {
-  margin: 0 0 21px 0;
-}
+  margin: 0 0 21px 0; }
 
 a {
-  color: #d8531e;
-}
+  color: #d8531e; }
 
 pre {
   padding: 20px;
   font-size: 20px;
-  background-color: #f8f8f8;
-}
+  background-color: #f8f8f8; }
+
+.box {
+  padding: 10px;
+  margin: 0 0 20px 0;
+  background-color: #f8f8f8; }
 
 .btn {
   display: inline-block;
@@ -147,26 +134,34 @@ pre {
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-.btn:hover {
-  background-color: #336e94;
-}
+  -webkit-box-sizing: border-box; }
+  .btn:hover {
+    background-color: #336e94; }
 
 .content {
-  border-bottom: 1px dotted #64a2c7;
-}
+  border-bottom: 1px dotted #64a2c7; }
+
+.quote {
+  background-color: #f8f8f8; }
+  .quote p {
+    font-size: 1.2em;
+    font-style: italic; }
+  .quote .author {
+    font-style: normal;
+    font-size: .9em;
+    text-align: right;
+    margin: 0; }
+  .quote#quote {
+    padding: 20px 0; }
 
 .foot {
   padding: 40px 0;
   background: #10222e;
   color: white;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .warning {
   background-color: #ffffe5;
   border: 1px solid yellow;
   padding: 10px;
-  border-radius: 10px;
-}
+  border-radius: 10px; }

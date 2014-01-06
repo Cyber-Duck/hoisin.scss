@@ -53,12 +53,27 @@
 			</div>
 			<div class="col6">
 				<p>Hoisin is a very simple responsive front end mini framework made to kick start your web project, written in Sass.</p>
-				<p>This framework was created as an alternative to more complex and bloated front end frameworks, with a focus on organisation, speed and flexibility. Its grid system will allow you to create complex layouts easily and the file structure will help you stay organised when coding large and complex websites.</p>
-				<p>Hoisin doesn't have any dependencies, you only need Sass installed to be able to compile your changes.</p>
+				<p>This framework was created as an alternative to more complex and bloated front end frameworks, with a focus on organisation, speed and flexibility. We also aim to keep its codebase fresh including new techniques, whilst maintaining good support for the most common browsers.</p>
+				<p>Please note that this framework is not an UI kit and it does not include predefined styles for components like forms, widgets or buttons. We aim to create an organised base from which you can create your own library instead of a one-size-fits-all solution.</p>
 			</div>
 			<div class="col6">
-				<p>Please note that this framework does not include predefined styles for components like forms, widgets or buttons. We aim to create an organised base from which you can create your own library instead of a one-size-fits-all solution.</p>
-				<p>We also did not include a reset or normalise since we believe they are not necessary, we encourage you to define the styles you need for your project, and leave the non styled elements to the browser. In the case that you still need to use a normalise, just include it at the top of the main stylesheet, but make sure you edit this file to fit your project.</p>
+				<p>Hoisin doesn't have any dependencies other than Sass, you will only need the Sass compiler installed to be able to compile your changes. More information about installing and using Sass can be found on <a href="http://sass-lang.com" target="_blank">their website</a>.</p>
+				<p>We did not include a <em>reset</em> or <em>normalize</em> since we believe they are not necessary, we encourage you to define the styles you need for your project, and leave the non styled elements to the browser. In the case that you still need to use a normalise, just include it at the top of the main stylesheet and make sure you edit this file to fit your project to avoid unnecessary overwriting of rules.</p>
+			</div>
+			<div class="clear"></div>
+			<div class="col6">
+				<h3>Browser support</h3>
+				<p>IE 6+ (Only large, using clear elements). Firefox 3.6+, Chrome, Opera, Android 2.3+ and iOS 6+.</p>
+			</div>
+		</div>
+	</section>
+	<section class="content quote" id="quote">
+		<div class="container">
+			<div class="col12">
+				<blockquote>
+					<p>Hoisin's grid system will allow you to create complex layouts easily and the file structure will help you stay organised when coding large and complex websites.</p>
+					<p class="author"><a href="http://www.cyber-duck.co.uk/about/ramon-lapenta" target="_blank">Ramon Lapenta</a> &bull; <a href="https://twitter.com/ramono" target="_blank">@ramono</a></p>
+				</blockquote>
 			</div>
 		</div>
 	</section>
@@ -66,18 +81,59 @@
 		<div class="container">
 			<div class="col12">
 				<h2>Documentation</h2>
+			</div>
+			<div class="col8">
+				<h3>File structure</h3>
+				<p>All the source files are located in a <code>scss</code> folder which compiles three stylesheets into the <code>css</code> folder. </p>
+				<p>We advise to create one file for each individual section / breakpoint and place it in its respective folder then use includes in the base files for each breakpoint. All files will compile to the main stylesheets and a IE fallback stylesheet that should include all desktop size styles.</p>
 
-				<p>Open the <code>_vars.scss</code> file and add your variables to it, including the size of your base grid. You can add any variables you will be using like colors, font files, sizes, etc.</p>
-
-				<script src="https://gist.github.com/ramono/8244718.js"></script>
-
-				<h3>Grid</h3>
+				<h3>Configuration</h3>
+				<p>This is done via the vars file. Open the <code>_vars.scss</code> file and add your variables to it, including the size of your base grid. You can add any variables you will be using like colors, font files, sizes, etc.</p>
+			</div>
+			<!--
+			<div class="col4">
+				<div class="box">
+					<ul>
+						<li>css
+							<ul>
+								<li>styles.css, responsive.css, ie.css</li>
+							</ul>
+						</li>
+						<li>scss
+							<ul>
+								<li>large
+									<ul>
+										<li>_base.scss, _home.scss, ...</li>
+									</ul>
+								</li>
+								<li>medium
+									<ul>
+										<li>_base.scss, _home.scss, ...</li>
+									</ul>
+								</li>
+								<li>small
+									<ul>
+										<li>_base.scss, _home.scss, ...</li>
+									</ul>
+								</li>
+								<li>_vars.scss</li>
+								<li>_version.scss</li>
+								<li>style.scss</li>
+								<li>responsive.scss</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		-->
+			<div class="clear"></div>
+			<div class="col8">
+				<h3>Grid system</h3>
 
 				<p>By default we use a 12 column grid with 60px columns and 20px gutters. The spans have simple names like <code>".col4"</code>. There are helper classes like <code>".colr"</code> to pull a span to the right, and <code>".pre1"</code> to <code>".pre10"</code> as well as <code>".suf1"</code> to <code>".suf10"</code> for offset spans.</p>
 
+				<script src="https://gist.github.com/ramono/8244718.js"></script>
 				<p>Tablet and mobile spans can be altered by using extra helper classes depending on the layout requirements, we've included classes for full, half one third and two thirds (widths) which override default column behaviour. We also added a <code>".clear"</code> helper class for browsers that can't clear themselves out.</p>
-
-				<h3>Breakpoints</h3>
 
 				<p>We have added three common breakpoints in the variables file, you can adjust these to match your content and layout, or even add new breakpoints for more control.</p>
 
@@ -90,10 +146,6 @@
 
 				<p>We have included a mixins file with all common mixins we use everyday. This file doesn't output anything by itself, so it's safe to include in every file so the mixins are always available.</p>
 
-				<h3>
-				<a name="file-structure" class="anchor" href="#file-structure"><span class="octicon octicon-link"></span></a>File structure</h3>
-
-				<p>We advise to create one file for each individual section / breakpoint and place it in its respective folder then use includes in the base files for each breakpoint. All files will compile to the main stylesheets and a IE fallback stylesheet that should include all desktop size styles.</p>
 				
 			</div>
 		</div>
@@ -105,8 +157,8 @@
 		        <p>This project is maintained by <a href="https://github.com/Cyber-Duck">Cyber-Duck</a></p>
 		        <p>Hosted on GitHub Pages</p>
 		        <p>
-		        	<a href="https://github.com/Cyber-Duck/hoisin.scss" class="btn" target="_blank"><i class="icon-github-circled"></i>Star on Github</a>
-		        	<a href="http://twitter.com/share?text=Check%20out%20this%20responsive%20mini%20framework&url=http://cyber-duck.github.io/hoisin.scss/&hashtags=rwd,scss,sass" class="btn" target="_blank"><i class="icon-twitter-circled"></i>Share on Twitter</a> 
+		        	<a href="https://github.com/Cyber-Duck/hoisin.scss" class="btn" target="_blank"><i class="icon-github-circled"></i>View on Github</a>
+		        	<a href="http://twitter.com/share?text=Check%20out%20this%20responsive%20mini%20framework&url=http://cyber-duck.github.io/hoisin.scss/&hashtags=rwd,scss,css" class="btn" target="_blank"><i class="icon-twitter-circled"></i>Share on Twitter</a> 
 		        	<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://hoisin.scss&p[images][0]=&p[title]=Hoisin.scss&p[summary]=Check%20out%20this%20responsive%20mini%20framework" class="btn" target="_blank"><i class="icon-facebook-circled"></i>Post to Facebook</a> 
 		        </p>
       		</div>
