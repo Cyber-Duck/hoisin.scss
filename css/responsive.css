@@ -2,7 +2,7 @@
  * Hoisin.scss
  * CSS responsive framework boilerplate
  * Create your own grids, plugin anything
- * Version: 0.9.4
+ * Version: 0.9.6
  * Created by: Cyber-Duck Ltd <info@cyber-duck.co.uk>,
  *             Ramon Lapenta <me@ramonlapenta.com>
  *
@@ -220,83 +220,83 @@
   }
 
   .pre1 {
-    padding-left: 100px;
+    margin-left: 100px;
   }
 
   .pre2 {
-    padding-left: 200px;
+    margin-left: 200px;
   }
 
   .pre3 {
-    padding-left: 300px;
+    margin-left: 300px;
   }
 
   .pre4 {
-    padding-left: 400px;
+    margin-left: 400px;
   }
 
   .pre5 {
-    padding-left: 500px;
+    margin-left: 500px;
   }
 
   .pre6 {
-    padding-left: 600px;
+    margin-left: 600px;
   }
 
   .pre7 {
-    padding-left: 700px;
+    margin-left: 700px;
   }
 
   .pre8 {
-    padding-left: 800px;
+    margin-left: 800px;
   }
 
   .pre9 {
-    padding-left: 900px;
+    margin-left: 900px;
   }
 
   .pre10 {
-    padding-left: 1000px;
+    margin-left: 1000px;
   }
 
   .suf1 {
-    padding-right: 100px;
+    margin-right: 100px;
   }
 
   .suf2 {
-    padding-right: 200px;
+    margin-right: 200px;
   }
 
   .suf3 {
-    padding-right: 300px;
+    margin-right: 300px;
   }
 
   .suf4 {
-    padding-right: 400px;
+    margin-right: 400px;
   }
 
   .suf5 {
-    padding-right: 500px;
+    margin-right: 500px;
   }
 
   .suf6 {
-    padding-right: 600px;
+    margin-right: 600px;
   }
 
   .suf7 {
-    padding-right: 700px;
+    margin-right: 700px;
   }
 
   .suf8 {
-    padding-right: 800px;
+    margin-right: 800px;
   }
 
   .suf9 {
-    padding-right: 900px;
+    margin-right: 900px;
   }
 
   .suf10 {
-    padding-right: 1000px;
+    margin-right: 1000px;
   }
 
   .container {
