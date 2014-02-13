@@ -1,0 +1,5 @@
+{
+  "name": "Hoisin.scss",
+  "description": "A simple responsive front end mini framework written in Sass to kick start your web project.",
+  "tags": ["rwd", "grid", "responsive", "framework"]
+}

@@ -44,4 +44,3 @@ We have included a mixins file with all common mixins we use everyday. This file
 
 ### File structure
 We advise to create one file for each individual section / breakpoint and place it in its respective folder then use includes in the base files for each breakpoint. All files will compile to the main stylesheets and a IE fallback stylesheet that should include all desktop size styles.
-

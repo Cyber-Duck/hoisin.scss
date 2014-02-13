@@ -2,7 +2,7 @@
  * Hoisin.scss
  * CSS responsive framework boilerplate
  * Create your own grids, plugin anything
- * Version: 0.9.6
+ * Version: 0.9.7
  * Created by: Cyber-Duck Ltd <info@cyber-duck.co.uk>,
  *             Ramon Lapenta <me@ramonlapenta.com>
  *
@@ -72,43 +72,43 @@
   }
 
   .pre1 {
-    margin-left: 80px;
+    margin-left: 90px;
   }
 
   .pre2 {
-    margin-left: 160px;
+    margin-left: 170px;
   }
 
   .pre3 {
-    margin-left: 240px;
+    margin-left: 250px;
   }
 
   .pre4 {
-    margin-left: 320px;
+    margin-left: 330px;
   }
 
   .pre5 {
-    margin-left: 400px;
+    margin-left: 410px;
   }
 
   .pre6 {
-    margin-left: 480px;
+    margin-left: 490px;
   }
 
   .pre7 {
-    margin-left: 560px;
+    margin-left: 570px;
   }
 
   .pre8 {
-    margin-left: 640px;
+    margin-left: 650px;
   }
 
   .pre9 {
-    margin-left: 720px;
+    margin-left: 730px;
   }
 
   .pre10 {
-    margin-left: 800px;
+    margin-left: 810px;
   }
 
   .suf1 {
@@ -167,6 +167,11 @@
   .clear {
     clear: both;
   }
+
+  .center {
+    margin: 0 auto;
+    float: none;
+  }
 }
 @media only screen and (min-width: 1024px) and (min-width: 1360px) and (min-device-width: 1360px) {
   .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10 {
@@ -220,83 +225,83 @@
   }
 
   .pre1 {
-    margin-left: 100px;
+    margin-left: 115px;
   }
 
   .pre2 {
-    margin-left: 200px;
+    margin-left: 215px;
   }
 
   .pre3 {
-    margin-left: 300px;
+    margin-left: 315px;
   }
 
   .pre4 {
-    margin-left: 400px;
+    margin-left: 415px;
   }
 
   .pre5 {
-    margin-left: 500px;
+    margin-left: 515px;
   }
 
   .pre6 {
-    margin-left: 600px;
+    margin-left: 615px;
   }
 
   .pre7 {
-    margin-left: 700px;
+    margin-left: 715px;
   }
 
   .pre8 {
-    margin-left: 800px;
+    margin-left: 815px;
   }
 
   .pre9 {
-    margin-left: 900px;
+    margin-left: 915px;
   }
 
   .pre10 {
-    margin-left: 1000px;
+    margin-left: 1015px;
   }
 
   .suf1 {
-    margin-right: 100px;
+    margin-right: 115px;
   }
 
   .suf2 {
-    margin-right: 200px;
+    margin-right: 215px;
   }
 
   .suf3 {
-    margin-right: 300px;
+    margin-right: 315px;
   }
 
   .suf4 {
-    margin-right: 400px;
+    margin-right: 415px;
   }
 
   .suf5 {
-    margin-right: 500px;
+    margin-right: 515px;
   }
 
   .suf6 {
-    margin-right: 600px;
+    margin-right: 615px;
   }
 
   .suf7 {
-    margin-right: 700px;
+    margin-right: 715px;
   }
 
   .suf8 {
-    margin-right: 800px;
+    margin-right: 815px;
   }
 
   .suf9 {
-    margin-right: 900px;
+    margin-right: 915px;
   }
 
   .suf10 {
-    margin-right: 1000px;
+    margin-right: 1015px;
   }
 
   .container {

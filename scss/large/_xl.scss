@@ -25,12 +25,12 @@ $wrap: $xl-col-width * 12 + $xl-gutter * 11;
 }
 @for $i from 1 through 10 {
     .pre#{$i} {
-        margin-left: $xl-col-width * $i + $xl-gutter * $i;
+        margin-left: ($xl-col-width * $i) + ($xl-gutter * $i) + ($xl-gutter / 2);
     }
 }
 @for $i from 1 through 10 {
     .suf#{$i} {
-        margin-right: $xl-col-width * $i + $xl-gutter * $i;
+        margin-right: ($xl-col-width * $i) + ($xl-gutter * $i) + ($xl-gutter / 2);
     }
 }
 .container {

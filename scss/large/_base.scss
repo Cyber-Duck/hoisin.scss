@@ -39,7 +39,7 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
 }
 @for $i from 1 through ($col-qty - 2) {
     .pre#{$i} {
-        margin-left: ($col-width * $i) + ($gutter * $i);
+        margin-left: ($col-width * $i) + ($gutter * $i) + ($gutter / 2);
     }
 }
 @for $i from 1 through ($col-qty - 2) {
@@ -61,6 +61,10 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
 }
 .clear {
     clear: both;
+}
+.center {
+    margin: 0 auto;
+    float: none;
 }
 
 // Import section files
