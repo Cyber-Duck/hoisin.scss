@@ -64,12 +64,13 @@
     animation: $options;
 }
 @mixin placeholder($color) {
-    input::-webkit-input-placeholder, 
-    textarea::-webkit-input-placeholder,
-    input:-moz-placeholder, 
-    textarea:-moz-placeholder,
-    input:-ms-input-placeholder, 
-    textarea:-ms-input-placeholder {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color; 
+    }
+    &:-ms-input-placeholder {
         color: $color;
     }
 }
