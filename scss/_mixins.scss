@@ -35,7 +35,7 @@
     -webkit-opacity: $opac;
     opacity: $opac;
 }
-@mixin transition($value) {
+@mixin transition($value: .15s) {
     -o-transition: $value;
     -moz-transition: $value;
     -webkit-transition: $value;
