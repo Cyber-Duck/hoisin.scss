@@ -26,9 +26,11 @@
     -moz-box-sizing: $type;
     -webkit-box-sizing: $type;
 }
-@mixin opacity($opac) {
-    filter: alpha(opacity=$opac * 100);
-    -ms-filter: alpha(opacity=$opac * 100);
+@mixin opacity($opac, $ie: false) {
+    @if $ie {
+      filter: alpha(opacity=$opac * 100);
+      -ms-filter: alpha(opacity=$opac * 100);
+    }
     -moz-opacity: $opac;
     -webkit-opacity: $opac;
     opacity: $opac;
