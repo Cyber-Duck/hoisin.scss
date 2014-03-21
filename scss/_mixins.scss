@@ -1,6 +1,6 @@
 // Simple box shadow mixin
 @mixin box-shadow($value: 0 0 4px 0 rgba(0,0,0,0.5)) {
-    @include prefixer(box-shadow, $value);
+    @include prefixer(box-shadow, $value, webkit);
 }
 
 // Simple linear gradients
@@ -15,7 +15,7 @@
 
 // Mixin for box sizing, defaults to border-box
 @mixin box-sizing($type: border-box) {
-    @include prefixer(box-sizing, $type);
+    @include prefixer(box-sizing, $type, moz webkit);
 }
 
 // Mixin for opacity, IE not included by default
@@ -24,20 +24,20 @@
       filter: alpha(opacity=$opac * 100);
       -ms-filter: alpha(opacity=$opac * 100);
     }
-    @include prefixer(opacity, $opac, moz webkit);
+    opacity: $opac;
 }
 
 // Simple transition mixin
 @mixin transition($value: .15s) {
-    @include prefixer(transition, $value);
+    @include prefixer(transition, $value, webkit);
 }
 
 // Rotate transformation mixin
 @mixin rotate($deg, $orig: 50% 50%) {
-    @include prefixer(transform, rotate(#{$deg}));
+    @include prefixer(transform, rotate(#{$deg}), webkit ms);
     @if $orig != 50% and $orig != (50% 50%) 
     and $orig != center and $orig != (center center) {
-        @include prefixer(transform-origin, $orig);
+        @include prefixer(transform-origin, $orig, webkit ms);
     }
 }
 
@@ -61,7 +61,7 @@
 
 @mixin noselect() {
     -webkit-touch-callout: none;
-    @include prefixer(user-select, none);
+    @include prefixer(user-select, none, webkit ms);
 }
 
 // This mixin is deprecated, will be removed in future versions
