@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>hoisin.scss</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all and (min-width: 120px)">
 
@@ -12,96 +13,218 @@
 
 	/* Sample page styles for display purposes only */
 	body {
-		font-family: sans-serif;
-		font-size: 17px;
-		color: #333;
+		color: #666;
+		margin: 0;
+		padding: 50px 0 0 0;
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		background: white;
 	}
-	.col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3, .col2, .half-medium, .one-third-medium, .two-thirds-medium, .half-small {
-		text-align: center;
-		margin-bottom: 20px;
+	h2 {
+		color: #d8531e;
+		font-weight: 300;
+		margin: 0;
+		font-size: 48px;
+		font-size: 48px;
+	}
+	h3 {
+		color: #333;
+		font-weight: 300;
+		margin: 0;
+		font-size: 36px;
+		line-height: 36px;
+		padding: 12px 0; 
 	}
 	p {
-		margin: 0;
-		padding: 10px 0;
+		margin: 0 0 21px 0;
+	}
+	a {
+		color: #d8531e;
+	}
+	.box {
+		margin: 0 0 20px 0;
+		padding: 10px;
 		background: #F5F5F5;
+	}
+	.box p {
+		margin: 0;
+	}
+	.code {
+		font-family: "Courier New", serif;
 	}
 
 	</style>
 </head>
 <body>
 	<div class="container">
-		<header class="col12">
-			<h1>hoisin.scss</h1>
+		<header class="col8">
+			<h2>Hoisin.scss</h2>
+			<p>These are a series of layout samples using Hoisin.scss grid system and its helpers. You can resize the browser window to see how they react in different screen sizes.</p>
 		</header>
 	</div>
+
 	<div class="container">
 		<div class="col12">
-			<p>Full width span</p>
+			<h3>Desktop grid system</h3>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col12">
+			<div class="box code">
+				<p>.col12</p>
+			</div>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="col3">
-			<p>3 columns</p>
+			<div class="box code">
+				<p>.col3</p>
+			</div>
 		</div>
 		<div class="col3">
-			<p>3 columns</p>
+			<div class="box code">
+				<p>.col3</p>
+			</div>
 		</div>
 		<div class="col3">
-			<p>3 columns</p>
+			<div class="box code">
+				<p>.col3</p>
+			</div>
 		</div>
 		<div class="col3">
-			<p>3 columns</p>
+			<div class="box code">
+				<p>.col3</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col2">
+			<div class="box code">
+				<p>.col2</p>
+			</div>
+		</div>
+		<div class="col2">
+			<div class="box code">
+				<p>.col2</p>
+			</div>
+		</div>
+		<div class="col2">
+			<div class="box code">
+				<p>.col2</p>
+			</div>
+		</div>
+		<div class="col2">
+			<div class="box code">
+				<p>.col2</p>
+			</div>
+		</div>
+		<div class="col2">
+			<div class="box code">
+				<p>.col2</p>
+			</div>
+		</div>
+		<div class="col2">
+			<div class="box code">
+				<p>.col2</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col12">
+			<h3>Breakpoint helpers</h3>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="col4">
-			<p>4 columns</p>
+			<div class="box code">
+				<p>.col4</p>
+			</div>
 		</div>
 		<div class="col4">
-			<p>4 columns</p>
+			<div class="box code">
+				<p>.col4</p>
+			</div>
 		</div>
 		<div class="col4 full-medium">
-			<p>4 columns</p>
+			<div class="box code">
+				<p>.col4 <br>.full-medium</p>
+			</div>
 		</div>
-	</div>
-
-	<div class="container">
-		<div class="col2">
-			<p>2 columns</p>
-		</div>
-		<div class="col2">
-			<p>2 columns</p>
-		</div>
-		<div class="col2">
-			<p>2 columns</p>
-		</div>
-		<div class="col2">
-			<p>2 columns</p>
-		</div>
-		<div class="col2">
-			<p>2 columns</p>
-		</div>
-		<div class="col2">
-			<p>2 columns</p>
-		</div>
-		<div class="clear"></div>
 	</div>
 
 	<div class="container">
 		<div class="col8 two-thirds-medium">
-			<p>8 Columns (two thirds)</p>
+			<div class="box code">
+				<p>.col8 <br>.two-thirds-medium</p>
+			</div>
 		</div>
 		<div class="col4 one-third-medium">
-			<p>4 columns (one third)</p>
+			<div class="box code">
+				<p>.col4 <br>.one-third-medium</p>
+			</div>
 		</div>
-		<div class="clear"></div>
 	</div>
 
 	<div class="container">
-		<div class="col8 pre2">
-			<p>Offset span</p>
+		<div class="col8 half-medium">
+			<div class="box code">
+				<p>.col8 <br>.half-medium</p>
+			</div>
+		</div>
+		<div class="col4 half-medium">
+			<div class="box code">
+				<p>.col4 <br>.half-medium</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col2 one-third-medium full-small">
+			<div class="box code">
+				<p>.col2 <br>.one-third-medium <br>.full-small</p>
+			</div>
+		</div>
+		<div class="col2 one-third-medium full-small">
+			<div class="box code">
+				<p>.col2 <br>.one-third-medium <br>.full-small</p>
+			</div>
+		</div>
+		<div class="col2 one-third-medium full-small">
+			<div class="box code">
+				<p>.col2 <br>.one-third-medium <br>.full-small</p>
+			</div>
+		</div>
+		<div class="col6 full-medium">
+			<div class="box code">
+				<p>.col6 <br>.full-medium</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col12">
+			<h3>Offset &amp; centered columns</h3>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col4 pre2">
+			<div class="box code">
+				<p>.col4 <br>.pre2</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="col5 center">
+			<div class="box code">
+				<p>.col5 <br>.center</p>
+			</div>
 		</div>
 	</div>
 
