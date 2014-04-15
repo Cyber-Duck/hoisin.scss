@@ -1,10 +1,9 @@
-@import "version";
+@import 'version';
+@import 'vars';
+@import 'mixins';
 
-@import "vars";
-@import "mixins";
-
-// Only styles common for all screen sizes
+// * Only styles common for all screen sizes
 body {
-	color: $text;
-	background: $white;
+  background: $white;
+  color: $text;
 }

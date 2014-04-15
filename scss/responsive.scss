@@ -1,20 +1,19 @@
-@import "version";
-
-@import "vars";
-@import "mixins";
+@import 'version';
+@import 'vars';
+@import 'mixins';
 
 @media (min-width: $breakpoint-large) {
 
-	@import "large/base";
+  @import 'large/base';
 
 }
 @media (min-width: $breakpoint-medium) and (max-width: ($breakpoint-large - 1)) {
 
-	@import "medium/base";
+  @import 'medium/base';
 
 }
 @media (min-width: $breakpoint-small) and (max-width: ($breakpoint-medium - 1)) {
 
-	@import "small/base";
+  @import 'small/base';
 
 }
