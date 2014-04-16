@@ -400,92 +400,147 @@
   }
 
   .pre1 {
-    padding-left: 100px;
+    margin-left: 115px;
   }
 
   .pre2 {
-    padding-left: 200px;
+    margin-left: 215px;
   }
 
   .pre3 {
-    padding-left: 300px;
+    margin-left: 315px;
   }
 
   .pre4 {
-    padding-left: 400px;
+    margin-left: 415px;
   }
 
   .pre5 {
-    padding-left: 500px;
+    margin-left: 515px;
   }
 
   .pre6 {
-    padding-left: 600px;
+    margin-left: 615px;
   }
 
   .pre7 {
-    padding-left: 700px;
+    margin-left: 715px;
   }
 
   .pre8 {
-    padding-left: 800px;
+    margin-left: 815px;
   }
 
   .pre9 {
-    padding-left: 900px;
+    margin-left: 915px;
   }
 
   .pre10 {
-    padding-left: 1000px;
+    margin-left: 1015px;
   }
 
   .suf1 {
-    padding-right: 100px;
+    margin-right: 115px;
   }
 
   .suf2 {
-    padding-right: 200px;
+    margin-right: 215px;
   }
 
   .suf3 {
-    padding-right: 300px;
+    margin-right: 315px;
   }
 
   .suf4 {
-    padding-right: 400px;
+    margin-right: 415px;
   }
 
   .suf5 {
-    padding-right: 500px;
+    margin-right: 515px;
   }
 
   .suf6 {
-    padding-right: 600px;
+    margin-right: 615px;
   }
 
   .suf7 {
-    padding-right: 700px;
+    margin-right: 715px;
   }
 
   .suf8 {
-    padding-right: 800px;
+    margin-right: 815px;
   }
 
   .suf9 {
-    padding-right: 900px;
+    margin-right: 915px;
   }
 
   .suf10 {
-    padding-right: 1000px;
+    margin-right: 1015px;
   }
 
   .container {
     width: 1200px;
   }
 
+  .col2 .container {
+    margin: 0 0 0 -15px;
+    width: 200px;
+  }
+
+  .col3 .container {
+    margin: 0 0 0 -15px;
+    width: 300px;
+  }
+
+  .col4 .container {
+    margin: 0 0 0 -15px;
+    width: 400px;
+  }
+
+  .col5 .container {
+    margin: 0 0 0 -15px;
+    width: 500px;
+  }
+
+  .col6 .container {
+    margin: 0 0 0 -15px;
+    width: 600px;
+  }
+
+  .col7 .container {
+    margin: 0 0 0 -15px;
+    width: 700px;
+  }
+
+  .col8 .container {
+    margin: 0 0 0 -15px;
+    width: 800px;
+  }
+
+  .col9 .container {
+    margin: 0 0 0 -15px;
+    width: 900px;
+  }
+
+  .col10 .container {
+    margin: 0 0 0 -15px;
+    width: 1000px;
+  }
+
+  .col11 .container {
+    margin: 0 0 0 -15px;
+    width: 1100px;
+  }
+
+  .col12 .container {
+    margin: 0 0 0 -15px;
+    width: 1200px;
+  }
+
   .colr {
     float: right;
-    margin: 0 15px;
+    margin: 0 10px;
   }
 
   .alpha {
@@ -498,6 +553,11 @@
 
   .clear {
     clear: both;
+  }
+
+  .center {
+    float: none;
+    margin: 0 auto;
   }
 }
 @media (min-width: 600px) and (max-width: 1023px) {
