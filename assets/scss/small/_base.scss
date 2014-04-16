@@ -1,60 +1,78 @@
-@import "vars";
-@import "mixins";
+@import 'vars';
+@import 'mixins';
+
+// * Grid system
+// * Define the properties of the flexible container
+// *
 
 .wrap {
-	overflow: hidden;
-	width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
+
 .container {
-	width: 96%;
-	margin: 0 auto;
-    &:after {
-        content: " ";
-        clear: both;
-        display: block;
-    }
-}
-.col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3 {
-	width: 100%;
-	margin: 0;
-	padding: 0 10px;
-	@include box-sizing(border-box);
-	.col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3 {
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-}
-.col2 {
-	width: 50%;
-	float: left;
-	margin: 0;
-	padding: 0 10px;
-	@include box-sizing(border-box);
-}
-.full-small {
-	width: 100%;
-	margin: 0;
-	padding: 0 10px;
-	@include box-sizing(border-box);
-}
-.half-small {
-	width: 50%;
-	float: left;
-	margin: 0;
-	padding: 0 10px;
-	@include box-sizing(border-box);
-}
-.clear {
+  width: 100%;
+
+  &:after {
     clear: both;
+    content: '';
+    display: block;
+  }
+  
+  .container {
+    width: 102%;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
 }
 
-
-@import "head";
-@import "home";
-@import "contact";
-
-// High definition displays
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) {
-
+.col12, 
+.col11, 
+.col10, 
+.col9, 
+.col8, 
+.col7, 
+.col6, 
+.col5, 
+.col4, 
+.col3 {
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+  @include box-sizing(border-box);
 }
+
+.col2 {
+  float: left;
+  margin: 0;
+  padding: 0 10px;
+  width: 50%;
+  @include box-sizing(border-box);
+}
+
+.full-small {
+  float: none;
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+  @include box-sizing(border-box);
+}
+
+.half-small {
+  float: left;
+  margin: 0;
+  padding: 0 10px;
+  width: 50%;
+  @include box-sizing(border-box);
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  font-size: 16px;
+}
+
+@import 'head';
+@import 'home';

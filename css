@@ -2,21 +2,20 @@
 Errno::ENOENT: No such file or directory - scss
 
 Backtrace:
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/plugin/compiler.rb:302:in `read'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/plugin/compiler.rb:302:in `update_stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/plugin/compiler.rb:182:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/plugin/compiler.rb:179:in `each'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/plugin/compiler.rb:179:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/plugin/compiler.rb:214:in `watch'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/plugin.rb:107:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/plugin.rb:107:in `method_missing'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/exec.rb:482:in `watch_or_update'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/exec.rb:324:in `process_result'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/exec.rb:41:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/../lib/sass/exec.rb:21:in `parse!'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.184/bin/sass:9
-/usr/bin/sass:19:in `load'
-/usr/bin/sass:19
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/plugin/compiler.rb:340:in `read'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/plugin/compiler.rb:191:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/plugin/compiler.rb:188:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/plugin/compiler.rb:188:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/plugin/compiler.rb:223:in `watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/plugin.rb:108:in `method_missing'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/exec.rb:508:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/exec.rb:346:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/exec.rb:43:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/lib/sass/exec.rb:22:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.0.rc.2/bin/sass:9:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
 */
 body:before {
   white-space: pre;
