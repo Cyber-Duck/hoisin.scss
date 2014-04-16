@@ -12,11 +12,16 @@
 
 .container {
   width: 100%;
-
   &::after {
     clear: both;
     content: '';
     display: block;
+  }
+
+  .container {
+    width: 102%;
+    width: calc(100% + 20px);
+    margin-left: -10px;
   }
 }
 
@@ -30,17 +35,6 @@
   padding: 0 10px;
   width: 100%;
   @include box-sizing(border-box);
-  
-  .col12, 
-  .col11, 
-  .col10, 
-  .col9, 
-  .col8, 
-  .col7 {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
 }
 
 .col6, 
@@ -64,6 +58,9 @@
 
 .full-medium {
   width: 100%;
+  &.colr {
+    float: none;
+  }
 }
 
 .half-medium {
@@ -96,6 +93,11 @@
 
 .clear {
   clear: both;
+}
+
+.center {
+  float: none;
+  margin: 0 auto;
 }
 
 @import 'header';

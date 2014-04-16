@@ -47,6 +47,13 @@ $wrap: $xl-col-width * 12 + $xl-gutter * 11;
   width: $wrap + $xl-gutter;
 }
 
+@for $i from 2 through $col-qty {
+    .col#{$i} .container {
+        margin: 0 0 0 -#{$xl-gutter/2};
+        width: ($xl-col-width * $i) + ($xl-gutter * $i);
+    }
+}
+
 // * Grid utilities
 .colr {
   float: right;
@@ -63,4 +70,9 @@ $wrap: $xl-col-width * 12 + $xl-gutter * 11;
 
 .clear {
   clear: both;
+}
+
+.center {
+  float: none;
+  margin: 0 auto;
 }
