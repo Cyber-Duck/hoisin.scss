@@ -76,3 +76,7 @@ $wrap: $xl-col-width * 12 + $xl-gutter * 11;
   float: none;
   margin: 0 auto;
 }
+
+.samples {
+  background: url('#{$img}bg-grid-xl.png') 50% 0;
+}

@@ -90,6 +90,10 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
 @import 'head';
 @import 'home';
 
+.samples {
+  background: url('#{$img}bg-grid.png') 50% 0;
+}
+
 // * Extra large desktop
 @media (min-width: $breakpoint-xl) {
 

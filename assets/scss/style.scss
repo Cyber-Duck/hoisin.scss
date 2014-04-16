@@ -37,7 +37,7 @@ pre {
 .box {
 	padding: 10px;
 	margin: 0 0 20px 0;
-	background-color: $pre;
+	background: rgba(160,160,160,0.10);
 }
 
 .btn {
@@ -52,8 +52,24 @@ pre {
 		background-color: darken($blue, 5%);
 	}
 }
+section {
+	margin-bottom: 50px;
+}
+.box p {
+	margin: 0;
+}
+.code {
+	font-family: "Courier New", serif;
+	font-size: 14px;
+}
+.nesting {
+	background: rgba(255,244,106,0.10);
+	margin-bottom: 20px;
+}
+.nesting .nesting {
+	background: rgba(223,251,191,0.30);
+}
 
-// Content
 .content {
 	border-bottom: 1px dotted $blue_lt;
 }
