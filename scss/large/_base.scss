@@ -19,7 +19,7 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
 }
 
 @for $i from 2 through $col-qty {
-    .col#{$i} .container {
+    .col#{$i} > .container {
         margin: 0 0 0 -#{$gutter/2};
         width: ($col-width * $i) + ($gutter * $i);
     }

@@ -9,57 +9,57 @@
     display: block;
   }
 
-  .col2 .container {
+  .col2 > .container {
     margin: 0 0 0 -10px;
     width: 160px;
   }
 
-  .col3 .container {
+  .col3 > .container {
     margin: 0 0 0 -10px;
     width: 240px;
   }
 
-  .col4 .container {
+  .col4 > .container {
     margin: 0 0 0 -10px;
     width: 320px;
   }
 
-  .col5 .container {
+  .col5 > .container {
     margin: 0 0 0 -10px;
     width: 400px;
   }
 
-  .col6 .container {
+  .col6 > .container {
     margin: 0 0 0 -10px;
     width: 480px;
   }
 
-  .col7 .container {
+  .col7 > .container {
     margin: 0 0 0 -10px;
     width: 560px;
   }
 
-  .col8 .container {
+  .col8 > .container {
     margin: 0 0 0 -10px;
     width: 640px;
   }
 
-  .col9 .container {
+  .col9 > .container {
     margin: 0 0 0 -10px;
     width: 720px;
   }
 
-  .col10 .container {
+  .col10 > .container {
     margin: 0 0 0 -10px;
     width: 800px;
   }
 
-  .col11 .container {
+  .col11 > .container {
     margin: 0 0 0 -10px;
     width: 880px;
   }
 
-  .col12 .container {
+  .col12 > .container {
     margin: 0 0 0 -10px;
     width: 960px;
   }
@@ -354,57 +354,57 @@
     width: 1200px;
   }
 
-  .col2 .container {
+  .col2 > .container {
     margin: 0 0 0 -15px;
     width: 200px;
   }
 
-  .col3 .container {
+  .col3 > .container {
     margin: 0 0 0 -15px;
     width: 300px;
   }
 
-  .col4 .container {
+  .col4 > .container {
     margin: 0 0 0 -15px;
     width: 400px;
   }
 
-  .col5 .container {
+  .col5 > .container {
     margin: 0 0 0 -15px;
     width: 500px;
   }
 
-  .col6 .container {
+  .col6 > .container {
     margin: 0 0 0 -15px;
     width: 600px;
   }
 
-  .col7 .container {
+  .col7 > .container {
     margin: 0 0 0 -15px;
     width: 700px;
   }
 
-  .col8 .container {
+  .col8 > .container {
     margin: 0 0 0 -15px;
     width: 800px;
   }
 
-  .col9 .container {
+  .col9 > .container {
     margin: 0 0 0 -15px;
     width: 900px;
   }
 
-  .col10 .container {
+  .col10 > .container {
     margin: 0 0 0 -15px;
     width: 1000px;
   }
 
-  .col11 .container {
+  .col11 > .container {
     margin: 0 0 0 -15px;
     width: 1100px;
   }
 
-  .col12 .container {
+  .col12 > .container {
     margin: 0 0 0 -15px;
     width: 1200px;
   }
