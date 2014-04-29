@@ -48,7 +48,7 @@ $wrap: $xl-col-width * 12 + $xl-gutter * 11;
 }
 
 @for $i from 2 through $col-qty {
-    .col#{$i} .container {
+    .col#{$i} > .container {
         margin: 0 0 0 -#{$xl-gutter/2};
         width: ($xl-col-width * $i) + ($xl-gutter * $i);
     }
@@ -57,7 +57,7 @@ $wrap: $xl-col-width * 12 + $xl-gutter * 11;
 // * Grid utilities
 .colr {
   float: right;
-  margin: 0 $gutter/2;
+  margin: 0 $xl-gutter/2;
 }
 
 .alpha {
