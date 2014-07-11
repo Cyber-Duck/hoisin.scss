@@ -1,10 +1,12 @@
+
+// * Large screens grid system
+// *
+
+
 @import 'vars';
 @import 'mixins';
 
-// * Grid system
 // * Define the size of the container using variables
-// *
-
 $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
 
 .container {
@@ -18,6 +20,7 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
   }
 }
 
+// * Loop through the cols to generate size of nested containers
 @for $i from 2 through $col-qty {
     .col#{$i} > .container {
         margin: 0 0 0 -#{$gutter/2};
@@ -25,26 +28,23 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
     }
 }
 
-// * Generate a common style for all spans
+// * Empty declaration as a base for all spans common styles
 %base-col {
   float: left;
   margin: 0 $gutter/2;
 }
 
+// * Mixin to loop through spans using the empty declaration
 @mixin cols {
   @for $i from 1 through $col-qty {
     .col#{$i} { @extend %base-col; }
   }
 }
 
-// * Output the common span styles
+// * Output all the spans common styles
 @include cols;
 
-// * Define widths for each span
-.col#{$col-qty} {
-  margin: 0 $gutter/2;
-}
-
+// * Loop to generate each span 
 @for $i from 2 through $col-qty {
   .col#{$i} {
     width: ($col-width * $i) + ($gutter * $i) - $gutter;
@@ -63,34 +63,44 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
   }
 }
 
+// *
 // * Additional grid utilities
+// *
+
+// * Force float a span to the right
 .colr {
   float: right;
   margin: 0 $gutter/2;
 }
 
+// * Remove left margin from span
 .alpha {
   margin-left: 0;
 }
 
+// * Remove right margin from span
 .omega {
   margin-right: 0;
 }
 
+// * Clear helper
 .clear {
   clear: both;
 }
 
+// * center span in container
 .center {
   float: none;
   margin: 0 auto;
 }
 
+
+
 // * Import section files
 @import 'header';
 @import 'home';
 
-// * Extra large desktop
+// * Extra large screens
 @media (min-width: $breakpoint-xl) {
 
   @import 'xl';
