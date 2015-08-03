@@ -6,23 +6,23 @@
 // *
 
 .wrap {
-  overflow: hidden;
-  width: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 
 .container {
-  width: 100%;
-  &::after {
-    clear: both;
-    content: '';
-    display: block;
-  }
+    width: 100%;
+    &::after {
+        clear: both;
+        content: '';
+        display: block;
+    }
 
-  .container {
-    width: 102%;
-    width: calc(100% + 20px);
-    margin-left: -10px;
-  }
+    .container {
+        width: 102%;
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
 }
 
 .col12, 
@@ -31,73 +31,73 @@
 .col9, 
 .col8, 
 .col7 {
-  margin: 0;
-  padding: 0 10px;
-  width: 100%;
-  @include box-sizing(border-box);
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+    @include box-sizing(border-box);
 }
 
 .col6, 
 .col5, 
 .col4, 
 .col3 {
-  float: left;
-  margin: 0;
-  padding: 0 10px;
-  width: 50%;
-  @include box-sizing(border-box);
+    float: left;
+    margin: 0;
+    padding: 0 10px;
+    width: 50%;
+    @include box-sizing(border-box);
 }
 
 .col2 {
-  float: left;
-  margin: 0;
-  padding: 0 10px;
-  width: 33.33%;
-  @include box-sizing(border-box);
+    float: left;
+    margin: 0;
+    padding: 0 10px;
+    width: 33.33%;
+    @include box-sizing(border-box);
 }
 
 .full-medium {
-  width: 100%;
-  &.colr {
-    float: none;
-  }
+    width: 100%;
+    &.colr {
+        float: none;
+    }
 }
 
 .half-medium {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .one-third-medium {
-  float: left;
-  width: 33.33%;
+    float: left;
+    width: 33.33%;
 }
 
 .two-thirds-medium {
-  float: left;
-  width: 66.66%;
+    float: left;
+    width: 66.66%;
 }
 
 // * Additional grid utilities
 .colr {
-  float: right;
+    float: right;
 }
 
 .alpha {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 .omega {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .clear {
-  clear: both;
+    clear: both;
 }
 
 .center {
-  float: none;
-  margin: 0 auto;
+    float: none;
+    margin: 0 auto;
 }
 
 @import 'header';

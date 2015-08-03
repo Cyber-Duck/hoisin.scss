@@ -12,57 +12,57 @@ header,
 hgroup, 
 nav, 
 section { 
-  display: block; 
+    display: block; 
 }
 
 $wrap: $col-width * $col-qty + $gutter * ($col-qty - 1);
 
 .container {
-  margin: 0 auto;
-  width: $wrap + $gutter;
+    margin: 0 auto;
+    width: $wrap + $gutter;
 }
 
 @for $i from 2 through $col-qty {
-  .col#{$i} {
-    float: left;
-    margin: 0 $gutter/2;
-    width: ($col-width * $i) + ($gutter * $i) - $gutter;
-  }
+    .col#{$i} {
+        float: left;
+        margin: 0 $gutter/2;
+        width: ($col-width * $i) + ($gutter * $i) - $gutter;
+    }
 }
 
 @for $i from 1 through ($col-qty - 1) {
-  .pre#{$i} {
-    padding-left: ($col-width * $i) + ($gutter * $i);
-  }
+    .pre#{$i} {
+        padding-left: ($col-width * $i) + ($gutter * $i);
+    }
 }
 
 @for $i from 1 through ($col-qty - 1) {
-  .suf#{$i} {
-    padding-right: ($col-width * $i) + ($gutter * $i);
-  }
+    .suf#{$i} {
+        padding-right: ($col-width * $i) + ($gutter * $i);
+    }
 }
 
 // Grid utilities
 .colr {
-  float: right;
-  margin: 0 $gutter/2;
+    float: right;
+    margin: 0 $gutter/2;
 }
 
 .alpha {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 .omega {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .clear {
-  clear: both;
+    clear: both;
 }
 
 .center {
-  float: none;
-  margin: 0 auto;
+    float: none;
+    margin: 0 auto;
 }
 
 // * Import all sections and common files from desk folder

@@ -6,24 +6,24 @@
 // *
 
 .wrap {
-  overflow: hidden;
-  width: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 
 .container {
-  width: 100%;
+    width: 100%;
 
-  &:after {
-    clear: both;
-    content: '';
-    display: block;
-  }
-  
-  .container {
-    width: 102%;
-    width: calc(100% + 20px);
-    margin-left: -10px;
-  }
+    &:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+    
+    .container {
+        width: 102%;
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
 }
 
 .col12, 
@@ -36,42 +36,42 @@
 .col5, 
 .col4, 
 .col3 {
-  margin: 0;
-  padding: 0 10px;
-  width: 100%;
-  @include box-sizing(border-box);
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+    @include box-sizing(border-box);
 }
 
 .col2 {
-  float: left;
-  margin: 0;
-  padding: 0 10px;
-  width: 50%;
-  @include box-sizing(border-box);
+    float: left;
+    margin: 0;
+    padding: 0 10px;
+    width: 50%;
+    @include box-sizing(border-box);
 }
 
 .full-small {
-  float: none;
-  margin: 0;
-  padding: 0 10px;
-  width: 100%;
-  @include box-sizing(border-box);
+    float: none;
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+    @include box-sizing(border-box);
 }
 
 .half-small {
-  float: left;
-  margin: 0;
-  padding: 0 10px;
-  width: 50%;
-  @include box-sizing(border-box);
+    float: left;
+    margin: 0;
+    padding: 0 10px;
+    width: 50%;
+    @include box-sizing(border-box);
 }
 
 .clear {
-  clear: both;
+    clear: both;
 }
 
 body {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 @import 'header';

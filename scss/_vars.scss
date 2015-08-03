@@ -1,47 +1,46 @@
 // Colours
-$highlight:				#fa9200;
+$highlight:                     #fa9200;
 
-$error:             	#f00;
-$error-bg: 		    	#ffe5e5;
+$error:                         #f00;
+$error-bg:                      #ffe5e5;
 
-$success: 		    	#390;
-$success-bg: 	    	#eaf5e5;
+$success:                       #390;
+$success-bg:                    #eaf5e5;
 
-$info: 			    	#39f;
-$info-bg: 		    	#eaf5ff;
+$info:                          #39f;
+$info-bg:                       #eaf5ff;
 
-$warning: 				#ff0;
-$warning-bg: 			#ffffe5;
+$warning:                       #ff0;
+$warning-bg:                    #ffffe5;
 
-$black:             	#000;
-$white:             	#fff;
-$text:              	#000;
-$title:					#000;
-
+$black:                         #000;
+$white:                         #fff;
+$text:                          #000;
+$title:                         #000;
 
 // Grid
-$col-qty:				12;
-$col-width: 			60px;
-$gutter:				20px;
+$col-qty:                       12;
+$col-width:                     60px;
+$gutter:                        20px;
 
 // Large desktop grid
-$xl-col-width: 			70px;
-$xl-gutter:				30px;
+$xl-col-width:                  70px;
+$xl-gutter:                     30px;
 
 
 // Breakpoints
-$breakpoint-xl: 		1360px;
-$breakpoint-large: 		1024px;
-$breakpoint-medium: 	680px;
-$breakpoint-small: 		120px;
+$breakpoint-xl:                 1360px;
+$breakpoint-large:              1024px;
+$breakpoint-medium:             680px;
+$breakpoint-small:              120px;
 
 
 // Paths
-$img: 		    		'../img/';
-$sprite: 		    	'../img/sprite.png';
-$fonts: 		    	'../fonts/';
+$img:                           '../img/';
+$sprite:                        '../img/sprite.png';
+$fonts:                         '../fonts/';
 
-	
+    
 // Typography
-$body-font: 			sans-serif;
-$title-font: 			serif;
+$body-font:                     sans-serif;
+$title-font:                    serif;
