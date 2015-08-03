@@ -484,24 +484,24 @@
     box-sizing: border-box;
   }
 
-  .full-medium {
+  .m-full {
     width: 100%;
   }
-  .full-medium.colr {
+  .m-full.colr {
     float: none;
   }
 
-  .half-medium {
+  .m-half {
     float: left;
     width: 50%;
   }
 
-  .one-third-medium {
+  .m-1_3 {
     float: left;
     width: 33.33%;
   }
 
-  .two-thirds-medium {
+  .m-2_3 {
     float: left;
     width: 66.66%;
   }
@@ -575,7 +575,7 @@
     box-sizing: border-box;
   }
 
-  .full-small {
+  .s-full {
     float: none;
     margin: 0;
     padding: 0 10px;
@@ -585,7 +585,7 @@
     box-sizing: border-box;
   }
 
-  .half-small {
+  .s-half {
     float: left;
     margin: 0;
     padding: 0 10px;

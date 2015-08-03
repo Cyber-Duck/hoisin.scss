@@ -47,7 +47,7 @@
     @include box-sizing(border-box);
 }
 
-.full-small {
+.s-full {
     float: none;
     margin: 0;
     padding: 0 10px;
@@ -55,7 +55,7 @@
     @include box-sizing(border-box);
 }
 
-.half-small {
+.s-half {
     float: left;
     margin: 0;
     padding: 0 10px;
