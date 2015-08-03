@@ -64,7 +64,3 @@ $wrap: $col-width * $col-qty + $gutter * ($col-qty - 1);
     float: none;
     margin: 0 auto;
 }
-
-// * Import all sections and common files from desk folder
-@import 'large/home';
-@import 'large/header';

@@ -48,10 +48,10 @@ $wrap: $xl-col-width * 12 + $xl-gutter * 11;
 }
 
 @for $i from 2 through $col-qty {
-        .col#{$i} > .container {
-                margin: 0 0 0 -#{$xl-gutter/2};
-                width: ($xl-col-width * $i) + ($xl-gutter * $i);
-        }
+    .col#{$i} > .container {
+        margin: 0 0 0 -#{$xl-gutter/2};
+        width: ($xl-col-width * $i) + ($xl-gutter * $i);
+    }
 }
 
 // * Grid utilities

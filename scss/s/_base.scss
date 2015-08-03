@@ -1,6 +1,3 @@
-@import 'vars';
-@import 'mixins';
-
 // * Grid system
 // * Define the properties of the flexible container
 // *
@@ -69,10 +66,3 @@
 .clear {
     clear: both;
 }
-
-body {
-    font-size: 16px;
-}
-
-@import 'header';
-@import 'home';

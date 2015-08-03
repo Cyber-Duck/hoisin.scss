@@ -1,10 +1,5 @@
-
 // * Large screens grid system
 // *
-
-
-@import 'vars';
-@import 'mixins';
 
 // * Define the size of the container using variables
 $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
@@ -94,14 +89,8 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
     margin: 0 auto;
 }
 
-
-
-// * Import section files
-@import 'header';
-@import 'home';
-
 // * Extra large screens
-@media (min-width: $breakpoint-xl) {
+@media (min-width: $bp-xl) {
 
     @import 'xl';
 

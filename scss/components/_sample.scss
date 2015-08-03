@@ -1,0 +1,70 @@
+// Component name
+	body {
+		color: #666;
+		margin: 0;
+		padding: 50px 0;
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		background: white;
+	}
+	h2 {
+		color: #d8531e;
+		font-weight: 300;
+		margin: 0;
+		font-size: 48px;
+		font-size: 48px;
+	}
+	h3 {
+		color: #333;
+		font-weight: 300;
+		margin: 0;
+		font-size: 36px;
+		line-height: 36px;
+		padding: 12px 0; 
+	}
+	p {
+		margin: 0 0 21px 0;
+	}
+	a {
+		color: #d8531e;
+	}
+	section {
+		margin-bottom: 50px;
+	}
+	.box {
+		margin: 0 0 20px 0;
+		padding: 10px;
+		background: #F5F5F5;
+	}
+	.box p {
+		margin: 0;
+	}
+	.code {
+		font-family: "Courier New", serif;
+		font-size: 14px;
+	}
+	.nesting {
+		background-color: #FFFFDF;
+		margin-bottom: 20px;
+	}
+	.nesting .nesting {
+		background-color: #FFE7DF;
+	}
+
+
+@media (min-width: $bp-xl) {
+	
+	.box {
+		margin-bottom: 30px;
+	}
+
+}
+// @media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
+
+
+// }
+// @media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
+
+
+// }

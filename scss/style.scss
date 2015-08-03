@@ -1,9 +1,12 @@
 @import 'version';
 @import 'vars';
 @import 'mixins';
+@import 'grid';
 
-// * Only styles common for all screen sizes
-body {
-    background: $white;
-    color: $text;
-}
+// Common components
+// @import 'components/component';
+@import 'components/body';
+@import 'components/sample';
+
+// Pages
+// @import 'pages/page';
