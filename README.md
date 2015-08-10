@@ -29,10 +29,10 @@ We have added three common breakpoints in the variables file, you can adjust the
 Example of a typical layout:
 
 	<div class="container">
-	    <div class="col8 two-thirds-medium">
+	    <div class="col8 m-2_3">
 	    	<p>Your content here</p>
 	    </div>
-	    <div class="col4 one-third-medium">
+	    <div class="col4 m_1_3">
 	    	<p>Your sidebar here</p>
 	    </div>	    
 	<div>
