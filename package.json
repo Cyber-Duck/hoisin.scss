@@ -4,6 +4,7 @@
   "description": "A simple responsive mini framework to kick start your project.",
   "version": "0.9.10",
   "homepage": "https://github.com/Cyber-Duck/hoisin.scss",
+  "license": "ICS",
   "author": {
     "name": "Ramon Lapenta",
     "url": "http://www.cyber-duck.co.uk/about/ramon-lapenta"
