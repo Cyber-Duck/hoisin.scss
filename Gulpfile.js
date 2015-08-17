@@ -7,20 +7,14 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     mainBowerFiles = require('main-bower-files');
 
+// Modify these variables according to your project
 var config = {
-    bowerDir: './bower_components',
-    viewDir: './public/themes/cyberduck/views',
-    scssDir: './public/themes/cyberduck/scss',
-    jsDir: './public/themes/cyberduck/js',
-    cssDir: './public/themes/cyberduck/css'
+    scssDir: './public/assets/scss',
+    jsDir: './public/assets/js',
+    cssDir: './public/assets/css'
 };
 
 gulp.task('default', ['style', 'js']);
-
-gulp.task('bower', function() {
-    return bower().pipe(gulp.dest(config.bowerDir));
-});
-
 
 // Compile Sass files
 gulp.task('style', function() {
