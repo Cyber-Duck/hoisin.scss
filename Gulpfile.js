@@ -4,14 +4,13 @@ var gulp = require('gulp'),
     minify = require('gulp-minify-css'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    watch = require('gulp-watch'),
-    mainBowerFiles = require('main-bower-files');
+    watch = require('gulp-watch');
 
 // Modify these variables according to your project
 var config = {
-    scssDir: './public/assets/scss',
-    jsDir: './public/assets/js',
-    cssDir: './public/assets/css'
+    scssDir: './scss',
+    jsDir: './js',
+    cssDir: './css'
 };
 
 gulp.task('default', ['style', 'js']);

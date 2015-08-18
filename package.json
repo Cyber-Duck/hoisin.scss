@@ -4,7 +4,7 @@
   "description": "A simple responsive mini framework to kick start your project.",
   "version": "0.9.10",
   "homepage": "https://github.com/Cyber-Duck/hoisin.scss",
-  "license": "ICS",
+  "license": "ISC",
   "author": {
     "name": "Ramon Lapenta",
     "url": "http://www.cyber-duck.co.uk/about/ramon-lapenta"
@@ -46,8 +46,7 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "^1.2.0",
     "gulp-minify-css": "1.1.1",
-    "gulp-watch": "^4.2.0",
-    "main-bower-files": "2.5.0"
+    "gulp-watch": "^4.2.0"
   },
   "scripts": {}
 }
