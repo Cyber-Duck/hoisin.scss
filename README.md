@@ -32,7 +32,7 @@ Example of a typical layout:
 	    <div class="col8 m-2_3">
 	    	<p>Your content here</p>
 	    </div>
-	    <div class="col4 m_1_3">
+	    <div class="col4 m-1_3">
 	    	<p>Your sidebar here</p>
 	    </div>	    
 	<div>
