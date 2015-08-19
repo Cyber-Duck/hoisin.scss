@@ -1,0 +1,219 @@
+// Main navigation
+.head {
+	height: 220px;
+	color: $white;
+	position: relative;
+	background: {
+		color: $blue_dk;
+		image: url("#{$img}bg-head.png");
+		position: 0 0;
+		attachment: fixed;
+		repeat: repeat;
+		size: 178px 135px;
+	}
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		z-index: 0;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid $white;
+		@include box-sizing();
+	}
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		z-index: 0;
+		border-left: 20px solid transparent;
+		border-bottom: 20px solid $white;
+		@include box-sizing;
+	}
+}
+.logo {
+	padding: 10px 0;
+	h1 {
+		margin: 25px auto 10px auto;
+		width: 240px;
+		height: 50px;
+	}
+	a {
+		display: block;
+		width: 240px;
+		height: 50px;
+		text-indent: 300px;
+		overflow: hidden;
+		background: {
+			image: url("#{$img}logo.png");
+			size: 240px 50px;
+		}
+	}
+	p {
+		font-size: 21px;
+		color: lighten($blue_lt, 10%);
+		text-align: center;
+		margin: 0 25%;
+	}
+}
+
+.menu-wrap {
+	height: 50px;
+	width: 100%;
+	background-color: transparentize($white, .1);
+	position: fixed;
+	top: 0;
+	z-index: 11;
+	border-bottom: 1px solid $blue;
+}
+.btn-menu {
+	display: none;
+}
+.menu {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		color: $blue;
+		font-size: 16px;
+		text-transform: uppercase;
+		display: block;
+		padding: 10px 20px;
+		line-height: 30px;
+		text-decoration: none;
+		&:hover {
+			color: $highlight;
+		}
+		i {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
+
+	.head {
+		color: $white;
+		position: relative;
+		min-height: 50px;
+		background: {
+			color: $blue_dk;
+			image: url("#{$img}bg-head.png");
+			position: 0 0;
+			attachment: fixed;
+			repeat: repeat;
+			size: 178px 135px;
+		}
+	}
+	.logo {
+		width: 120px;
+		height: 25px;
+		position: absolute;
+		top: 0;
+		left: 2%;
+		h1 {
+			margin: 0;
+		}
+		a {
+			display: block;
+			width: 120px;
+			height: 46px;
+			text-indent: 300px;
+			overflow: hidden;
+			background: {
+				image: url("#{$img}logo.png");
+				size: 120px 25px;
+				position: 50%;
+				repeat: no-repeat;
+			}
+		}
+		p {
+			display: none;
+		}
+	}
+
+	.menu-wrap {
+		width: 100%;
+		&.closed {
+			.btn-menu {
+				.icon-minus-outline {
+					display: none;
+				}
+				.icon-menu-outline {
+					display: inline;
+				}
+			}
+			.menu {
+				height: 0;
+				@include transition(all 250ms ease-out);
+			}
+		}
+	}
+	.btn-menu {
+		display: block;
+		float: right;
+		width: 40px;
+		height: 40px;
+		margin: 4px;
+		line-height: 40px;
+		text-align: center;
+		color: $blue;
+		.icon-menu-outline {
+			display: none;
+		}
+	}
+	.menu {
+		overflow: hidden;
+		height: 173px;
+		width: 100%;
+		padding: 0;
+		overflow: hidden;
+		@include transition(all 250ms ease-out);
+		ul {
+			background-color: $white;
+			border-bottom: 1px solid $blue;
+			margin: 2px 0 0 0;
+			padding: 0;
+			height: 170px;
+			width: 100%;
+			overflow: hidden;
+			list-style: none;
+		}
+		li {
+			display: block;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			@include box-sizing();
+		}
+		a {
+			color: $blue;
+			font-size: 16px;
+			text-transform: uppercase;
+			display: block;
+			padding: 10px 20px;
+			line-height: 20px;
+			text-decoration: none;
+			&:hover {
+				color: $highlight;
+			}
+			i {
+				font-size: 14px;
+			}
+		}
+	}
+
+}

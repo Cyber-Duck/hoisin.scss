@@ -1,18 +1,18 @@
-@import 'version';
-@import 'vars';
-@import 'mixins';
-@import 'icons';
-
-// Only styles common for all screen sizes
+// Body
 body {
 	color: $text;
 	margin: 0;
-	padding: 0;
+	padding: 50px 0 0 0;
 	font-family: $body_font;
 	font-size: 18px;
 	font-weight: 300;
 	background: $white;
 }
+
+.content {
+	padding: 40px 0;
+}
+
 h2 {
 	color: $highlight;
 	font-weight: 300;
@@ -102,4 +102,48 @@ section {
 	border: 1px solid $warning;
 	padding: 10px;
 	border-radius: 10px;
+}
+
+@media (min-width: $bp-l) {
+
+	body {
+		font-size: 18px;
+	}
+
+}
+@media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
+
+	body {
+		font-size: 16px;
+	}
+
+}
+@media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
+	
+	body {
+		font-size: 16px;
+	}
+	.content {
+		padding: 20px 0 40px 0;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 24px;
+		padding: 12px 0;
+	}
+
+	h3 {
+		font-size: 21px;
+		line-height: 21px;
+		padding: 12px 0;
+	}
+	p {
+		margin: 0 0 21px 0;
+	}
+	.btn {
+		width: 100%;
+		margin: 0 0 5px 0;
+		text-align: center;
+	}
+
 }
