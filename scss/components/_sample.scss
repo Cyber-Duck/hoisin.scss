@@ -60,11 +60,17 @@
 	}
 
 }
-// @media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
+@media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
 
+	.box {
+		margin-bottom: 10px;
+	}
 
-// }
-// @media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
+}
+@media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
+	
+	.box {
+		margin-bottom: 10px;
+	}
 
-
-// }
+}

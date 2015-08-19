@@ -9,6 +9,8 @@
 
 .container {
     width: 100%;
+    padding: 0 ($gutter/4);
+    @include box-sizing;
     &::after {
         clear: both;
         content: '';
@@ -18,7 +20,7 @@
     .container {
         width: 102%;
         width: calc(100% + 20px);
-        margin-left: -10px;
+        margin-left: -($gutter/4);
     }
 }
 
@@ -29,9 +31,9 @@
 .col8, 
 .col7 {
     margin: 0;
-    padding: 0 10px;
+    padding: 0 ($gutter/4);
     width: 100%;
-    @include box-sizing(border-box);
+    @include box-sizing;
 }
 
 .col6, 
@@ -40,17 +42,17 @@
 .col3 {
     float: left;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 ($gutter/4);
     width: 50%;
-    @include box-sizing(border-box);
+    @include box-sizing;
 }
 
 .col2 {
     float: left;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 ($gutter/4);
     width: 33.33%;
-    @include box-sizing(border-box);
+    @include box-sizing;
 }
 
 .m-full {
