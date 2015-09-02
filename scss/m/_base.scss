@@ -19,8 +19,8 @@
 
     .container {
         width: 102%;
-        width: calc(100% + 20px);
-        margin-left: -($gutter/4);
+        width: calc(100% + #{$gutter});
+        margin-left: -($gutter/2);
     }
 }
 

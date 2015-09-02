@@ -248,7 +248,7 @@
     .container .container {
       width: 102%;
       width: calc(100% + 20px);
-      margin-left: -5px; }
+      margin-left: -10px; }
   .col12, .col11, .col10, .col9, .col8, .col7 {
     margin: 0;
     padding: 0 5px;
@@ -314,7 +314,7 @@
     .container .container {
       width: 102%;
       width: calc(100% + 20px);
-      margin-left: -5px; }
+      margin-left: -10px; }
   .col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3 {
     margin: 0;
     padding: 0 5px;
@@ -410,7 +410,7 @@ pre {
 
 .box {
   padding: 10px;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   background: rgba(160, 160, 160, 0.1); }
 
 .btn {
@@ -471,11 +471,15 @@ pre {
 
 @media (min-width: 1024px) {
   body {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .box {
+    margin: 0 0 20px 0; } }
 
 @media (min-width: 1360px) {
   body {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .box {
+    margin: 0 0 30px 0; } }
 
 @media (min-width: 680px) and (max-width: 1023px) {
   body {

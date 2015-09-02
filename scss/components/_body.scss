@@ -63,7 +63,7 @@ pre {
 }
 .box {
 	padding: 10px;
-	margin: 0 0 20px 0;
+	margin: 0 0 10px 0;
 	background: rgba(160,160,160,0.10);
 }
 
@@ -136,13 +136,18 @@ pre {
 	body {
 		font-size: 18px;
 	}
-
+	.box {
+		margin: 0 0 20px 0;
+	}
 }
 
 @media (min-width: $bp-xl) {
 
 	body {
 		font-size: 20px;
+	}
+	.box {
+		margin: 0 0 30px 0;
 	}
 
 }
