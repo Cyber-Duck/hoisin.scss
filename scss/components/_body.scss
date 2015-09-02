@@ -3,8 +3,9 @@ body {
 	color: $text;
 	margin: 0;
 	padding: 50px 0 0 0;
-	font-family: $body_font;
+	font-family: $body-font;
 	font-size: 18px;
+    line-height: 1.45;
 	font-weight: 300;
 	background: $white;
 }
@@ -13,19 +14,45 @@ body {
 	padding: 40px 0;
 }
 
-h2 {
-	color: $highlight;
-	font-weight: 300;
+h1 {
+	color: $title;
+	font-family: $title-font;
+	font-weight: 700;
 	margin: 0;
+    line-height: 1.2;
+}
+h2 {
+	font-size: 2.369em;
+	color: $title;
+	font-family: $title-font;
+	font-weight: 700;
+	margin: 0 0 1em 0;
+    line-height: 1.2;
 }
 h3 {
+	font-size: 1.777em;
 	color: $title;
+	font-family: $title-font;
 	font-weight: 300;
-	margin: 0;
+	margin: 0 0 0.5em 0;
+    line-height: 1.2;
+}
+h4 {
+	font-size: 1.333em;
+    line-height: 1.2;
+	font-weight: 300;
+	margin: 0 0 0.5em 0;
 }
 p {
-	margin: 0 0 21px 0;
+	margin: 0 0 1.3em 0;
+	&.hero {
+		font-family: $title-font;
+		font-style: italic;
+	}
 }
+
+small, .font_small {font-size: 0.75em;}
+
 a {
 	color: $highlight;
 }
@@ -43,18 +70,16 @@ pre {
 .btn {
 	display: inline-block;
 	padding: 5px 10px 6px 10px;
-	background-color: $blue;
+	background-color: $text;
 	color: $white;
 	text-decoration: none;
 	border-radius: 4px;
 	@include box-sizing();
 	&:hover {
-		background-color: darken($blue, 5%);
+		background-color: darken($text, 5%);
 	}
 }
-section {
-	margin-bottom: 50px;
-}
+
 .box p {
 	margin: 0;
 }
@@ -70,17 +95,19 @@ section {
 	background: rgba(223,251,191,0.30);
 }
 
-.content {
-	border-bottom: 1px dotted $blue_lt;
-}
 .quote {
 	background-color: $pre;
+	blockquote {
+		margin: 0;
+		padding: 2em 0 0 0;
+	}
 	p {
-		font-size: 1.2em;
+		font-size: 1.777em;
+		line-height: 1.2em;
+		font-family: $title-font;
 		font-style: italic;
 	}
 	.author {
-		font-style: normal;
 		font-size: .9em;
 		text-align: right;
 		margin: 0;
@@ -92,7 +119,7 @@ section {
 
 .foot {
 	padding: 40px 0;
-	background: $blue_dk;
+	background: $title;
 	color: $white;
 	font-size: 16px;
 }
@@ -108,6 +135,14 @@ section {
 
 	body {
 		font-size: 18px;
+	}
+
+}
+
+@media (min-width: $bp-xl) {
+
+	body {
+		font-size: 20px;
 	}
 
 }
@@ -127,18 +162,7 @@ section {
 		padding: 20px 0 40px 0;
 	}
 	h2 {
-		font-size: 24px;
-		line-height: 24px;
-		padding: 12px 0;
-	}
-
-	h3 {
-		font-size: 21px;
-		line-height: 21px;
-		padding: 12px 0;
-	}
-	p {
-		margin: 0 0 21px 0;
+		font-size: 2em;
 	}
 	.btn {
 		width: 100%;

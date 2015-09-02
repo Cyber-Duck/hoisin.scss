@@ -20,7 +20,7 @@ gulp.task('style', function() {
     gulp.src(config.scssDir + '/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(minify())
+    //.pipe(minify())
     .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest(config.cssDir));
 });

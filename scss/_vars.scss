@@ -1,5 +1,5 @@
 // Colours
-$highlight:				#D8531E;
+$highlight:				#f00;
 
 $blue_lt: 				#64A2C7;
 $blue: 					#3A7CA7;
@@ -21,8 +21,8 @@ $warning-bg:                    #ffffe5;
 
 $black:                         #000;
 $white:                         #fff;
-$text:                          #000;
-$title:                         #000;
+$text:                          #555;
+$title:                         #111;
 
 // Grid
 $col-qty:                       12;
@@ -48,5 +48,5 @@ $fonts:                         '../fonts/';
 
     
 // Typography
-$body-font:                     sans-serif;
-$title-font:                    serif;
+$body-font:                     'Nunito', sans-serif;
+$title-font:                    'Alegreya', serif;

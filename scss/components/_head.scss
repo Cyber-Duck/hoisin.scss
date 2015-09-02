@@ -4,36 +4,7 @@
 	color: $white;
 	position: relative;
 	background: {
-		color: $blue_dk;
-		image: url("#{$img}bg-head.png");
-		position: 0 0;
-		attachment: fixed;
-		repeat: repeat;
-		size: 178px 135px;
-	}
-	&:before {
-		content: "";
-		display: block;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 50%;
-		z-index: 0;
-		border-right: 20px solid transparent;
-		border-bottom: 20px solid $white;
-		@include box-sizing();
-	}
-	&:after {
-		content: "";
-		display: block;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 50%;
-		z-index: 0;
-		border-left: 20px solid transparent;
-		border-bottom: 20px solid $white;
-		@include box-sizing;
+		color: $title;
 	}
 }
 .logo {
@@ -55,10 +26,10 @@
 		}
 	}
 	p {
-		font-size: 21px;
-		color: lighten($blue_lt, 10%);
+		font-size: 1.777em;
+		color: $white;
 		text-align: center;
-		margin: 0 25%;
+		margin: 0 20%;
 	}
 }
 
@@ -69,7 +40,6 @@
 	position: fixed;
 	top: 0;
 	z-index: 11;
-	border-bottom: 1px solid $blue;
 }
 .btn-menu {
 	display: none;
@@ -87,7 +57,7 @@
 		padding: 0;
 	}
 	a {
-		color: $blue;
+		color: $title;
 		font-size: 16px;
 		text-transform: uppercase;
 		display: block;
@@ -107,28 +77,21 @@
 
 	.head {
 		color: $white;
+		height: auto;
 		position: relative;
 		min-height: 50px;
 		background: {
-			color: $blue_dk;
-			image: url("#{$img}bg-head.png");
-			position: 0 0;
-			attachment: fixed;
-			repeat: repeat;
-			size: 178px 135px;
+			color: $title;
 		}
 	}
 	.logo {
-		width: 120px;
-		height: 25px;
-		position: absolute;
-		top: 0;
-		left: 2%;
+		height: auto;
 		h1 {
-			margin: 0;
+			margin: 0 auto;
 		}
 		a {
 			display: block;
+			margin: 0 auto;
 			width: 120px;
 			height: 46px;
 			text-indent: 300px;
@@ -141,7 +104,8 @@
 			}
 		}
 		p {
-			display: none;
+			margin: 0 0 10px 0;
+			font-size: 1.333em;
 		}
 	}
 
@@ -153,7 +117,7 @@
 					display: none;
 				}
 				.icon-menu-outline {
-					display: inline;
+					display: block;
 				}
 			}
 			.menu {
@@ -165,14 +129,30 @@
 	.btn-menu {
 		display: block;
 		float: right;
-		width: 40px;
+		width: 90px;
 		height: 40px;
 		margin: 4px;
 		line-height: 40px;
 		text-align: center;
-		color: $blue;
+		color: $title;
+		text-decoration: none;
+		text-transform: uppercase;
 		.icon-menu-outline {
 			display: none;
+			float: left;
+			width: 20px;
+			height: 6px;
+			border-top: 4px solid $text;
+			border-bottom: 4px solid $text;
+			margin-top: 12px;
+		}
+		.icon-minus-outline {
+			display: block;
+			float: left;
+			width: 20px;
+			height: 20px;
+			border-top: 4px solid $text;
+			margin-top: 16px;
 		}
 	}
 	.menu {
@@ -200,7 +180,7 @@
 			@include box-sizing();
 		}
 		a {
-			color: $blue;
+			color: $title;
 			font-size: 16px;
 			text-transform: uppercase;
 			display: block;
