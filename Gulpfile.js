@@ -21,6 +21,12 @@ gulp.task('style', function() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(minify())
+    .pipe(gulp.dest(config.cssDir));
+});
+gulp.task('style-dev', function() {
+    gulp.src(config.scssDir + '/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(config.cssDir));
 });
@@ -40,12 +46,21 @@ gulp.task('compress', function() {
     .pipe(uglify())
     .pipe(gulp.dest(config.jsDir + '/min'));
 });
+gulp.task('compress-dev', function() {
+    return gulp.src(config.jsDir + '/scripts.js')
+    .pipe(gulp.dest(config.jsDir + '/min'));
+});
 
+// Production
+gulp.task('build', function() {
+    gulp.start('style');
+    gulp.start('compress');
+});
 
 // Watch for changes
 gulp.task('watch', function() {
     watch(config.scssDir + '/**/*.scss', function () {
-        gulp.start('style');
+        gulp.start('style-dev');
     });
 
     watch(config.jsDir + '/src/*.js', function () {
@@ -53,7 +68,7 @@ gulp.task('watch', function() {
     });
 
     watch(config.jsDir + '/scripts.js', function () {
-        gulp.start('compress');
+        gulp.start('compress-dev');
     });
 
 });

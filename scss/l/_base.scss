@@ -88,10 +88,3 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
     float: none;
     margin: 0 auto;
 }
-
-// * Extra large screens
-@media (min-width: $bp-xl) {
-
-    @import 'xl';
-
-}
