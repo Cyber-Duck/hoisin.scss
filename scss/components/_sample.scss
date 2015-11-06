@@ -52,11 +52,43 @@
 		background-color: #FFE7DF;
 	}
 
+	pre {
+		border: 1px solid #CCC;
+		background-color: #F9F9F9;
+		padding: 10px;
+		margin: 0;
+	}
 
+
+
+
+@media (min-width: $bp-l) {
+	
+	.content {
+		width: span(8);
+		float: left;
+		margin: 0 ($gutter / 2);
+	}
+	.sidebar {
+		width: span(4);
+		float: right;
+		margin: 0 ($gutter / 2);
+	}
+
+}
 @media (min-width: $bp-xl) {
 	
 	.box {
 		margin-bottom: 30px;
+	}
+	
+	.content {
+		width: span-xl(8);
+		margin: 0 ($xl-gutter / 2);
+	}
+	.sidebar {
+		width: span-xl(4);
+		margin: 0 ($xl-gutter / 2);
 	}
 
 }
@@ -64,6 +96,19 @@
 
 	.box {
 		margin-bottom: 10px;
+	}
+
+	.content {
+		width: span-fw(m-2_3);
+		float: left;
+		padding: 0 ($gutter / 4);
+		@include box-sizing;
+	}
+	.sidebar {
+		width: span-fw(m-1_3);
+		float: right;
+		padding: 0 ($gutter / 4);
+		@include box-sizing;
 	}
 
 }

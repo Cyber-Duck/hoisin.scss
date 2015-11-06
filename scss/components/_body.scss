@@ -4,6 +4,17 @@ body {
 	padding: 0;
 	font-family: $body-font;
 }
+$red: red;
+.red {
+	color: $red;
+}
+.red-light {
+	color: light($red, 70%);
+}
+.red-dark {
+	color: dark($red, 50%);
+}
+
 
 @media (min-width: $bp-l) {
 

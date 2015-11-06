@@ -263,6 +263,82 @@
 			</div>
 		</div>
 	</section>
+	
+	<section>
+		<div class="container">
+			<div class="col8">
+				<h3>Color Functions</h3>
+				<p>Color functions to handle simple color changes like darken and lighten, but with more granular control that native darken and lighten functions.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="col8">
+				<div class="box code">
+					<p class="red">Red <code>p.red</code></p>
+					<p>&nbsp;</p>
+					<pre>
+.red-light {
+  color: dark($red, 50%);
+}
+					</pre>
+					<p class="red-dark">Red <code>p.red-dark</code></p>
+					<p>&nbsp;</p>
+					<pre>
+.red-light {
+  color: light($red, 70%);
+}
+					</pre>
+					<p class="red-light">Lighter red <code>p.red-light</code></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="col8">
+				<h3>Layout Functions</h3>
+				<p>Semantic layout is easier now, by using the layout functions as grid values, no need to add class names.</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="content">
+				<div class="box code">
+					<p>Main content</p>
+					<p>&nbsp;</p>
+					<pre>
+@media (min-width: $bp-l) {
+  .content {
+    width: span(8);
+    float: left;
+    margin: 0 ($gutter / 2);
+  }
+}
+@media (min-width: $bp-xl) {
+  .content {
+    width: span-xl(8);
+    margin: 0 ($xl-gutter / 2);
+}
+@media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
+  .box {
+    margin-bottom: 10px;
+  }
+  .content {
+    width: span-fw(m-2_3);
+    float: left;
+    padding: 0 ($gutter / 4);
+    @include box-sizing;
+  }
+}
+					</pre>
+				</div>
+			</div>
+			<div class="sidebar">
+				<div class="box code">
+					<p>Sidebar</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
