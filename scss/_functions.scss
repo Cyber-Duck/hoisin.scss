@@ -15,7 +15,7 @@
 // * dark($blue, 20%);
 // *
 @function dark($color, $value: 10%) {
-    @return mix(black, $color, $value);
+    @return mix($black, $color, $value);
 }
 
 
@@ -29,7 +29,7 @@
 // * light($blue, 20%);
 // *
 @function light($color, $value: 10%) {
-    @return mix(white, $color, $value);
+    @return mix($white, $color, $value);
 }
 
 
@@ -42,22 +42,18 @@
 // *
 // * @param $width ($width);
 // *
-// * span-fw("m-2_3");
+// * span-fw('m-2_3');
 // *
 @function span-fw($width) {
-    @if $width == "m-2_3" {
+    @if $width == 'm-2_3' {
         @return 66.66%;
-    }
-    @else if $width == "m-half" {
+    } @else if $width == 'm-half' {
         @return 50%;
-    }
-    @else if $width == "m-1_3" {
+    } @else if $width == 'm-1_3' {
         @return 33.33%;
-    }
-    @else if $width == "m-4_4" {
+    } @else if $width == 'm-4_4' {
         @return 25%;
-    }
-    @else {
+    } @else {
         @return 100%;
     }
 }

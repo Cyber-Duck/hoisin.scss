@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
     minify = require('gulp-minify-css'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+    scsslint = require('gulp-scss-lint');
 
 // Modify these variables according to your project
 var config = {
@@ -11,6 +12,7 @@ var config = {
 };
 
 gulp.task('default', ['style']);
+
 
 // Compile Sass files
 gulp.task('style', function() {
@@ -27,12 +29,20 @@ gulp.task('style-dev', function() {
     .pipe(gulp.dest(config.cssDir));
 });
 
+ 
+gulp.task('lint', function() {
+  return gulp.src(config.scssDir + '/*.scss')
+    .pipe(scsslint({
+        'config': 'lint.yml',
+    }));
+});
 
 
 // Production
 gulp.task('build', function() {
     gulp.start('style');
 });
+
 
 // Watch for changes
 gulp.task('watch', function() {
