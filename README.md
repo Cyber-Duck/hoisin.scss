@@ -5,6 +5,18 @@ A simple responsive mini framework to kick start your project, written in Sass. 
 
 We did not include a reset since we believe they are not necessary, we encourage you to define the styles you need for your project, and leave the unstyled elements to the browser.
 
+## Installation
+#### Bower
+
+	$ bower install hoisin.scss
+
+#### Manual
+Place the `scss` and `css` folders in the relevan folder of your proyect. If they need to be separated (like in a Laravel project) you will need to adjust the `config` variable in the Gulpfile.
+
+### Requirements
+* Should work with all Sass 3.3 compatible preprocessors. 
+* To use the provided Gulpfile just need NPM installed and do `$ npm install`
+
 ## Usage
 Open the `_vars.scss` file and add your variables to it, including the size of your base grid if you need anything different than the standard. You can add any variables you will be using like colors, font files, sizes, etc. Feel free to use Sass maps as well.
 
@@ -21,6 +33,7 @@ We recommend to create one file for each individual component and save it in the
 	$bp-l: 		1024px;
 	$bp-m: 		600px;
 	$bp-s: 		240px;
+
 
 ### Grid
 By default we use a small desktop 12 column grid with 60px columns and 20px gutters and a larger desktop grid with 70px columns and 30px gutters. The column spans have simple names like `".col4"`. There are also some helper classes like `".colr"` to pull a span to the right, and `".pre1"` to `".pre10"` as well as `".suf1"` to `".suf10"` for offset spans.
