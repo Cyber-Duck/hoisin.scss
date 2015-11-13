@@ -17,10 +17,10 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
 
 // * Loop through the cols to generate size of nested containers
 @for $i from 2 through $col-qty {
-        .col#{$i} > .container {
-                margin: 0 0 0 -#{$gutter/2};
-                width: ($col-width * $i) + ($gutter * $i);
-        }
+    .col#{$i} > .container {
+        margin: 0 0 0 0 -($gutter/2);
+        width: ($col-width * $i) + ($gutter * $i);
+    }
 }
 
 // * Empty declaration as a base for all spans common styles
@@ -87,11 +87,4 @@ $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
 .center {
     float: none;
     margin: 0 auto;
-}
-
-// * Extra large screens
-@media (min-width: $bp-xl) {
-
-    @import 'xl';
-
 }

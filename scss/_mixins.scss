@@ -56,8 +56,8 @@
 // *
 @mixin opacity($opac, $ie: false) {
     @if $ie {
-        filter: alpha(opacity=$opac * 100);
         -ms-filter: alpha(opacity=$opac * 100);
+        filter: alpha(opacity=$opac * 100);
     }
     opacity: $opac;
 }
