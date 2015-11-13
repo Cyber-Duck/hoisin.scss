@@ -11,9 +11,9 @@ We did not include a reset since we believe they are not necessary, we encourage
 	$ bower install hoisin.scss
 
 #### Manual
-Place the `scss` and `css` folders in the relevan folder of your proyect. If they need to be separated (like in a Laravel project) you will need to adjust the `config` variable in the Gulpfile.
+Place the `scss` and `css` folders in the relevan folder of your proyect. If they need to be separate from each other (like in a Laravel project) you will need to adjust the `config` variable in the Gulpfile.
 
-### Requirements
+#### Requirements
 * Should work with all Sass 3.3 compatible preprocessors. 
 * To use the provided Gulpfile just need NPM installed and do `$ npm install`
 
@@ -21,7 +21,7 @@ Place the `scss` and `css` folders in the relevan folder of your proyect. If the
 Open the `_vars.scss` file and add your variables to it, including the size of your base grid if you need anything different than the standard. You can add any variables you will be using like colors, font files, sizes, etc. Feel free to use Sass maps as well.
 
 ### File structure
-We recommend to create one file for each individual component and save it in the components folder then use `@include: 'components/filename';` in the main styles file. The same with styles that apply only to individual pages and don't belong to any component can be saved in individual files per page in the `pages` folder and use `@include: 'pages/filename';` in the main styles file. You can create as many component or page files as you want.
+We recommend to create one individual file for each component and save it in the `components` folder then use `@include: 'components/filename';` in the main styles file. The same with styles that apply only to individual pages and don't belong to any component can be saved in individual files per page in the `pages` folder and use `@include: 'pages/filename';` in the main styles file. You can create as many component or page files as you want.
 
 	// Grid
 	$col-qty: 				12;   // Amount of columns
@@ -36,7 +36,7 @@ We recommend to create one file for each individual component and save it in the
 
 
 ### Grid
-By default we use a small desktop 12 column grid with 60px columns and 20px gutters and a larger desktop grid with 70px columns and 30px gutters. The column spans have simple names like `".col4"`. There are also some helper classes like `".colr"` to pull a span to the right, and `".pre1"` to `".pre10"` as well as `".suf1"` to `".suf10"` for offset spans.
+By default we use a small desktop 12 column grid with 60px columns and 20px gutters (960gs standard) and a larger desktop grid with 70px columns and 30px gutters. The column spans have simple names like `".col4"`. There are also some helper classes like `".colr"` to pull a span to the right, and `".pre1"` to `".pre10"` as well as `".suf1"` to `".suf10"` for offset spans.
 
 Tablet and mobile spans can be altered by using extra helper classes depending on the layout requirements, we've included classes for full, half one third and two thirds (widths) which override default column behaviour. We also added a `".clear"` helper class for browsers that can't clear themselves out. 
 
