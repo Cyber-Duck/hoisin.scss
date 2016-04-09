@@ -1,121 +1,125 @@
 // Component name
-	body {
-		color: #666;
-		margin: 0;
-		padding: 50px 0;
-		font-family: "Roboto Condensed", sans-serif;
-		font-size: 18px;
-		font-weight: 300;
-		background: white;
-	}
-	h2 {
-		color: #d8531e;
-		font-weight: 300;
-		margin: 0;
-		font-size: 48px;
-		font-size: 48px;
-	}
-	h3 {
-		color: #333;
-		font-weight: 300;
-		margin: 0;
-		font-size: 36px;
-		line-height: 36px;
-		padding: 12px 0; 
-	}
-	p {
-		margin: 0 0 21px 0;
-	}
-	a {
-		color: #d8531e;
-	}
-	section {
-		margin-bottom: 50px;
-	}
-	.box {
-		margin: 0 0 20px 0;
-		padding: 10px;
-		background: #F5F5F5;
-	}
-	.box p {
-		margin: 0;
-	}
-	.code {
-		font-family: "Courier New", serif;
-		font-size: 14px;
-	}
-	.nesting {
-		background-color: #FFFFDF;
-		margin-bottom: 20px;
-	}
-	.nesting .nesting {
-		background-color: #FFE7DF;
-	}
-
-	pre {
-		border: 1px solid #CCC;
-		background-color: #F9F9F9;
-		padding: 10px;
-		margin: 0;
-	}
-
-
-
-
-@media (min-width: $bp-l) {
-	
-	.content {
-		width: span(8);
-		float: left;
-		margin: 0 ($gutter / 2);
-	}
-	.sidebar {
-		width: span(4);
-		float: right;
-		margin: 0 ($gutter / 2);
-	}
-
+body {
+    color: #666;
+    margin: 0;
+    padding: 50px 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    background: white;
 }
-@media (min-width: $bp-xl) {
-	
-	.box {
-		margin-bottom: 30px;
-	}
-	
-	.content {
-		width: span-xl(8);
-		margin: 0 ($xl-gutter / 2);
-	}
-	.sidebar {
-		width: span-xl(4);
-		margin: 0 ($xl-gutter / 2);
-	}
-
+h2 {
+    color: #d8531e;
+    font-weight: 300;
+    margin: 0;
+    font-size: 48px;
+    font-size: 48px;
 }
-@media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
-
-	.box {
-		margin-bottom: 10px;
-	}
-
-	.content {
-		width: span-fw(m-2_3);
-		float: left;
-		padding: 0 ($gutter / 4);
-		@include box-sizing;
-	}
-	.sidebar {
-		width: span-fw(m-1_3);
-		float: right;
-		padding: 0 ($gutter / 4);
-		@include box-sizing;
-	}
-
+h3 {
+    color: #333;
+    font-weight: 300;
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 12px 0; 
 }
-@media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
-	
-	.box {
-		margin-bottom: 10px;
-	}
+p {
+    margin: 0 0 21px 0;
+}
+a {
+    color: #d8531e;
+}
+section {
+    margin-bottom: 50px;
+}
+.box {
+    margin: 0 0 ($gutter / 2) 0;
+    padding: ($gutter / 2);
+    background: #F5F5F5;
 
+    @include respond-to(l) {
+        margin-bottom: $gutter;
+        padding: $gutter;
+    }
+    @include respond-to(xl) {
+        margin-bottom: $xl-gutter;
+        padding: $xl-gutter;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.code {
+    font-family: "Courier New", serif;
+    font-size: 14px;
+}
+.nesting {
+    background-color: #FFFFDF;
+    margin-bottom: 20px;
+    .nesting {
+        background-color: #FFE7DF;
+    }
+}
+
+pre {
+    border: 1px solid #CCC;
+    background-color: #F9F9F9;
+    padding: 10px;
+    margin: 0;
+    overflow: auto;
+}
+
+.content {
+    @include respond-to(l) {
+        float: left;
+        margin: 0 ($gutter / 2);
+        width: span(8);
+    }
+    @include respond-to(xl) {       
+        margin: 0 ($xl-gutter / 2);
+        width: span-xl(8);
+    }
+    @include respond-to(m) {
+        float: left;
+        padding: 0 ($gutter / 4);
+        width: span-fw(m-2_3);
+        box-sizing: border-box;
+    }
+    @include respond-to(m) {
+        float: left;
+        padding: 0 ($gutter / 4);
+        width: span-fw(m-2_3);
+        box-sizing: border-box;
+    }
+}
+
+.sidebar {
+    @include respond-to(l) {
+        float: right;
+        margin: 0 ($gutter / 2);
+        width: span(4);
+    }
+    @include respond-to(xl) {
+        margin: 0 ($xl-gutter / 2);
+        width: span-xl(4);
+    }
+    @include respond-to(m) {
+        float: right;
+        padding: 0 ($gutter / 4);
+        width: span-fw(m-1_3);
+        box-sizing: border-box;
+    }
+    @include respond-to(s) {
+        padding: 0 ($gutter / 4);
+        box-sizing: border-box;
+    }
+}
+
+@include respond-to(s) {
+    .test {
+        padding: 0 ($gutter / 4);
+        box-sizing: border-box;
+    }
 }

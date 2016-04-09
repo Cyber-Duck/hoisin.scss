@@ -10,7 +10,7 @@
 .container {
     width: 100%;
     padding: 0 ($gutter/4);
-    @include box-sizing;
+    box-sizing: border-box;
     &:after {
         clear: both;
         content: '';
@@ -37,7 +37,7 @@
     margin: 0;
     padding: 0 ($gutter/4);
     width: 100%;
-    @include box-sizing;
+    box-sizing: border-box;
 }
 
 .col2 {
@@ -45,7 +45,7 @@
     margin: 0;
     padding: 0 ($gutter/4);
     width: 50%;
-    @include box-sizing;
+    box-sizing: border-box;
 }
 
 .s-full {
@@ -53,7 +53,7 @@
     margin: 0;
     padding: 0 ($gutter/4);
     width: 100%;
-    @include box-sizing;
+    box-sizing: border-box;
 }
 
 .s-half {
@@ -61,7 +61,7 @@
     margin: 0;
     padding: 0 ($gutter/4);
     width: 50%;
-    @include box-sizing;
+    box-sizing: border-box;
 }
 
 .clear {
