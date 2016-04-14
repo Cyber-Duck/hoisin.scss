@@ -11,7 +11,7 @@ We did not include a reset since we believe they are not necessary, we encourage
 	$ bower install hoisin.scss
 
 #### Manual
-Place the `scss` and `css` folders in the relevan folder of your proyect. If they need to be separate from each other (like in a Laravel project) you will need to adjust the `config` variable in the Gulpfile.
+Place the `scss` and `css` folders in the relevan folder of your Project. If they need to be separate from each other (like in a Laravel project) you will need to adjust the `config` variable in the Gulpfile.
 
 #### Requirements
 * Should work with all Sass 3.3 compatible preprocessors. 
