@@ -2,100 +2,103 @@
 // * Define the properties of the flexible container
 // *
 
-.wrap {
-    overflow: hidden;
-    width: 100%;
-}
-
-.container {
-    width: 100%;
-    padding: 0 ($gutter/4);
-    box-sizing: border-box;
-    
-    &::after {
-        clear: both;
-        content: '';
-        display: block;
+// Output the grid only if variable set to true
+@if ($include-grid) {
+    .wrap {
+        overflow: hidden;
+        width: 100%;
     }
 
     .container {
-        width: 102%;
-        width: calc(100% + #{$gutter});
-        margin-left: -($gutter/2);
+        width: 100%;
+        padding: 0 ($gutter/4);
+        box-sizing: border-box;
+        
+        &::after {
+            clear: both;
+            content: '';
+            display: block;
+        }
+
+        .container {
+            width: 102%;
+            width: calc(100% + #{$gutter});
+            margin-left: -($gutter/2);
+        }
     }
-}
 
-.col12, 
-.col11, 
-.col10, 
-.col9, 
-.col8, 
-.col7 {
-    margin: 0;
-    padding: 0 ($gutter/4);
-    width: 100%;
-    box-sizing: border-box;
-}
+    .col12, 
+    .col11, 
+    .col10, 
+    .col9, 
+    .col8, 
+    .col7 {
+        margin: 0;
+        padding: 0 ($gutter/4);
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-.col6, 
-.col5, 
-.col4, 
-.col3 {
-    float: left;
-    margin: 0;
-    padding: 0 ($gutter/4);
-    width: 50%;
-    box-sizing: border-box;
-}
+    .col6, 
+    .col5, 
+    .col4, 
+    .col3 {
+        float: left;
+        margin: 0;
+        padding: 0 ($gutter/4);
+        width: 50%;
+        box-sizing: border-box;
+    }
 
-.col2 {
-    float: left;
-    margin: 0;
-    padding: 0 ($gutter/4);
-    width: 33.33%;
-    box-sizing: border-box;
-}
+    .col2 {
+        float: left;
+        margin: 0;
+        padding: 0 ($gutter/4);
+        width: 33.33%;
+        box-sizing: border-box;
+    }
 
-.m-full {
-    width: 100%;
-    &.colr {
+    .m-full {
+        width: 100%;
+        &.colr {
+            float: none;
+        }
+    }
+
+    .m-half {
+        float: left;
+        width: 50%;
+    }
+
+    .m-1_3 {
+        float: left;
+        width: 33.33%;
+    }
+
+    .m-2_3 {
+        float: left;
+        width: 66.66%;
+    }
+
+    // * Additional grid utilities
+    .colr {
+        float: right;
+    }
+
+    .alpha {
+        margin-left: 0;
+    }
+
+    .omega {
+        margin-right: 0;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .center {
         float: none;
+        margin: 0 auto;
     }
-}
-
-.m-half {
-    float: left;
-    width: 50%;
-}
-
-.m-1_3 {
-    float: left;
-    width: 33.33%;
-}
-
-.m-2_3 {
-    float: left;
-    width: 66.66%;
-}
-
-// * Additional grid utilities
-.colr {
-    float: right;
-}
-
-.alpha {
-    margin-left: 0;
-}
-
-.omega {
-    margin-right: 0;
-}
-
-.clear {
-    clear: both;
-}
-
-.center {
-    float: none;
-    margin: 0 auto;
 }

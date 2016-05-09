@@ -487,4 +487,196 @@
   }
 }
 
-/*# sourceMappingURL=maps/style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.red {
+  color: red;
+}
+
+.red-light {
+  color: #ffb3b3;
+}
+
+.red-dark {
+  color: maroon;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 120px) and (max-width: 679px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+body {
+  color: #666;
+  margin: 0;
+  padding: 50px 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  background: white;
+}
+
+h2 {
+  color: #d8531e;
+  font-weight: 300;
+  margin: 0;
+  font-size: 48px;
+  font-size: 48px;
+}
+
+h3 {
+  color: #333;
+  font-weight: 300;
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 12px 0;
+}
+
+p {
+  margin: 0 0 21px 0;
+}
+
+a {
+  color: #d8531e;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.box {
+  margin: 0 0 10px 0;
+  padding: 10px;
+  background: #F5F5F5;
+}
+
+@media (min-width: 1024px) {
+  .box {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .box {
+    margin-bottom: 30px;
+    padding: 30px;
+  }
+}
+
+.box p {
+  margin: 0;
+}
+
+.code {
+  font-family: "Courier New", serif;
+  font-size: 14px;
+}
+
+.nesting {
+  background-color: #FFFFDF;
+  margin-bottom: 20px;
+}
+
+.nesting .nesting {
+  background-color: #FFE7DF;
+}
+
+pre {
+  border: 1px solid #CCC;
+  background-color: #F9F9F9;
+  padding: 10px;
+  margin: 0;
+  overflow: auto;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    float: left;
+    margin: 0 10px;
+    width: 620px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .content {
+    margin: 0 15px;
+    width: 770px;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 1023px) {
+  .content {
+    float: left;
+    padding: 0 5px;
+    width: 66.66%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 1023px) {
+  .content {
+    float: left;
+    padding: 0 5px;
+    width: 66.66%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    float: right;
+    margin: 0 10px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .sidebar {
+    margin: 0 15px;
+    width: 370px;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 1023px) {
+  .sidebar {
+    float: right;
+    padding: 0 5px;
+    width: 33.33%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 680px) {
+  .sidebar {
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 680px) {
+  .test {
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+}
+
+/*# sourceMappingURL=maps/sample.css.map */
