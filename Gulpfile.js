@@ -20,6 +20,7 @@ gulp.task('style', function () {
     'use strict';
     gulp.src(config.scssDir + '/*.scss')
         .pipe(sass())
+        .on('error', sass.logError)
         .pipe(autoprefixer({browsers: ['last 2 versions', 'ie >= 9']}))
         .pipe(cssnano())
         .pipe(gulp.dest(config.cssDir));
@@ -29,6 +30,7 @@ gulp.task('style-dev', function () {
     gulp.src(config.scssDir + '/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: "expanded"}))
+        .on('error', sass.logError)
         .pipe(autoprefixer({browsers: ['last 2 versions', 'ie >= 9']}))
         .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest(config.cssDir));
