@@ -2,7 +2,7 @@
  * Hoisin.scss
  * CSS responsive framework boilerplate
  * Create your own grids, plugin anything
- * Version: 0.9.15
+ * Version: 0.9.16
  * Created by: Cyber-Duck Ltd <info@cyber-duck.co.uk>,
  *             Ramon Lapenta <me@ramonlapenta.com>
  *
@@ -20,6 +20,10 @@
     clear: both;
     content: '';
     display: block;
+  }
+  .col1 > .container {
+    margin: 0 0 0 -10px;
+    width: 80px;
   }
   .col2 > .container {
     margin: 0 0 0 -10px;
@@ -64,6 +68,9 @@
   .col12 > .container {
     margin: 0 0 0 -10px;
     width: 960px;
+  }
+  .col1 {
+    width: 60px;
   }
   .col2 {
     width: 140px;
@@ -128,6 +135,9 @@
   .pre10 {
     margin-left: 810px;
   }
+  .pre11 {
+    margin-left: 890px;
+  }
   .suf1 {
     margin-right: 80px;
   }
@@ -158,6 +168,9 @@
   .suf10 {
     margin-right: 800px;
   }
+  .suf11 {
+    margin-right: 880px;
+  }
   .colr {
     float: right;
     margin: 0 10px;
@@ -175,16 +188,32 @@
     float: none;
     margin: 0 auto;
   }
+  .l-hide {
+    display: none;
+  }
+  .l-show-block,
+  .l-show-inline {
+    display: inline;
+  }
+  .s-show-block,
+  .s-show-block,
+  .m-show-inline,
+  .m-show-inline {
+    display: none;
+  }
 }
 
 @media (min-width: 1360px) {
-  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10 {
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 {
     float: left;
     margin: 0 15px;
   }
   .col12 {
     margin: 0 15px;
     width: 1170px;
+  }
+  .col1 {
+    width: 70px;
   }
   .col2 {
     width: 170px;
@@ -246,6 +275,9 @@
   .pre10 {
     margin-left: 1015px;
   }
+  .pre11 {
+    margin-left: 1115px;
+  }
   .suf1 {
     margin-right: 115px;
   }
@@ -276,8 +308,15 @@
   .suf10 {
     margin-right: 1015px;
   }
+  .suf11 {
+    margin-right: 1115px;
+  }
   .container {
     width: 1200px;
+  }
+  .col1 > .container {
+    margin: 0 0 0 -15px;
+    width: 100px;
   }
   .col2 > .container {
     margin: 0 0 0 -15px;
@@ -351,6 +390,8 @@
     width: 100%;
     padding: 0 5px;
     box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 780px;
   }
   .container::after {
     clear: both;
@@ -390,23 +431,39 @@
     width: 33.33%;
     box-sizing: border-box;
   }
+  .col1 {
+    float: left;
+    margin: 0;
+    padding: 0 5px;
+    width: 25%;
+    box-sizing: border-box;
+  }
   .m-full {
     width: 100%;
   }
   .m-full.colr {
     float: none;
   }
-  .m-half {
+  .m-half,
+  .m-2_4 {
     float: left;
     width: 50%;
+  }
+  .m-3_4 {
+    float: left;
+    width: 75%;
+  }
+  .m-2_3 {
+    float: left;
+    width: 66.66%;
   }
   .m-1_3 {
     float: left;
     width: 33.33%;
   }
-  .m-2_3 {
+  .m-1_4 {
     float: left;
-    width: 66.66%;
+    width: 25%;
   }
   .colr {
     float: right;
@@ -424,6 +481,19 @@
     float: none;
     margin: 0 auto;
   }
+  .m-hide {
+    display: none;
+  }
+  .m-show-block,
+  .m-show-inline {
+    display: inline;
+  }
+  .s-show-block,
+  .s-show-block,
+  .l-show-inline,
+  .l-show-inline {
+    display: none;
+  }
 }
 
 @media (min-width: 120px) and (max-width: 679px) {
@@ -435,6 +505,8 @@
     width: 100%;
     padding: 0 5px;
     box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 540px;
   }
   .container:after {
     clear: both;
@@ -461,7 +533,8 @@
     width: 100%;
     box-sizing: border-box;
   }
-  .col2 {
+  .col2,
+  .col1 {
     float: left;
     margin: 0;
     padding: 0 5px;
@@ -484,6 +557,19 @@
   }
   .clear {
     clear: both;
+  }
+  .s-hide {
+    display: none;
+  }
+  .s-show-block,
+  .s-show-inline {
+    display: inline;
+  }
+  .m-show-block,
+  .m-show-inline,
+  .l-show-block,
+  .l-show-inline {
+    display: none;
   }
 }
 

@@ -37,7 +37,7 @@
     }
 
     // * Loop through the cols to generate size of nested containers
-    @for $i from 2 through $col-qty {
+    @for $i from 1 through $col-qty {
         .col#{$i} > .container {
             margin: 0 0 0 0 -($gutter/2);
             width: ($col-width * $i) + ($gutter * $i);
@@ -48,19 +48,19 @@
     @include cols;
 
     // * Loop to generate each span 
-    @for $i from 2 through $col-qty {
+    @for $i from 1 through $col-qty {
         .col#{$i} {
             width: ($col-width * $i) + ($gutter * $i) - $gutter;
         }
     }
 
-    @for $i from 1 through ($col-qty - 2) {
+    @for $i from 1 through ($col-qty - 1) {
         .pre#{$i} {
             margin-left: ($col-width * $i) + ($gutter * $i) + ($gutter / 2);
         }
     }
 
-    @for $i from 1 through ($col-qty - 2) {
+    @for $i from 1 through ($col-qty - 1) {
         .suf#{$i} {
             margin-right: ($col-width * $i) + ($gutter * $i);
         }
@@ -96,4 +96,19 @@
         float: none;
         margin: 0 auto;
     }
+}
+
+// * Show or hide elements by breakpoint
+.l-hide {
+    display: none;
+}
+.l-show-block,
+.l-show-inline {
+    display: inline;
+}
+.s-show-block,
+.s-show-block,
+.m-show-inline, 
+.m-show-inline {
+    display: none;
 }

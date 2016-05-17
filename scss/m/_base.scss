@@ -11,8 +11,10 @@
 
     .container {
         width: 100%;
-        padding: 0 ($gutter/4);
+        padding: 0 ($gutter / 4);
         box-sizing: border-box;
+        margin: 0 auto;
+        max-width: $m-max-width;
         
         &::after {
             clear: both;
@@ -23,7 +25,7 @@
         .container {
             width: 102%;
             width: calc(100% + #{$gutter});
-            margin-left: -($gutter/2);
+            margin-left: -($gutter / 2);
         }
     }
 
@@ -34,7 +36,7 @@
     .col8, 
     .col7 {
         margin: 0;
-        padding: 0 ($gutter/4);
+        padding: 0 ($gutter / 4);
         width: 100%;
         box-sizing: border-box;
     }
@@ -45,16 +47,24 @@
     .col3 {
         float: left;
         margin: 0;
-        padding: 0 ($gutter/4);
+        padding: 0 ($gutter / 4);
         width: 50%;
         box-sizing: border-box;
     }
 
-    .col2 {
+    .col2{
         float: left;
         margin: 0;
-        padding: 0 ($gutter/4);
+        padding: 0 ($gutter / 4);
         width: 33.33%;
+        box-sizing: border-box;
+    }
+
+    .col1 {
+        float: left;
+        margin: 0;
+        padding: 0 ($gutter / 4);
+        width: 25%;
         box-sizing: border-box;
     }
 
@@ -65,9 +75,20 @@
         }
     }
 
-    .m-half {
+    .m-half,
+    .m-2_4 {
         float: left;
         width: 50%;
+    }
+
+    .m-3_4 {
+        float: left;
+        width: 75%;
+    }
+
+    .m-2_3 {
+        float: left;
+        width: 66.66%;
     }
 
     .m-1_3 {
@@ -75,9 +96,9 @@
         width: 33.33%;
     }
 
-    .m-2_3 {
+    .m-1_4 {
         float: left;
-        width: 66.66%;
+        width: 25%;
     }
 
     // * Additional grid utilities
@@ -101,4 +122,19 @@
         float: none;
         margin: 0 auto;
     }
+}
+
+// * Show or hide elements by breakpoint
+.m-hide {
+    display: none;
+}
+.m-show-block,
+.m-show-inline {
+    display: inline;
+}
+.s-show-block,
+.s-show-block,
+.l-show-inline,
+.l-show-inline {
+    display: none;
 }
