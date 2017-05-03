@@ -4,6 +4,7 @@
 
 // Output the grid only if variable set to true
 @if ($include-grid) {
+
     .wrap {
         overflow: hidden;
         width: 100%;
@@ -122,19 +123,19 @@
         float: none;
         margin: 0 auto;
     }
-}
 
-// * Show or hide elements by breakpoint
-.m-hide {
-    display: none;
-}
-.m-show-block,
-.m-show-inline {
-    display: inline;
-}
-.s-show-block,
-.s-show-block,
-.l-show-inline,
-.l-show-inline {
-    display: none;
+    // * Show or hide elements by breakpoint
+    .m-hide {
+        display: none;
+    }
+    .m-show-block,
+    .m-show-inline {
+        display: inline;
+    }
+    .s-show-block,
+    .s-show-block,
+    .l-show-inline,
+    .l-show-inline {
+        display: none;
+    }
 }

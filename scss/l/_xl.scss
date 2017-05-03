@@ -23,6 +23,7 @@
 
 // Output the grid only if variable set to true
 @if ($include-grid) {
+
     $wrap: ($xl-col-width * $col-qty) + ($xl-gutter * ($col-qty - 1));
 
     // * Output the common span styles
