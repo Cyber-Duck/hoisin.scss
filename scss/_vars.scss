@@ -1,23 +1,22 @@
 // Colours
 $highlight:                     #fa9200;
 
-$error:                         #f00;
+$error:                         #ff0000;
 $error-bg:                      #ffe5e5;
 
-$success:                       #390;
+$success:                       #339900;
 $success-bg:                    #eaf5e5;
 
-$info:                          #39f;
+$info:                          #3399ff;
 $info-bg:                       #eaf5ff;
 
-$warning:                       #ff0;
+$warning:                       #ffff00;
 $warning-bg:                    #ffffe5;
 
-$black:                         #000;
-$white:                         #fff;
-$text:                          #000;
-$title:                         #000;
-
+$black:                         #010101;
+$white:                         #ffffff;
+$text:                          $black;
+$title:                         $black;
 
 // Grid
 $include-grid:                  true;
@@ -32,19 +31,16 @@ $xl-gutter:                     30px;
 $m-max-width:                   780px;
 $s-max-width:                   540px;
 
-
 // Breakpoints
 $bp-xl:                 		1360px;
 $bp-l:              			1024px;
 $bp-m:             				680px;
 $bp-s:              			120px;
 
-
 // Paths
 $img:                           '../img/';
 $sprite:                        '../img/sprite.png';
 $fonts:                         '../fonts/';
-
     
 // Typography
 $body-font:                     sans-serif;

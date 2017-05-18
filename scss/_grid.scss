@@ -4,20 +4,19 @@
 @media (min-width: $bp-l) {
 
     @import 'l/base';
-
 }
+
 @media (min-width: $bp-xl) {
 
     @import 'l/xl';
-
 }
+
 @media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
 
     @import 'm/base';
-
 }
+
 @media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
 
     @import 's/base';
-
 }

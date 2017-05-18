@@ -1,13 +1,14 @@
 // Component name
 body {
-    color: #666;
+    color: #666666;
     margin: 0;
     padding: 50px 0;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
     font-weight: 300;
     background: white;
 }
+
 h2 {
     color: #d8531e;
     font-weight: 300;
@@ -15,27 +16,32 @@ h2 {
     font-size: 48px;
     font-size: 48px;
 }
+
 h3 {
-    color: #333;
+    color: #333333;
     font-weight: 300;
     margin: 0;
     font-size: 36px;
     line-height: 36px;
     padding: 12px 0; 
 }
+
 p {
     margin: 0 0 21px 0;
 }
+
 a {
     color: #d8531e;
 }
+
 section {
     margin-bottom: 50px;
 }
+
 .box {
     margin: 0 0 ($gutter / 2) 0;
     padding: ($gutter / 2);
-    background: #F5F5F5;
+    background: #f5f5f5;
 
     @include respond-to(l) {
         margin-bottom: $gutter;
@@ -52,20 +58,22 @@ section {
 }
 
 .code {
-    font-family: "Courier New", serif;
+    font-family: 'Courier New', serif;
     font-size: 14px;
 }
+
 .nesting {
-    background-color: #FFFFDF;
+    background-color: #ffffdf;
     margin-bottom: 20px;
+
     .nesting {
-        background-color: #FFE7DF;
+        background-color: #ffe7df;
     }
 }
 
 pre {
-    border: 1px solid #CCC;
-    background-color: #F9F9F9;
+    border: 1px solid #cccccc;
+    background-color: #f9f9f9;
     padding: 10px;
     margin: 0;
     overflow: auto;

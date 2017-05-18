@@ -7,7 +7,6 @@
 // */
 
 
-
 ///* 
 // * Respond to
 // * @param $breakpoint (s | m | m-up | m-down | l | xl);
@@ -17,38 +16,37 @@
 // * }
 // */
 @mixin respond-to($bp) {
-    @if $bp == "s" {
+    @if $bp == 's' {
         @media (max-width: $bp-m) {
             @content;
         }
     }
-    @else if $bp == "m" {
+    @else if $bp == 'm' {
         @media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
             @content;
         }
     }
-    @else if $bp == "m-up" {
+    @else if $bp == 'm-up' {
         @media (min-width: $bp-m) {
             @content;
         }
     }
-    @else if $bp == "m-down" {
+    @else if $bp == 'm-down' {
         @media (max-width: ($bp-l - 1)) {
             @content;
         }
     }
-    @else if $bp == "l" {
+    @else if $bp == 'l' {
         @media (min-width: $bp-l) {
             @content;
         }
     }
-    @else if $bp == "xl" {
+    @else if $bp == 'xl' {
         @media (min-width: $bp-xl) {
             @content;
         }
     }
 }
-
 
 
 ///* 
@@ -57,10 +55,9 @@
 // *
 // * @include box-shadow(2px 2px 2px 2px rgba(0,0,0,0.2));
 // */
-@mixin box-shadow($value: 0 0 4px 0 rgba(0, 0, 0, .5)) {
+@mixin box-shadow($value: 0 0 4px 0 rgba(0, 0, 0, 0.5)) {
     @include prefixer(box-shadow, $value, webkit);
 }
-
 
 
 ///* 
@@ -72,13 +69,8 @@
 // */
 @mixin gradients($first, $second) {
     background-color: $first;
-    background-image: -o-linear-gradient(top, $first 0%, $second 100%);
-    background-image: -ms-linear-gradient(top, $first 0%, $second 100%);
-    background-image: -moz-linear-gradient(top, $first, $second);
-    background-image: -webkit-gradient(linear, left top, left bottom, from($first), to($second));
     background-image: linear-gradient(top, $first 0%, $second 100%);
 }
-
 
 
 ///* 
@@ -92,7 +84,6 @@
 }
 
 
-
 // *
 // * Opacity (Old IE disabled by default)
 // * @param $opac ($opacity);
@@ -102,12 +93,10 @@
 // */
 @mixin opacity($opac, $ie: false) {
     @if $ie {
-        -ms-filter: alpha(opacity=$opac * 100);
         filter: alpha(opacity=$opac * 100);
     }
     opacity: $opac;
 }
-
 
 
 ///*
@@ -116,10 +105,9 @@
 // *
 // * @include transition(height 200ms ease-out);
 // */
-@mixin transition($value: .15s) {
+@mixin transition($value: 0.15s) {
     @include prefixer(transition, $value, webkit);
 }
-
 
 
 ///* 
@@ -131,12 +119,10 @@
 // */
 @mixin rotate($deg, $orig: 50% 50%) {
     @include prefixer(transform, rotate(#{$deg}), webkit ms);
-    @if $orig != 50% and $orig != (50% 50%) 
-    and $orig != center and $orig != (center center) {
+    @if $orig != 50% and $orig != (50% 50%) and $orig != center and $orig != (center center) {
         @include prefixer(transform-origin, $orig, webkit ms);
     }
 }
-
 
 
 ///*
@@ -149,7 +135,6 @@
 @mixin translate($hdist: 0, $vdist: 0) {
     @include prefixer(transform, translate(#{$hdist}, #{$vdist}), webkit ms);
 }
-
 
 
 ///* 
@@ -194,7 +179,6 @@
     -webkit-touch-callout: none;
     @include prefixer(user-select, none, webkit ms);
 }
-
 
 
 ///*

@@ -4,7 +4,6 @@
 
 // Output the grid only if variable set to true
 @if ($include-grid) {
-
     .wrap {
         overflow: hidden;
         width: 100%;
@@ -16,7 +15,7 @@
         box-sizing: border-box;
         margin: 0 auto;
         max-width: $m-max-width;
-        
+
         &::after {
             clear: both;
             content: '';
@@ -30,11 +29,11 @@
         }
     }
 
-    .col12, 
-    .col11, 
-    .col10, 
-    .col9, 
-    .col8, 
+    .col12,
+    .col11,
+    .col10,
+    .col9,
+    .col8,
     .col7 {
         margin: 0;
         padding: 0 ($gutter / 4);
@@ -42,9 +41,9 @@
         box-sizing: border-box;
     }
 
-    .col6, 
-    .col5, 
-    .col4, 
+    .col6,
+    .col5,
+    .col4,
     .col3 {
         float: left;
         margin: 0;
@@ -53,7 +52,7 @@
         box-sizing: border-box;
     }
 
-    .col2{
+    .col2 {
         float: left;
         margin: 0;
         padding: 0 ($gutter / 4);
@@ -71,6 +70,7 @@
 
     .m-full {
         width: 100%;
+
         &.colr {
             float: none;
         }
@@ -128,10 +128,12 @@
     .m-hide {
         display: none;
     }
+
     .m-show-block,
     .m-show-inline {
         display: inline;
     }
+
     .s-show-block,
     .s-show-block,
     .l-show-inline,
