@@ -82,7 +82,7 @@ gulp.task('lint-css', function lintCssTask() {
 /*
  * Clean non used JS files, and sourcemaps for production
  */
-gulp.task('clean', ['style', 'compress'], () => {
+gulp.task('clean', ['style'], () => {
     'use strict';
     del(config.cssDir + '/maps/*');
     del(config.cssDir + '/maps/');
