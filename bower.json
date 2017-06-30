@@ -1,6 +1,6 @@
 {
   "name": "hoisin.scss",
-  "version": "0.9.17",
+  "version": "0.9.18",
   "description": "A simple responsive mini framework to kick start your project.",
   "main": ["scss/styles.scss", "scss/responsive.scss"],
   "keywords": [
