@@ -109,10 +109,12 @@
 
     .alpha {
         margin-left: 0;
+        padding-left: 0;
     }
 
     .omega {
         margin-right: 0;
+        padding-right: 0;
     }
 
     .clear {
@@ -129,7 +131,10 @@
         display: none;
     }
 
-    .m-show-block,
+    .m-show-block {
+        display: block;
+    }
+
     .m-show-inline {
         display: inline;
     }

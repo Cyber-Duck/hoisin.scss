@@ -102,7 +102,10 @@
         display: none;
     }
 
-    .l-show-block,
+    .l-show-block {
+        display: block;
+    }
+
     .l-show-inline {
         display: inline;
     }

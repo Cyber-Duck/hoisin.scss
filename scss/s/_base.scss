@@ -79,7 +79,10 @@
         display: none;
     }
 
-    .s-show-block,
+    .s-show-block {
+        display: block;
+    }
+
     .s-show-inline {
         display: inline;
     }
