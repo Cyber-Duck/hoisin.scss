@@ -39,7 +39,7 @@
     // * Loop through the cols to generate size of nested containers
     @for $i from 1 through $col-qty {
         .col#{$i} > .container {
-            margin: 0 0 0 -($gutter / 2);
+            margin: 0 0 0 (-($gutter / 2));
             width: ($col-width * $i) + ($gutter * $i);
         }
     }

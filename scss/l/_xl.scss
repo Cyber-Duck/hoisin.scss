@@ -59,7 +59,7 @@
 
     @for $i from 1 through $col-qty {
         .col#{$i} > .container {
-            margin: 0 0 0 -($xl-gutter / 2);
+            margin: 0 0 0 (-($xl-gutter / 2));
             width: ($xl-col-width * $i) + ($xl-gutter * $i);
         }
     }

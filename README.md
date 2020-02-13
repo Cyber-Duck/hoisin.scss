@@ -15,7 +15,7 @@ Place the `scss` and `css` folders in the relevan folder of your Project. If the
 
 #### Requirements
 * Should work with all Sass 3.3 compatible preprocessors. 
-* To use the provided Gulpfile just need NPM installed and do `$ npm install`
+* We recommend installing our front end build system for easy compiling of Sass.
 
 ## Usage
 Open the `_vars.scss` file and add your variables to it, including the size of your base grid if you need anything different than the standard. You can add any variables you will be using like colors, font files, sizes, etc. Feel free to use Sass maps as well.

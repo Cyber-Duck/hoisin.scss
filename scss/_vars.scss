@@ -20,6 +20,7 @@ $title:                         $black;
 
 // Grid
 $include-grid:                  true;
+$include-flexible-grid:         true;
 $col-qty:                       12;
 $col-width:                     60px;
 $gutter:                        20px;
@@ -30,12 +31,13 @@ $xl-gutter:                     30px;
 
 $m-max-width:                   780px;
 $s-max-width:                   540px;
+$flex-grid-max-width:           1680px;
 
 // Breakpoints
-$bp-xl:                 		1360px;
-$bp-l:              			1024px;
-$bp-m:             				680px;
-$bp-s:              			120px;
+$bp-xl:                         1360px;
+$bp-l:                          1024px;
+$bp-m:                          680px;
+$bp-s:                          120px;
 
 // Paths
 $img:                           '../img/';
