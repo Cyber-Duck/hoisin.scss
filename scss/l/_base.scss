@@ -1,119 +1,78 @@
 // * Large screens grid system
 // *
 
-// * Empty declaration as a base for all spans common styles
-%base-col {
-    float: left;
-    margin: 0 $gutter/2;
-}
+.container {
+    width: (($col-width * $col-qty) + ($gutter * ($col-qty - 1)));
+    margin: 0 auto;
+    gap: 0;
+    padding: 0 ($gutter-sides / 2);
+    box-sizing: border-box;
+    justify-items: stretch;
 
-///* 
-// * Cols
-// * Mixin to create the col spans using the previous empty % declaration
-// *
-// * @include cols;
-// */
-@mixin cols {
-    @for $i from 1 through $col-qty {
-        .col#{$i} { @extend %base-col; }
+    &.l-sp-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &.l-sp-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &.l-sp-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &.l-sp-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &.l-sp-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    // Spcial layouts (may leave out for flexibility)
+    &.l-wside-r {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    &.l-wside-l {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    &.l-side-r {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    &.l-side-l {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    &.l_1_1_2 {
+        grid-template-columns: 1fr 1fr 2fr;
     }
 }
 
-// Output the grid only if variable set to true
-@if ($include-grid) {
+.span {
+    padding: 0 ($gutter / 2);
+    box-sizing: border-box;
+    display: flex;
+}
 
-    // * Define the size of the container using variables
-    $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
+// * Show or hide elements by breakpoint
+.l-hide {
+    display: none;
+}
 
-    .container {
-        margin: 0 auto;
-        width: $wrap + $gutter;
+.l-show-block {
+    display: block;
+}
 
-        &:after {
-            clear: both;
-            content: '';
-            display: block;
-        }
-    }
+.l-show-inline {
+    display: inline;
+}
 
-    // * Loop through the cols to generate size of nested containers
-    @for $i from 1 through $col-qty {
-        .col#{$i} > .container {
-            margin: 0 0 0 (-($gutter / 2));
-            width: ($col-width * $i) + ($gutter * $i);
-        }
-    }
-
-    // * Output all the spans common styles
-    @include cols;
-
-    // * Loop to generate each span 
-    @for $i from 1 through $col-qty {
-        .col#{$i} {
-            width: ($col-width * $i) + ($gutter * $i) - $gutter;
-        }
-    }
-
-    @for $i from 1 through ($col-qty - 1) {
-        .pre#{$i} {
-            margin-left: ($col-width * $i) + ($gutter * $i) + ($gutter / 2);
-        }
-    }
-
-    @for $i from 1 through ($col-qty - 1) {
-        .suf#{$i} {
-            margin-right: ($col-width * $i) + ($gutter * $i);
-        }
-    }
-
-    // *
-    // * Additional grid utilities
-    // *
-
-    // * Force float a span to the right
-    .colr {
-        float: right;
-        margin: 0 ($gutter / 2);
-    }
-
-    // * Remove left margin from span
-    .alpha {
-        margin-left: 0;
-    }
-
-    // * Remove right margin from span
-    .omega {
-        margin-right: 0;
-    }
-
-    // * Clear helper
-    .clear {
-        clear: both;
-    }
-
-    // * center span in container
-    .center {
-        float: none;
-        margin: 0 auto;
-    }
-
-    // * Show or hide elements by breakpoint
-    .l-hide {
-        display: none;
-    }
-
-    .l-show-block {
-        display: block;
-    }
-
-    .l-show-inline {
-        display: inline;
-    }
-
-    .s-show-block,
-    .s-show-block,
-    .m-show-inline,
-    .m-show-inline {
-        display: none;
-    }
+.s-show-block,
+.s-show-block,
+.m-show-inline,
+.m-show-inline {
+    display: none;
 }

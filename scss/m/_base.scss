@@ -3,146 +3,81 @@
 // *
 
 // Output the grid only if variable set to true
-@if ($include-grid) {
-    .wrap {
-        overflow: hidden;
-        width: 100%;
+.container {
+    width: 100%;
+    margin: 0 auto;
+    gap: 0;
+    padding: 0 ($gutter-sides / 4);
+    box-sizing: border-box;
+    justify-items: stretch;
+
+    &.m-sp-4 {
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .container {
-        width: 100%;
-        padding: 0 ($gutter / 4);
-        box-sizing: border-box;
-        margin: 0 auto;
-        max-width: $m-max-width;
-
-        &::after {
-            clear: both;
-            content: '';
-            display: block;
-        }
-
-        .container {
-            width: 102%;
-            width: calc(100% + #{$gutter});
-            margin-left: -($gutter / 2);
-        }
+    &.m-wside-r {
+        grid-template-columns: 2fr 1fr;
     }
 
-    .col12,
-    .col11,
-    .col10,
-    .col9,
-    .col8,
-    .col7 {
-        margin: 0;
-        padding: 0 ($gutter / 4);
-        width: 100%;
-        box-sizing: border-box;
+    &.m-wside-l {
+        grid-template-columns: 1fr 2fr;
     }
 
-    .col6,
-    .col5,
-    .col4,
-    .col3 {
-        float: left;
-        margin: 0;
-        padding: 0 ($gutter / 4);
-        width: 50%;
-        box-sizing: border-box;
+    &.m-side-r {
+        grid-template-columns: 3fr 1fr;
     }
 
-    .col2 {
-        float: left;
-        margin: 0;
-        padding: 0 ($gutter / 4);
-        width: 33.33%;
-        box-sizing: border-box;
+    &.m-side-l {
+        grid-template-columns: 1fr 3fr;
     }
+}
 
-    .col1 {
-        float: left;
-        margin: 0;
-        padding: 0 ($gutter / 4);
-        width: 25%;
-        box-sizing: border-box;
-    }
+.span {
+    padding: 0 ($gutter / 4);
+    box-sizing: border-box;
+    display: flex;
+}
 
-    .m-full {
-        width: 100%;
+// * Additional grid utilities
+.colr {
+    float: right;
+}
 
-        &.colr {
-            float: none;
-        }
-    }
+.alpha {
+    margin-left: 0;
+    padding-left: 0;
+}
 
-    .m-half,
-    .m-2_4 {
-        float: left;
-        width: 50%;
-    }
+.omega {
+    margin-right: 0;
+    padding-right: 0;
+}
 
-    .m-3_4 {
-        float: left;
-        width: 75%;
-    }
+.clear {
+    clear: both;
+}
 
-    .m-2_3 {
-        float: left;
-        width: 66.66%;
-    }
+.center {
+    float: none;
+    margin: 0 auto;
+}
 
-    .m-1_3 {
-        float: left;
-        width: 33.33%;
-    }
+// * Show or hide elements by breakpoint
+.m-hide {
+    display: none;
+}
 
-    .m-1_4 {
-        float: left;
-        width: 25%;
-    }
+.m-show-block {
+    display: block;
+}
 
-    // * Additional grid utilities
-    .colr {
-        float: right;
-    }
+.m-show-inline {
+    display: inline;
+}
 
-    .alpha {
-        margin-left: 0;
-        padding-left: 0;
-    }
-
-    .omega {
-        margin-right: 0;
-        padding-right: 0;
-    }
-
-    .clear {
-        clear: both;
-    }
-
-    .center {
-        float: none;
-        margin: 0 auto;
-    }
-
-    // * Show or hide elements by breakpoint
-    .m-hide {
-        display: none;
-    }
-
-    .m-show-block {
-        display: block;
-    }
-
-    .m-show-inline {
-        display: inline;
-    }
-
-    .s-show-block,
-    .s-show-block,
-    .l-show-inline,
-    .l-show-inline {
-        display: none;
-    }
+.s-show-block,
+.s-show-block,
+.l-show-inline,
+.l-show-inline {
+    display: none;
 }

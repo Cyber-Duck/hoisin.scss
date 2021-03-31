@@ -3,87 +3,12 @@
 // * Define the size of the container using extra large variables
 // *
 
-// * Generate a common style for all spans
-%base-xl-col {
-    float: left;
-    margin: 0 ($xl-gutter / 2);
+.container {
+    width: (($xl-col-width * $col-qty) + ($xl-gutter * ($col-qty - 1)));
+    gap: 0;
+    padding: 0 ($xl-gutter-sides / 2);
 }
 
-///* 
-// * Cols
-// * Mixin to create the col spans using the previous empty % declaration
-// *
-// * @include cols;
-// */
-@mixin cols {
-    @for $i from 1 to $col-qty {
-        .col#{$i} { @extend %base-xl-col; }
-    }
-}
-
-// Output the grid only if variable set to true
-@if ($include-grid) {
-
-    $wrap: ($xl-col-width * $col-qty) + ($xl-gutter * ($col-qty - 1));
-
-    // * Output the common span styles
-    @include cols;
-
-    // Define widths for each span
-    .col#{$col-qty} {
-        margin: 0 ($xl-gutter / 2); // Full width, doesn't need float
-        width: ($xl-col-width * $col-qty) + ($xl-gutter * $col-qty) - $xl-gutter;
-    }
-
-    @for $i from 1 to $col-qty {
-        .col#{$i} {
-            width: ($xl-col-width * $i) + ($xl-gutter * $i) - $xl-gutter;
-        }
-    }
-
-    @for $i from 1 through ($col-qty - 1) {
-        .pre#{$i} {
-            margin-left: ($xl-col-width * $i) + ($xl-gutter * $i) + ($xl-gutter / 2);
-        }
-    }
-
-    @for $i from 1 through ($col-qty - 1) {
-        .suf#{$i} {
-            margin-right: ($xl-col-width * $i) + ($xl-gutter * $i) + ($xl-gutter / 2);
-        }
-    }
-
-    .container {
-        width: $wrap + $xl-gutter;
-    }
-
-    @for $i from 1 through $col-qty {
-        .col#{$i} > .container {
-            margin: 0 0 0 (-($xl-gutter / 2));
-            width: ($xl-col-width * $i) + ($xl-gutter * $i);
-        }
-    }
-
-    // * Grid utilities
-    .colr {
-        float: right;
-        margin: 0 ($xl-gutter / 2);
-    }
-
-    .alpha {
-        margin-left: 0;
-    }
-
-    .omega {
-        margin-right: 0;
-    }
-
-    .clear {
-        clear: both;
-    }
-
-    .center {
-        float: none;
-        margin: 0 auto;
-    }
+.span {
+    padding: 0 ($xl-gutter / 2);
 }

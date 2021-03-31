@@ -22,21 +22,23 @@ $title:                         $black;
 $include-grid:                  true;
 $include-flexible-grid:         true;
 $col-qty:                       12;
-$col-width:                     60px;
-$gutter:                        20px;
+$col-width:                     64px;
+$gutter:                        24px;
+$gutter-sides:                  0;
 
 // Large desktop grid
-$xl-col-width:                  70px;
-$xl-gutter:                     30px;
+$xl-col-width:                  72px;
+$xl-gutter:                     36px;
+$xl-gutter-sides:                  0;
 
-$m-max-width:                   780px;
-$s-max-width:                   540px;
+$m-max-width:                   980px;
+$s-max-width:                   640px;
 $flex-grid-max-width:           1680px;
 
 // Breakpoints
-$bp-xl:                         1360px;
-$bp-l:                          1024px;
-$bp-m:                          680px;
+$bp-xl:                         1480px;
+$bp-l:                          1140px;
+$bp-m:                          720px;
 $bp-s:                          120px;
 
 // Paths
