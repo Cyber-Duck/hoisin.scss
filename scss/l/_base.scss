@@ -1,119 +1,35 @@
 // * Large screens grid system
 // *
+@use "sass:math";
 
-// * Empty declaration as a base for all spans common styles
-%base-col {
-    float: left;
-    margin: 0 $gutter/2;
+.container {
+    width: (($col-width * $col-qty) + ($gutter * ($col-qty - 1)));
+    padding: 0 math-div($gutter-sides, 2);
+
+    @for $i from 2 through 6 {
+        &.l-sp-#{$i} {
+            grid-template-columns: repeat(#{$i}, 1fr);
+        }
+    }
+
+    // Spcial layouts (may leave out for flexibility)
+    &.l-wside-r {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    &.l-wside-l {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    &.l-side-r {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    &.l-side-l {
+        grid-template-columns: 1fr 3fr;
+    }
 }
 
-///* 
-// * Cols
-// * Mixin to create the col spans using the previous empty % declaration
-// *
-// * @include cols;
-// */
-@mixin cols {
-    @for $i from 1 through $col-qty {
-        .col#{$i} { @extend %base-col; }
-    }
-}
-
-// Output the grid only if variable set to true
-@if ($include-grid) {
-
-    // * Define the size of the container using variables
-    $wrap: ($col-width * $col-qty) + $gutter * ($col-qty - 1);
-
-    .container {
-        margin: 0 auto;
-        width: $wrap + $gutter;
-
-        &:after {
-            clear: both;
-            content: '';
-            display: block;
-        }
-    }
-
-    // * Loop through the cols to generate size of nested containers
-    @for $i from 1 through $col-qty {
-        .col#{$i} > .container {
-            margin: 0 0 0 (-($gutter / 2));
-            width: ($col-width * $i) + ($gutter * $i);
-        }
-    }
-
-    // * Output all the spans common styles
-    @include cols;
-
-    // * Loop to generate each span 
-    @for $i from 1 through $col-qty {
-        .col#{$i} {
-            width: ($col-width * $i) + ($gutter * $i) - $gutter;
-        }
-    }
-
-    @for $i from 1 through ($col-qty - 1) {
-        .pre#{$i} {
-            margin-left: ($col-width * $i) + ($gutter * $i) + ($gutter / 2);
-        }
-    }
-
-    @for $i from 1 through ($col-qty - 1) {
-        .suf#{$i} {
-            margin-right: ($col-width * $i) + ($gutter * $i);
-        }
-    }
-
-    // *
-    // * Additional grid utilities
-    // *
-
-    // * Force float a span to the right
-    .colr {
-        float: right;
-        margin: 0 ($gutter / 2);
-    }
-
-    // * Remove left margin from span
-    .alpha {
-        margin-left: 0;
-    }
-
-    // * Remove right margin from span
-    .omega {
-        margin-right: 0;
-    }
-
-    // * Clear helper
-    .clear {
-        clear: both;
-    }
-
-    // * center span in container
-    .center {
-        float: none;
-        margin: 0 auto;
-    }
-
-    // * Show or hide elements by breakpoint
-    .l-hide {
-        display: none;
-    }
-
-    .l-show-block {
-        display: block;
-    }
-
-    .l-show-inline {
-        display: inline;
-    }
-
-    .s-show-block,
-    .s-show-block,
-    .m-show-inline,
-    .m-show-inline {
-        display: none;
-    }
+.span {
+    padding: 0 math.div($gutter, 2);
 }

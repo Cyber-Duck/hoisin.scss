@@ -3,9 +3,6 @@
 @import 'functions';
 @import 'mixins';
 @import 'grid';
-@if ($include-flexible-grid) {
-    @import 'flexgrid';
-}
 
 // Common components
 // @import 'components/component';

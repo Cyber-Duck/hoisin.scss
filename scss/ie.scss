@@ -1,3 +1,4 @@
+@use "sass:math";
 @import 'version';
 @import 'vars';
 @import 'mixins';
@@ -25,7 +26,7 @@ $wrap: $col-width * $col-qty + $gutter * ($col-qty - 1);
 @for $i from 2 through $col-qty {
     .col#{$i} {
         float: left;
-        margin: 0 $gutter/2;
+        margin: 0 math.div($gutter, 2);
         width: ($col-width * $i) + ($gutter * $i) - $gutter;
     }
 }
@@ -45,7 +46,7 @@ $wrap: $col-width * $col-qty + $gutter * ($col-qty - 1);
 // Grid utilities
 .colr {
     float: right;
-    margin: 0 $gutter/2;
+    margin: 0 math.div($gutter, 2);
 }
 
 .alpha {
