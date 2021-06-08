@@ -36,27 +36,27 @@ Please note the use of `.container` is currently only supported in the main leve
 
 #### Example of a typical simple layout:
 
-<header class="container l-side-l m-side-l">
-    <div class="span">
-	<div class="logo">
+	<header class="container l-side-l m-side-l">
+	    <div class="span">
+		<div class="logo">
 
-	</div>
-    </div>
-    <div class="span">
-        <nav>
+		</div>
+	    </div>
+	    <div class="span">
+		<nav>
 
-	</nav>
-    </div>
-</header>
+		</nav>
+	    </div>
+	</header>
 
-<div class="container l-side-l m-side-l">
-    <div class="span">
-	<p>Your content here</p>
-    </div>
-    <div class="span">
-	<p>Your sidebar here</p>
-    </div>	    
-<div>
+	<div class="container l-side-l m-side-l">
+	    <div class="span">
+		<p>Your content here</p>
+	    </div>
+	    <div class="span">
+		<p>Your sidebar here</p>
+	    </div>
+	<div>
 
 See index.html file for more layout examples and combinations.
 
