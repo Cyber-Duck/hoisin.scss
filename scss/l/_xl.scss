@@ -2,13 +2,14 @@
 // * Grid system
 // * Define the size of the container using extra large variables
 // *
+@use "sass:math";
 
 .container {
     width: (($xl-col-width * $col-qty) + ($xl-gutter * ($col-qty - 1)));
     gap: 0;
-    padding: 0 ($xl-gutter-sides / 2);
+    padding: 0 math.div($xl-gutter-sides, 2);
 }
 
 .span {
-    padding: 0 ($xl-gutter / 2);
+    padding: 0 math.div($xl-gutter, 2);
 }

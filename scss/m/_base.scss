@@ -1,18 +1,18 @@
 // * Grid system
 // * Define the properties of the flexible container
 // *
+@use "sass:math";
 
 // Output the grid only if variable set to true
 .container {
     width: 100%;
-    margin: 0 auto;
-    gap: 0;
-    padding: 0 ($gutter-sides / 4);
-    box-sizing: border-box;
-    justify-items: stretch;
+    max-width: $m-max-width;
+    padding: 0 math.div($gutter-sides, 4);
 
-    &.m-sp-4 {
-        grid-template-columns: repeat(4, 1fr);
+    @for $i from 2 through 6 {
+        &.m-sp-#{$i} {
+            grid-template-columns: repeat(#{$i}, 1fr);
+        }
     }
 
     &.m-wside-r {
@@ -33,51 +33,6 @@
 }
 
 .span {
-    padding: 0 ($gutter / 4);
-    box-sizing: border-box;
-    display: flex;
+    padding: 0 math.div($gutter, 4);
 }
 
-// * Additional grid utilities
-.colr {
-    float: right;
-}
-
-.alpha {
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.omega {
-    margin-right: 0;
-    padding-right: 0;
-}
-
-.clear {
-    clear: both;
-}
-
-.center {
-    float: none;
-    margin: 0 auto;
-}
-
-// * Show or hide elements by breakpoint
-.m-hide {
-    display: none;
-}
-
-.m-show-block {
-    display: block;
-}
-
-.m-show-inline {
-    display: inline;
-}
-
-.s-show-block,
-.s-show-block,
-.l-show-inline,
-.l-show-inline {
-    display: none;
-}

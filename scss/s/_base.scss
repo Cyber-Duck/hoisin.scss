@@ -1,96 +1,21 @@
 // * Grid system
 // * Define the properties of the flexible container
 // *
+@use "sass:math";
 
 // Output the grid only if variable set to true
-@if ($include-grid) {
-    .wrap {
-        overflow: hidden;
-        width: 100%;
-    }
+.container {
+    width: 100%;
+    max-width: $s-max-width;
+    padding: 0 math.div($gutter, 4);
 
-    .container {
-        width: 100%;
-        padding: 0 ($gutter / 4);
-        box-sizing: border-box;
-        margin: 0 auto;
-        // max-width: $s-max-width;
-
-        &:after {
-            clear: both;
-            content: '';
-            display: block;
-        }
-
-        .container {
-            width: 102%;
-            width: calc(100% + #{$gutter});
-            margin-left: -($gutter / 2);
+    @for $i from 2 through 3 {
+        &.s-sp-#{$i} {
+            grid-template-columns: repeat(#{$i}, 1fr);
         }
     }
+}
 
-    .col12,
-    .col11,
-    .col10,
-    .col9,
-    .col8,
-    .col7,
-    .col6,
-    .col5,
-    .col4,
-    .col3 {
-        margin: 0;
-        padding: 0 ($gutter / 4);
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .col2,
-    .col1 {
-        float: left;
-        margin: 0;
-        padding: 0 ($gutter / 4);
-        width: 50%;
-        box-sizing: border-box;
-    }
-
-    .s-full {
-        float: none;
-        margin: 0;
-        padding: 0 ($gutter / 4);
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .s-half {
-        float: left;
-        margin: 0;
-        padding: 0 ($gutter / 4);
-        width: 50%;
-        box-sizing: border-box;
-    }
-
-    .clear {
-        clear: both;
-    }
-
-    // * Show or hide elements by breakpoint
-    .s-hide {
-        display: none;
-    }
-
-    .s-show-block {
-        display: block;
-    }
-
-    .s-show-inline {
-        display: inline;
-    }
-
-    .m-show-block,
-    .m-show-inline,
-    .l-show-block,
-    .l-show-inline {
-        display: none;
-    }
+.span {
+    padding: 0 math.div($gutter, 4);
 }

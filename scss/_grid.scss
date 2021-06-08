@@ -2,6 +2,28 @@
 .container {
     display: grid;
     grid-template-rows: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-items: stretch;
+    gap: 0;
+}
+
+.span {
+    box-sizing: border-box;
+    display: flex;
+}
+
+@media (min-width: $bp-m) {
+    // Reverse items
+    .container {
+        &.grid-reverse {
+            @for $i from 1 through 6 {
+                .span:nth-child(#{$i}) {
+                    order: (7 - $i);
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: $bp-l) {

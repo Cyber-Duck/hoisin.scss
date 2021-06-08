@@ -1,4 +1,6 @@
 // Component name
+@use "sass:math";
+
 body {
     color: #666666;
     margin: 0;
@@ -9,24 +11,35 @@ body {
     background: white;
 }
 
+h1 {
+    color: #d8531e;
+    font-weight: 300;
+    margin: 0 0 0.25em 0;
+    font-size: 48px;
+}
+
 h2 {
     color: #d8531e;
     font-weight: 300;
-    margin: 0;
-    font-size: 48px;
+    margin: 0 0 0.25em 0;
+    font-size: 36px;
 }
 
 h3 {
     color: #333333;
     font-weight: 300;
     margin: 0;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 32px;
     padding: 12px 0; 
 }
 
 p {
     margin: 0 0 21px 0;
+}
+
+.big {
+    font-weight: bold;
+    font-size: 4em;
 }
 
 a {
@@ -38,20 +51,11 @@ section {
 }
 
 .box {
-    margin: 0 0 ($gutter / 2) 0;
-    padding: ($gutter / 2);
+    margin: 0 0 math.div($gutter, 2) 0;
+    padding: math.div($gutter, 2);
     background: #333;
     color: #f6f6f6;
     flex: 1 1 auto;
-
-    @include respond-to(l) {
-        margin-bottom: $gutter;
-        padding: $gutter;
-    }
-    @include respond-to(xl) {
-        margin-bottom: $xl-gutter;
-        padding: $xl-gutter;
-    }
 
     p {
         margin: 0;
@@ -75,60 +79,29 @@ section {
 pre {
     border: 1px solid #cccccc;
     background-color: #f9f9f9;
-    padding: 10px;
+    padding: math.div($gutter, 2);
     margin: 0;
     overflow: auto;
 }
 
-.content {
-    @include respond-to(l) {
-        float: left;
-        margin: 0 ($gutter / 2);
-        width: span(8);
-    }
-    @include respond-to(xl) {       
-        margin: 0 ($xl-gutter / 2);
-        width: span-xl(8);
-    }
-    @include respond-to(m) {
-        float: left;
-        padding: 0 ($gutter / 4);
-        width: span-fw(m-2_3);
-        box-sizing: border-box;
-    }
-    @include respond-to(m) {
-        float: left;
-        padding: 0 ($gutter / 4);
-        width: span-fw(m-2_3);
-        box-sizing: border-box;
+@media (min-width: $bp-l) {
+    .box {
+        margin-bottom: $gutter;
+        padding: math.div($gutter, 2);
     }
 }
 
-.sidebar {
-    @include respond-to(l) {
-        float: right;
-        margin: 0 ($gutter / 2);
-        width: span(4);
-    }
-    @include respond-to(xl) {
-        margin: 0 ($xl-gutter / 2);
-        width: span-xl(4);
-    }
-    @include respond-to(m) {
-        float: right;
-        padding: 0 ($gutter / 4);
-        width: span-fw(m-1_3);
-        box-sizing: border-box;
-    }
-    @include respond-to(s) {
-        padding: 0 ($gutter / 4);
-        box-sizing: border-box;
+@media (min-width: $bp-xl) {
+    .box {
+        margin-bottom: $xl-gutter;
+        padding: math.div($xl-gutter, 2);
     }
 }
 
-@include respond-to(s) {
-    .test {
-        padding: 0 ($gutter / 4);
-        box-sizing: border-box;
-    }
-}
+// @media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
+
+// }
+
+// @media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
+
+// }

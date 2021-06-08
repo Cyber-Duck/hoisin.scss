@@ -1,32 +1,15 @@
 // * Large screens grid system
 // *
+@use "sass:math";
 
 .container {
     width: (($col-width * $col-qty) + ($gutter * ($col-qty - 1)));
-    margin: 0 auto;
-    gap: 0;
-    padding: 0 ($gutter-sides / 2);
-    box-sizing: border-box;
-    justify-items: stretch;
+    padding: 0 math-div($gutter-sides, 2);
 
-    &.l-sp-2 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    &.l-sp-3 {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    &.l-sp-4 {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    &.l-sp-5 {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    &.l-sp-6 {
-        grid-template-columns: repeat(6, 1fr);
+    @for $i from 2 through 6 {
+        &.l-sp-#{$i} {
+            grid-template-columns: repeat(#{$i}, 1fr);
+        }
     }
 
     // Spcial layouts (may leave out for flexibility)
@@ -45,34 +28,8 @@
     &.l-side-l {
         grid-template-columns: 1fr 3fr;
     }
-
-    &.l_1_1_2 {
-        grid-template-columns: 1fr 1fr 2fr;
-    }
 }
 
 .span {
-    padding: 0 ($gutter / 2);
-    box-sizing: border-box;
-    display: flex;
-}
-
-// * Show or hide elements by breakpoint
-.l-hide {
-    display: none;
-}
-
-.l-show-block {
-    display: block;
-}
-
-.l-show-inline {
-    display: inline;
-}
-
-.s-show-block,
-.s-show-block,
-.m-show-inline,
-.m-show-inline {
-    display: none;
+    padding: 0 math.div($gutter, 2);
 }

@@ -10,16 +10,41 @@
 .container {
   display: grid;
   grid-template-rows: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-items: stretch;
+  gap: 0;
 }
 
+.span {
+  box-sizing: border-box;
+  display: flex;
+}
+
+@media (min-width: 720px) {
+  .container.grid-reverse .span:nth-child(1) {
+    order: 6;
+  }
+  .container.grid-reverse .span:nth-child(2) {
+    order: 5;
+  }
+  .container.grid-reverse .span:nth-child(3) {
+    order: 4;
+  }
+  .container.grid-reverse .span:nth-child(4) {
+    order: 3;
+  }
+  .container.grid-reverse .span:nth-child(5) {
+    order: 2;
+  }
+  .container.grid-reverse .span:nth-child(6) {
+    order: 1;
+  }
+}
 @media (min-width: 1140px) {
   .container {
     width: 1032px;
-    margin: 0 auto;
-    gap: 0;
-    padding: 0 0;
-    box-sizing: border-box;
-    justify-items: stretch;
+    padding: 0 math-div(0, 2);
   }
   .container.l-sp-2 {
     grid-template-columns: repeat(2, 1fr);
@@ -48,33 +73,9 @@
   .container.l-side-l {
     grid-template-columns: 1fr 3fr;
   }
-  .container.l_1_1_2 {
-    grid-template-columns: 1fr 1fr 2fr;
-  }
 
   .span {
     padding: 0 12px;
-    box-sizing: border-box;
-    display: flex;
-  }
-
-  .l-hide {
-    display: none;
-  }
-
-  .l-show-block {
-    display: block;
-  }
-
-  .l-show-inline {
-    display: inline;
-  }
-
-  .s-show-block,
-.s-show-block,
-.m-show-inline,
-.m-show-inline {
-    display: none;
   }
 }
 @media (min-width: 1480px) {
@@ -91,14 +92,23 @@
 @media (min-width: 720px) and (max-width: 1139px) {
   .container {
     width: 100%;
-    margin: 0 auto;
-    gap: 0;
+    max-width: 980px;
     padding: 0 0;
-    box-sizing: border-box;
-    justify-items: stretch;
+  }
+  .container.m-sp-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container.m-sp-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
   .container.m-sp-4 {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .container.m-sp-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .container.m-sp-6 {
+    grid-template-columns: repeat(6, 1fr);
   }
   .container.m-wside-r {
     grid-template-columns: 2fr 1fr;
@@ -115,137 +125,23 @@
 
   .span {
     padding: 0 6px;
-    box-sizing: border-box;
-    display: flex;
-  }
-
-  .colr {
-    float: right;
-  }
-
-  .alpha {
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  .omega {
-    margin-right: 0;
-    padding-right: 0;
-  }
-
-  .clear {
-    clear: both;
-  }
-
-  .center {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .m-hide {
-    display: none;
-  }
-
-  .m-show-block {
-    display: block;
-  }
-
-  .m-show-inline {
-    display: inline;
-  }
-
-  .s-show-block,
-.s-show-block,
-.l-show-inline,
-.l-show-inline {
-    display: none;
   }
 }
 @media (min-width: 120px) and (max-width: 719px) {
-  .wrap {
-    overflow: hidden;
-    width: 100%;
-  }
-
   .container {
     width: 100%;
+    max-width: 640px;
     padding: 0 6px;
-    box-sizing: border-box;
-    margin: 0 auto;
   }
-  .container:after {
-    clear: both;
-    content: "";
-    display: block;
+  .container.s-sp-2 {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .container .container {
-    width: 102%;
-    width: calc(100% + 24px);
-    margin-left: -12px;
+  .container.s-sp-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .col12,
-.col11,
-.col10,
-.col9,
-.col8,
-.col7,
-.col6,
-.col5,
-.col4,
-.col3 {
-    margin: 0;
+  .span {
     padding: 0 6px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .col2,
-.col1 {
-    float: left;
-    margin: 0;
-    padding: 0 6px;
-    width: 50%;
-    box-sizing: border-box;
-  }
-
-  .s-full {
-    float: none;
-    margin: 0;
-    padding: 0 6px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .s-half {
-    float: left;
-    margin: 0;
-    padding: 0 6px;
-    width: 50%;
-    box-sizing: border-box;
-  }
-
-  .clear {
-    clear: both;
-  }
-
-  .s-hide {
-    display: none;
-  }
-
-  .s-show-block {
-    display: block;
-  }
-
-  .s-show-inline {
-    display: inline;
-  }
-
-  .m-show-block,
-.m-show-inline,
-.l-show-block,
-.l-show-inline {
-    display: none;
   }
 }
 body {
@@ -291,24 +187,35 @@ body {
   background: white;
 }
 
+h1 {
+  color: #d8531e;
+  font-weight: 300;
+  margin: 0 0 0.25em 0;
+  font-size: 48px;
+}
+
 h2 {
   color: #d8531e;
   font-weight: 300;
-  margin: 0;
-  font-size: 48px;
+  margin: 0 0 0.25em 0;
+  font-size: 36px;
 }
 
 h3 {
   color: #333333;
   font-weight: 300;
   margin: 0;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 32px;
   padding: 12px 0;
 }
 
 p {
   margin: 0 0 21px 0;
+}
+
+.big {
+  font-weight: bold;
+  font-size: 4em;
 }
 
 a {
@@ -325,18 +232,6 @@ section {
   background: #333;
   color: #f6f6f6;
   flex: 1 1 auto;
-}
-@media (min-width: 1140px) {
-  .box {
-    margin-bottom: 24px;
-    padding: 24px;
-  }
-}
-@media (min-width: 1480px) {
-  .box {
-    margin-bottom: 36px;
-    padding: 36px;
-  }
 }
 .box p {
   margin: 0;
@@ -358,73 +253,21 @@ section {
 pre {
   border: 1px solid #cccccc;
   background-color: #f9f9f9;
-  padding: 10px;
+  padding: 12px;
   margin: 0;
   overflow: auto;
 }
 
 @media (min-width: 1140px) {
-  .content {
-    float: left;
-    margin: 0 12px;
-    width: 680px;
+  .box {
+    margin-bottom: 24px;
+    padding: 12px;
   }
 }
 @media (min-width: 1480px) {
-  .content {
-    margin: 0 18px;
-    width: 828px;
-  }
-}
-@media (min-width: 720px) and (max-width: 1139px) {
-  .content {
-    float: left;
-    padding: 0 6px;
-    width: 66.66%;
-    box-sizing: border-box;
-  }
-}
-@media (min-width: 720px) and (max-width: 1139px) {
-  .content {
-    float: left;
-    padding: 0 6px;
-    width: 66.66%;
-    box-sizing: border-box;
-  }
-}
-
-@media (min-width: 1140px) {
-  .sidebar {
-    float: right;
-    margin: 0 12px;
-    width: 328px;
-  }
-}
-@media (min-width: 1480px) {
-  .sidebar {
-    margin: 0 18px;
-    width: 396px;
-  }
-}
-@media (min-width: 720px) and (max-width: 1139px) {
-  .sidebar {
-    float: right;
-    padding: 0 6px;
-    width: 33.33%;
-    box-sizing: border-box;
-  }
-}
-@media (max-width: 720px) {
-  .sidebar {
-    padding: 0 6px;
-    box-sizing: border-box;
-  }
-}
-
-@media (max-width: 720px) {
-  .test {
-    padding: 0 6px;
-    box-sizing: border-box;
+  .box {
+    margin-bottom: 36px;
+    padding: 18px;
   }
 }
 
