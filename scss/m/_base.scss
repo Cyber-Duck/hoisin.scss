@@ -7,7 +7,7 @@
 .container {
     width: 100%;
     max-width: $m-max-width;
-    padding: 0 math.div($gutter-sides, 4);
+    padding: 0 math.div($gutter, 4);
 
     @for $i from 2 through 6 {
         &.m-sp-#{$i} {
