@@ -1,4 +1,7 @@
-// Page title
+// Element name
+@use "../variables/global";
+@use "../variables/colors";
+@use "../mixins";
 
 @include mixins.respond(lg) {
 
