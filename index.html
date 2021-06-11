@@ -9,166 +9,132 @@
     <meta name="robots" content="all">
     <meta name="description" content="A simple responsive front end mini framework written in Sass to kick start your web project.">
     <meta name="keywords" content="Hoisin, sass, scss, responsive, grid, grid system, rwd, framework, css, front end">
-
-	<title>Hoisin.scss by Cyber-Duck</title>
-	<link href='https://fonts.googleapis.com/css?family=Nunito:300|Alegreya:400italic,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Hoisin.scss by Cyber-Duck</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300|Alegreya:400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-	<div class="wrap">
-		
-		<header class="head">
-			<div class="menu-wrap closed">
-				<a href="x" class="btn-menu"><i class="icon-menu-outline"></i><i class="icon-minus-outline"></i> Menu</a>
-				<nav class="menu">
-					<ul>
-						<li><a href="#about"><i class="icon-home-outline"></i> About Hoisin.scss</a></li>
-						<li><a href="#documentation"><i class="icon-doc-text"></i> Documentation</a></li>
-						<li><a href="https://github.com/Cyber-Duck/hoisin.scss" target="_blank"><i class="icon-github-circled"></i> View on Github</a></li>
-						<li><a href="https://github.com/Cyber-Duck/hoisin.scss/zipball/master" target="_blank"><i class="icon-download-outline"></i> Download</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="container">
-				<div class="col12">
-					<div class="logo">
-						<h1><a href="/">Hoisin.scss</a></h1>
-						<p class="hero">A simple responsive front end mini framework written in Sass to kick start your web project</p>
-					</div>
-				</div>
-			</div>
-		</header>
+    <div class="wrap">
+        <header class="head">
+            <div class="menu-wrap closed">
+                <a href="x" class="btn-menu"><i class="icon-menu-outline"></i><i class="icon-minus-outline"></i> Menu</a>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#about">About Hoisin.scss</a></li>
+                        <li><a href="#documentation">Documentation</a></li>
+                        <li><a href="https://github.com/Cyber-Duck/hoisin.scss" target="_blank">View on Github</a></li>
+                        <li><a href="https://github.com/Cyber-Duck/hoisin.scss/zipball/master" target="_blank">Download</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-	</div>
+            <div class="grid grid-narrow">
+                <div class="span">
+                    <div class="logo">
+                        <h1><a href="/">Hoisin.scss</a></h1>
+                        <p class="hero">A simple responsive front end mini framework written in Sass to kick start your web project</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
 
-	<section class="content" id="about">
-		<div class="container">
-			<div class="col12">
-				<h2>About Hoisin.scss</h2>
-			</div>
-			<div class="col6">
-				<p>Hoisin is a very simple responsive front end mini framework made to kick start your web project, written in Sass.</p>
-				<p>This framework was created as an alternative to more complex and bloated front end frameworks, with a focus on organisation, speed and flexibility. We also aim to keep its codebase fresh including new techniques, whilst maintaining good support for the most common browsers.</p>
-				<p>Please note that this framework is not an UI kit and it does not include predefined styles for components like forms, widgets or buttons. We aim to create an organised base from which you can create your own library instead of a one-size-fits-all solution.</p>
-			</div>
-			<div class="col6">
-				<p>Hoisin doesn't have any dependencies other than Sass 3.3, but we have included a basic Gulpfile to get you started on it. You will only need the Sass compiler installed to be able to compile your changes. More information about installing and using Sass can be found on <a href="http://sass-lang.com" target="_blank">their website</a>.</p>
-				<p>We did not include a <em>reset</em> or <em>normalize</em> since we don't require them in our projects. We encourage you to define the styles you need for your project, and leave the non styled elements to the browser. In the case that you still need to use a normalise, just include it at the top of the main stylesheet and make sure you edit this file to fit your project to avoid unnecessary overwriting of rules.</p>
-			</div>
-			<div class="clear"></div>
-			<div class="col6">
-				<h3>Browser support</h3>
-				<p>IE 6+ (Only large breakpoint, using clear elements). Firefox 3.6+, Chrome, Opera, Android 2.3+ and iOS 6+.</p>
-			</div>
-		</div>
-	</section>
-	<section class="content quote" id="quote">
-		<div class="container">
-			<div class="col12">
-				<blockquote>
-					<p>Hoisin's grid system will allow you to create complex layouts easily and the file structure will help you stay organised when coding large scale websites.</p>
-					<p class="author"><a href="http://www.cyber-duck.co.uk/about/ramon-lapenta" target="_blank">Ramon Lapenta</a> &bull; <a href="https://twitter.com/ramono" target="_blank">@ramono</a></p>
-				</blockquote>
-			</div>
-		</div>
-	</section>
-	<section class="content" id="documentation">
-		<div class="container">
-			<div class="col12">
-				<h2>Documentation</h2>
-			</div>
-			<div class="col8">
-				<h3>Configuration</h3>
-				<p>This is done via the vars file. Open the <code>_vars.scss</code> file and add your variables to it, including the size of your base grid. You can add any variables you will be using like colors, font files, sizes, etc.</p>
-				<h3>Installation</h3>
-				<h4>Bower</h4>
-				<pre>$ bower install hoisin.scss</pre>
-				<h4>Manual</h4>
-				<p>Place the <code>scss</code> and <code>css</code> folders in the relevan folder of your proyect. If they need to be separate from each other (like in a Laravel project) you will need to adjust the config variable in the Gulpfile.</p>
-				<h3>File structure</h3>
-				<p>We recommend to create one individual file for each component and save it in the components folder then use <code>@include: 'components/filename';</code> in the main styles file. The same with styles that apply only to individual pages and don't belong to any component can be saved in individual files per page in the pages folder and use <code>@include: 'pages/filename';</code> in the main styles file. You can create as many component or page files as you want.</p>
+    <section class="content" id="about">
+        <div class="grid">
+            <div class="span">
+                <h2>About Hoisin.scss</h2>
+            </div>
+        </div>
 
-			</div>
-			<!--
-			<div class="col4">
-				<div class="box">
-					<ul>
-						<li>css
-							<ul>
-								<li>styles.css, responsive.css, ie.css</li>
-							</ul>
-						</li>
-						<li>scss
-							<ul>
-								<li>large
-									<ul>
-										<li>_base.scss, _home.scss, ...</li>
-									</ul>
-								</li>
-								<li>medium
-									<ul>
-										<li>_base.scss, _home.scss, ...</li>
-									</ul>
-								</li>
-								<li>small
-									<ul>
-										<li>_base.scss, _home.scss, ...</li>
-									</ul>
-								</li>
-								<li>_vars.scss</li>
-								<li>_version.scss</li>
-								<li>style.scss</li>
-								<li>responsive.scss</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		-->
-			<div class="clear"></div>
-			<div class="col8">
-				<h3>Grid system</h3>
+        <div class="grid lg-2 md-2">
+            <div class="span">
+                <div class="content-box">
+                    <p>Hoisin is a very simple responsive front end mini framework made to kick start your web project, written in Sass.</p>
+                    <p>This framework was created as an alternative to more complex and bloated front end frameworks, with a focus on organisation, speed and flexibility. We also aim to keep its codebase fresh including new techniques, whilst maintaining good support for the most common browsers.</p>
+                    <p>Please note that this framework is not an UI kit and it does not include predefined styles for components like forms, widgets or buttons. We aim to create an organised base from which you can create your own library instead of a one-size-fits-all solution.</p>
+                </div>
+            </div>
 
-				<p>By default we use a small desktop 12 column grid with 60px columns and 20px gutters (960gs standard) and a larger desktop grid with 70px columns and 30px gutters. The column spans have simple names like <code>".col4"</code>. There are also some helper classes like <code>".colr"</code> to pull a span to the right, and <code>".pre1"</code> to <code>".pre10"</code> as well as <code>".suf1"</code> to <code>".suf10"</code> for offset spans.</p>
+            <div class="span">
+                <div class="content-box">
+                    <p>Hoisin doesn't have any dependencies other than Sass 3.3, but we have included a basic Gulpfile to get you started on it. You will only need the Sass compiler installed to be able to compile your changes. More information about installing and using Sass can be found on <a href="http://sass-lang.com" target="_blank">their website</a>.</p>
+                    <p>We did not include a <em>reset</em> or <em>normalize</em> since we don't require them in our projects. We encourage you to define the styles you need for your project, and leave the non styled elements to the browser. In the case that you still need to use a normalise, just include it at the top of the main stylesheet and make sure you edit this file to fit your project to avoid unnecessary overwriting of rules.</p>
+                </div>
+            </div>
+        </div>
 
-				<script src="https://gist.github.com/ramono/8244718.js"></script>
-				<p>Tablet and mobile spans can be altered by using extra helper classes depending on the layout requirements, we've included classes for full, half one third and two thirds (widths) which override default column behaviour. We also added a <code>".clear"</code> helper class for browsers that can't clear themselves out.</p>
+        <div class="grid lg-2 md-2">
+            <div class="span">
+                <div class="content-box">
+                    <h3>Browser support</h3>
+                    <p>IE 10+ Firefox, Chrome, Android and iOS 6+.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<p>We have added four common breakpoints in the variables file, you can adjust these to match your content and layout, or even add new breakpoints for more control.</p>
+    <section class="content quote" id="quote">
+        <div class="grid">
+            <div class="span">
+                <blockquote>
+                    <p>Hoisin's grid system will allow you to create complex layouts easily and the file structure will help you stay organised when coding large scale websites.</p>
+                    <p class="author"><a href="http://www.cyber-duck.co.uk/about/ramon-lapenta" target="_blank">Ramon Lapenta</a> &bull; <a href="https://twitter.com/ramono" target="_blank">@ramono</a></p>
+                </blockquote>
+            </div>
+        </div>
+    </section>
 
-				<h4>Example of a typical layout:</h4>
-				<script src="https://gist.github.com/ramono/8244742.js"></script>
+    <section class="content" id="documentation">
+        <div class="grid grid-narrow">
+            <div class="span">
+                <div class="content-box">
+                    <p>A simple responsive mini framework to kick start your web project. It containes a grid system, some mixins and functions and a base file structure to help you organize your styles.</p>
+                    <p><strong>Disclaimer</strong>: This is not a UI Kit, there are no predesigned components.</p>
+                    <p><strong>Note</strong>: We did not include a reset since we believe they are not necessary, we encourage you to define the styles you need for your project, and leave the unstyled elements to the browser.</p>
+                    <h2><a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"></a>Installation</h2>
+                    <p>Place the <code>scss</code> and <code>css</code> folders in the relevan folder of your project and point your compiler to them. Link the generated CSS file to your web pages. That is all.</p>
+                    <h3><a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"></a>Requirements</h3>
+                    <ul>
+                    <li>Requires Dart Sass 1.3 and up</li>
+                    <li>A good understanding of Sass</li>
+                    <li>A basic understanding of the CSS Grid module is helpful</li>
+                    <li>We recommend installing our front end build system for easy compiling of Sass.</li>
+                    </ul>
+                    <h2><a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"></a>Usage</h2>
+                    <p>The variables folder contain somoe basic files for colors, global variables and the grid system, feel free to modify them to fit your project, and to add new files with module specific variables.</p>
+                    <h3><a id="user-content-file-structure" class="anchor" aria-hidden="true" href="#file-structure"></a>File structure</h3>
+                    <p>We recommend to create individual files for elements and components and save them in the <code>elements</code> and <code>components</code> folders respectively. Be sure to name these files using the <code>_filename</code> pattern to avoid Sass compiling them separately, and  remember to add the respective <code>@use</code> statements on these files to have access to variables or mixins.</p>
+                    <p>Then add <code>@use: 'elements/filename';</code> or/and <code>@use: 'components/filename';</code> in the main styles file to import them into your main stylesheet.</p>
+                    <p>The same applies to styles related to specific pages and don't belong to any component, these can be saved in individual files per page in the <code>pages</code> folder and add <code>@use: 'pages/filename';</code> in the main styles file.</p>
+                    <p>You can create as many element, component or page files as you want.</p>
+                    <h3><a id="user-content-grid" class="anchor" aria-hidden="true" href="#grid"></a>Grid</h3>
+                    <p>By default we use a CSS Grid setup with 1 to 6 columns and 24px gaps on small devices, 36px on larger desktop screens. All the values of the grid are configurable in the <code>variables/_grid.scss</code> file.</p>
+                    <p>There are helper classes to remove grid gaps, reverse items placement, and make narrow or wider columns, and also to create some predefined common layouts like content/sidebar.</p>
+                    <h4><a id="user-content-example-of-a-typical-simple-layout-with-content-and-sidebar" class="anchor" aria-hidden="true" href="#example-of-a-typical-simple-layout-with-content-and-sidebar"></a>Example of a typical simple layout with content and sidebar:</h4>
+                    <script src="https://gist.github.com/ramono/58dbdb0db2080e23aab598ac08d8618c.js"></script>
+                    <p>See <a href="samples.html">samples</a> file for more examples.</p>
+                    <h3><a id="user-content-mixins" class="anchor" aria-hidden="true" href="#mixins"></a>Mixins</h3>
+                    <p>We have included a mixins file with all common mixins we use everyday. This file doesn't output anything by itself, so it's safe to include in the main styles file so the mixins are always available. Please check the <code>_mixins.scss</code> file for usage information about each one of them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<p>See <a href="samples.html">samples.html</a> file for more examples.</p>
-
-				<h3>Mixins</h3>
-				<p>We have included a mixins file with all common mixins we use everyday. This file doesn't output anything by itself, so it's safe to include in the main styles file so the mixins are always available. Please check the <code>_mixins.scss</code> file for usage information about each one of them.</p>
-				
-				<h3>Functions</h3>
-				<p>We have also included a functions file with a few functions we use in every project. This file doesn't output anything by itself either, so it's always included in the main styles file so the functions are available across all components and pages. Please check the _functions.scss file for usageinformation about each one of them.</p>
-				
-			</div>
-		</div>
-	</section>
-
-      <footer class="foot">
-      	<div class="container">
-      		<div class="col12">
-		        <p>This project is maintained by <a href="https://github.com/Cyber-Duck">Cyber-Duck</a></p>
-		        <p>Hosted on GitHub Pages</p>
-		        <p>
-		        	<a href="https://github.com/Cyber-Duck/hoisin.scss" class="btn" target="_blank"><i class="icon-github-circled"></i>View on Github</a>
-		        	<a href="http://twitter.com/share?text=Check%20out%20this%20responsive%20mini%20framework&url=http://cyber-duck.github.io/hoisin.scss/&hashtags=rwd,scss,css" class="btn" target="_blank"><i class="icon-twitter-circled"></i>Share on Twitter</a> 
-		        	<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://hoisin.scss&p[images][0]=&p[title]=Hoisin.scss&p[summary]=Check%20out%20this%20responsive%20mini%20framework" class="btn" target="_blank"><i class="icon-facebook-circled"></i>Post to Facebook</a> 
-		        </p>
-      		</div>
-      	</div>
-      </footer>				
-
-	
-	<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
-	<script>window.jQuery || document.write('<script src="assets/js/jquery-2.0.3.min.js"><\/script>')</script>
-
-	<script src="js/scripts.js"></script>
+    <footer class="foot">
+        <div class="grid">
+            <div class="span">
+                <div class="content-box">
+                    <p>This project is maintained by <a href="https://github.com/Cyber-Duck">Cyber-Duck</a></p>
+                    <p>Hosted on GitHub Pages</p>
+                    <p>
+                        <a href="https://github.com/Cyber-Duck/hoisin.scss" class="btn" target="_blank" rel="noopener noreferrer">View on Github</a>
+                        <a href="http://twitter.com/share?text=Check%20out%20this%20responsive%20mini%20framework&url=http://cyber-duck.github.io/hoisin.scss/&hashtags=rwd,scss,css" class="btn" target="_blank" rel="noopener noreferrer">Share on Twitter</a> 
+                        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://hoisin.scss&p[images][0]=&p[title]=Hoisin.scss&p[summary]=Check%20out%20this%20responsive%20mini%20framework" class="btn" target="_blank" rel="noopener noreferrer">Post to Facebook</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

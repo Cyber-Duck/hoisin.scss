@@ -1,0 +1,19 @@
+// *
+// * Variables
+// * Define values for common and globally used elements
+// *
+
+// Typography
+$body-font:                     'Nunito', sans-serif;
+$title-font:                    'Alegreya', serif;
+
+// Paths
+$img:                           '../img/';
+$sprite:                        '../img/sprite.png';
+$fonts:                         '../fonts/';
+
+// Breakpoints
+$bp-xl:                         1480px;
+$bp-l:                          1180px;
+$bp-m:                          720px;
+$bp-s:                          120px;

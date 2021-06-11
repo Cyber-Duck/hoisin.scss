@@ -1,14 +1,20 @@
 // Component name
+@use "../variables/global";
+@use "../variables/colors";
+@use "../mixins";
 
-// @media (min-width: $bp-l) {
-
-
-// }
-// @media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
-
+// @include mixins.respond(lg) {
 
 // }
-// @media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
 
+// @include mixins.respond(xl) {
+
+// }
+
+// @include mixins.respond(md) {
+
+// }
+
+// @include mixins.respond(sm) {
 
 // }

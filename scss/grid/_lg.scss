@@ -1,0 +1,53 @@
+// *
+// * Grid system
+// * Define the properties of the grid elements for small desktop devices
+// *
+@use "sass:math";
+@use "../variables/global";
+@use "../variables/grid";
+@use "../mixins";
+
+@include mixins.respond(lg) {
+    .grid {
+        width: grid.$grid-width;
+        gap: grid.$gutter;
+        @if(grid.$gutter-sides > 0) {
+        padding: 0 math.div(grid.$gutter-sides, 2);
+        }
+
+        &.grid-tight {
+            gap: 0;
+        }
+
+        &.grid-narrow {
+            width: grid.$grid-narrow-width;
+        }
+
+        &.grid-wide {
+            width: grid.$grid-wide-width;
+        }
+
+        @for $i from 2 through grid.$lg-max-spans {
+            &.lg-#{$i} {
+                grid-template-columns: repeat(#{$i}, 1fr);
+            }
+        }
+
+        // Spcial layouts (may leave out for flexibility)
+        &.lg-wide-sidebar-right {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        &.lg-wide-sidebar-left {
+            grid-template-columns: 1fr 2fr;
+        }
+
+        &.lg-sidebar-right {
+            grid-template-columns: 3fr 1fr;
+        }
+
+        &.lg-sidebar-left {
+            grid-template-columns: 1fr 3fr;
+        }
+    }
+}

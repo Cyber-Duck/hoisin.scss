@@ -1,6 +1,11 @@
+// Body
+@use "../variables/global" as *;
+@use "../variables/colors" as *;
+@use "../mixins";
+
 // Main navigation
 .head {
-	height: 220px;
+	padding: 24px 0;
 	color: $white;
 	position: relative;
 	background: {
@@ -10,7 +15,7 @@
 .logo {
 	padding: 10px 0;
 	h1 {
-		margin: 25px auto 10px auto;
+		margin: 0 auto 24px auto;
 		width: 240px;
 		height: 50px;
 	}
@@ -36,7 +41,7 @@
 .menu-wrap {
 	height: 50px;
 	width: 100%;
-	background-color: transparentize($white, .1);
+	background-color: rgba($white, 0.75);
 	position: fixed;
 	top: 0;
 	z-index: 11;
@@ -122,7 +127,7 @@
 			}
 			.menu {
 				height: 0;
-				@include transition(all 250ms ease-out);
+				transition: all 250ms ease-out;
 			}
 		}
 	}
@@ -160,11 +165,9 @@
 		height: 173px;
 		width: 100%;
 		padding: 0;
-		overflow: hidden;
-		@include transition(all 250ms ease-out);
+		transition: all 250ms ease-out;
 		ul {
 			background-color: $white;
-			border-bottom: 1px solid $blue;
 			margin: 2px 0 0 0;
 			padding: 0;
 			height: 170px;
@@ -177,7 +180,7 @@
 			margin: 0;
 			padding: 0;
 			width: 100%;
-			@include box-sizing();
+			box-sizing: border-box;
 		}
 		a {
 			color: $title;

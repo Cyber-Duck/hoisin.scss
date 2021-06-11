@@ -1,18 +1,25 @@
-@import 'version';
-@import 'vars';
-@import 'functions';
-@import 'mixins';
-@import 'grid';
+@forward "variables/global";
+
+@use 'version';
+@use 'grid';
+
+// Single elements
+// @use 'elements/element';
 
 // Common components
-// @import 'components/component';
-@import 'components/body';
-@import 'components/head';
+// @use 'components/component';
+@use 'components/body'; 
+@use 'components/header'; 
 
-// This is just Hoisin's sample page styles
-// You can delete this import and delete the _sample.scss
-// file for your project.
-@import 'components/sample'; 
+/* 
+/* This is just Hoisin's sample page styles
+/* You can remove this and delete the _sample.scss
+/* file for your project.
+*/
+@use 'components/sample'; 
 
 // Pages
-// @import 'pages/page';
+// @use 'pages/page';
+
+// Plugins
+// @use 'plugins/plugin';

@@ -1,8 +1,13 @@
 // Body
+@use "../variables/global" as *;
+@use "../variables/colors" as *;
+@use "../mixins";
+
+// Body
 body {
 	color: $text;
 	margin: 0;
-	padding: 50px 0 0 0;
+	padding: 0;
 	font-family: $body-font;
 	font-size: 18px;
     line-height: 1.45;
@@ -11,7 +16,7 @@ body {
 }
 
 .content {
-	padding: 40px 0;
+    padding: 50px 0;
 }
 
 h1 {
@@ -74,9 +79,10 @@ pre {
 	color: $white;
 	text-decoration: none;
 	border-radius: 4px;
-	@include box-sizing();
+	box-sizing: border-box;
+
 	&:hover {
-		background-color: darken($text, 5%);
+		background-color: mix($black, $text, 5%);
 	}
 }
 
@@ -93,6 +99,10 @@ pre {
 }
 .nesting .nesting {
 	background: rgba(223,251,191,0.30);
+}
+
+.content-box {
+    margin-bottom: 24px;
 }
 
 .quote {
@@ -131,48 +141,20 @@ pre {
 	border-radius: 10px;
 }
 
-@media (min-width: $bp-l) {
-
-	body {
-		font-size: 18px;
-	}
-	.box {
-		margin: 0 0 20px 0;
-	}
+@include mixins.respond(lg) {
+    .wrap {
+        padding-top: 50px;
+    }
 }
 
-@media (min-width: $bp-xl) {
+// @include mixins.respond(xl) {
 
-	body {
-		font-size: 20px;
-	}
-	.box {
-		margin: 0 0 30px 0;
-	}
+// }
 
-}
-@media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
+// @include mixins.respond(md) {
 
-	body {
-		font-size: 16px;
-	}
+// }
 
-}
-@media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
-	
-	body {
-		font-size: 16px;
-	}
-	.content {
-		padding: 20px 0 40px 0;
-	}
-	h2 {
-		font-size: 2em;
-	}
-	.btn {
-		width: 100%;
-		margin: 0 0 5px 0;
-		text-align: center;
-	}
+// @include mixins.respond(sm) {
 
-}
+// }

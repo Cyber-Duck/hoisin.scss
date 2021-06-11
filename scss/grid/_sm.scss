@@ -1,0 +1,36 @@
+// *
+// * Grid system
+// * Define the properties of the grid elements for small or mobile devices
+// *
+@use "sass:math";
+@use "../variables/global";
+@use "../variables/grid";
+@use "../mixins";
+
+@include mixins.respond(sm) {
+    .grid {
+        width: grid.$sm-grid-width;
+        gap: 0 math.div(grid.$gutter, 2);
+        @if(grid.$sm-gutter-sides > 0) {
+        padding: 0 math.div(grid.$sm-gutter-sides, 2);
+        }
+
+        &.grid-tight {
+            gap: 0;
+        }
+
+        &.grid-narrow {
+            width: grid.$sm-grid-narrow-width;
+        }
+
+        &.grid-wide {
+            width: grid.$sm-grid-wide-width;
+        }
+
+        @for $i from 2 through grid.$sm-max-spans {
+            &.sm-#{$i} {
+                grid-template-columns: repeat(#{$i}, 1fr);
+            }
+        }
+    }
+}

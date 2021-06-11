@@ -1,0 +1,30 @@
+// *
+// * Grid system
+// * Define the properties of the grid elements for larger desktop devices
+// *
+@use "sass:math";
+@use "../variables/global";
+@use "../variables/grid";
+@use "../mixins";
+
+@include mixins.respond(xl) {
+    .grid {
+        width: grid.$xl-grid-width;
+        gap: grid.$xl-gutter;
+        @if(grid.$xl-gutter-sides > 0) {
+        padding: 0 math.div(grid.$xl-gutter-sides, 2);
+        }
+
+        &.grid-tight {
+            gap: 0;
+        }
+
+        &.grid-narrow {
+            width: grid.$xl-grid-narrow-width;
+        }
+
+        &.grid-wide {
+            width: grid.$xl-grid-wide-width;
+        }
+    }
+}

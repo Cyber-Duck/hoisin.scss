@@ -1,117 +1,335 @@
+// Samples file
 @use "sass:math";
+@use "../variables/global" as *;
+@use "../variables/grid";
+@use "../mixins";
 
-// Component name
-	body {
-		color: #666;
-		margin: 0;
-		padding: 50px 0;
-		font-family: "Roboto Condensed", sans-serif;
-		font-size: 18px;
-		font-weight: 300;
-		background: white;
-	}
-	h2 {
-		color: #a53e16;
-		font-weight: 300;
-		margin: 0;
-		font-size: 48px;
-	}
-	h3 {
-		color: #333;
-		font-weight: 300;
-		margin: 0;
-		font-size: 36px;
-		line-height: 36px;
-		padding: 12px 0; 
-	}
-	p {
-		margin: 0 0 21px 0;
-	}
-	a {
-		color: #a53e16;
-	}
-	section {
-		margin-bottom: 50px;
-	}
-	.box {
-		margin: 0 0 20px 0;
-		padding: 10px;
-		background: #F5F5F5;
-	}
-	.box p {
-		margin: 0;
-	}
-	.code {
-		font-family: "Courier New", serif;
-		font-size: 14px;
-	}
-	.nesting {
-		background-color: #FFFFDF;
-		margin-bottom: 20px;
-	}
-	.nesting .nesting {
-		background-color: #FFE7DF;
-	}
-
-$red: red;
-.red-dark {
-  color: dark($red, 50%);
-}
-.red-light {
-  color: light($red, 70%);
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
 
-@media (min-width: $bp-l) {
-  	.cont {
-		width: span(8);
-    	float: left;
-    	margin: math.div($gutter, 2);
-  	}
-	.sidebar {
-		width: span(4);
-		float: right;
-		margin: math.div($gutter, 2);
-	}
+h1 {
+    color: #d8531e;
+    font-weight: 300;
+    margin: 0 0 0.25em 0;
 }
-@media (min-width: $bp-xl) {
-	
-	.box {
-		margin-bottom: 30px;
-	}
-  	.cont {
-    	width: span-xl(8);
-    	margin: 0 math.div($xl-gutter, 2);
-	}
-	.sidebar {
-		width: span-xl(4);
-		margin: 0 math.div($xl-gutter, 2);
-	}
-}
-@media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
 
-	.box {
-		margin-bottom: 10px;
-	}
-	.box {
-		margin-bottom: 10px;
-	}
-	.cont {
-		width: span-fw(m-2_3);
-		float: left;
-		padding: 0 ($gutter / 4);
-		@include box-sizing;
-	}
-	.sidebar {
-		width: span-fw(m-1_3);
-		float: right;
-		padding: math.div($gutter, 4);
-		@include box-sizing;
-	}
+h2 {
+    color: #d8531e;
+    font-weight: 300;
+    margin: 0 0 0.25em 0;
 }
-@media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
-	
-	.box {
-		margin-bottom: 10px;
-	}
 
+h3 {
+    color: #333333;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 0 0.25em 0; 
+}
+
+p {
+    margin: 0 0 21px 0;
+
+    &:last-of-type {
+        margin: 0;
+    }
+}
+
+.txtc {
+    text-align: center;
+}
+
+.txtr {
+    text-align: right;
+}
+
+.big {
+    font-weight: bold;
+    font-size: 4em;
+}
+
+a {
+    color: #d8531e;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.box {
+    margin: 0 0 math.div(grid.$gutter, 2) 0;
+    padding: grid.$gutter;
+    background: #0c353c;
+    color: #f6f6f6;
+    flex: 1 1 auto;
+
+    p {
+        margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #fff;
+    }
+}
+
+
+.code {
+    font-family: 'Courier New', serif;
+    font-size: 0.9em;
+}
+
+.nesting {
+    background-color: #ffffdf;
+    margin-bottom: 20px;
+
+    .nesting {
+        background-color: #ffe7df;
+    }
+}
+
+pre {
+    border: 1px solid #cccccc;
+    background-color: #f9f9f9;
+    padding: math.div(grid.$gutter, 2);
+    margin: 0;
+    overflow: auto;
+}
+
+article {
+    padding: grid.$gutter;
+    color: #fff;
+    margin-bottom: math.div(grid.$gutter, 2);
+
+    p {
+        margin: 0;
+    }
+}
+
+.sp1 {
+    background-color: #21492d;
+    color: #fff;
+
+    h3 {
+        color: #fff;
+    }
+}
+
+.sp2 {
+    background-color: #0c4336;
+    color: #fff;
+
+    h3 {
+        color: #fff;
+    }
+}
+
+.sp3 {
+    background-color: #033c3c;
+    color: #fff;
+
+    h3 {
+        color: #fff;
+    }
+}
+
+.sp4 {
+    background-color: #0c353c;
+    color: #fff;
+
+    h3 {
+        color: #fff;
+    }
+}
+
+.sp5 {
+    background-color: #182d37;
+    color: #fff;
+
+    h3 {
+        color: #fff;
+    }
+}
+
+.sp6 {
+    background-color: #101D24;
+    color: #fff;
+
+    h3 {
+        color: #fff;
+    }
+}
+
+.grey {
+    padding: 24px 0;
+    background-color: #f5f5f5;
+}
+
+@include mixins.respond(lg) {
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 2.4em;
+    }
+
+    h2 {
+        font-size: 1.86em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    .box {
+        margin-bottom: grid.$gutter;
+    }
+
+    article {
+        margin-bottom: grid.$gutter;
+    }
+
+    .gradient {
+        background: #21492d;
+        background: linear-gradient(90deg, #21492d 0%, #21492d 50%, #182d37 50%, #182d37 100%);
+
+        article {
+            margin: 0;
+        }
+
+        .sp1 {
+            padding-right: 48px;
+            padding-left: 0;
+        }
+
+        .sp5 {
+            padding-left: 48px;
+            padding-right: 0;
+        }
+    }
+
+    .content-area {
+        padding: 0 0 0 48px;
+    }
+
+    .grid-reverse {
+        .content-area {
+            padding: 0 48px 0 0;
+        }
+    }
+}
+
+@include mixins.respond(xl) {
+    body {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .box {
+        margin-bottom: grid.$xl-gutter;
+        padding: grid.$xl-gutter;
+    }
+    
+    article {
+        padding: grid.$xl-gutter;
+        margin-bottom: grid.$xl-gutter;
+    }
+}
+
+@include mixins.respond(md) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .row-tight {
+        article {
+            margin-bottom: 0;
+        }
+    }
+
+
+    .gradient {
+        background: #21492d;
+        background: linear-gradient(90deg, #21492d 0%, #21492d 50%, #182d37 50%, #182d37 100%);
+
+        article {
+            margin: 0;
+        }
+
+        .sp1 {
+            padding-right: 24px;
+            padding-left: 0;
+        }
+
+        .sp5 {
+            padding-left: 24px;
+            padding-right: 0;
+        }
+    }
+
+    .content-area {
+        padding: 0 0 0 24px;
+    }
+
+    .grid-reverse {
+        .content-area {
+            padding: 0 24px 0 0;
+        }
+    }
+}
+
+@include mixins.respond(sm) {
+    body {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .grid-tight {
+        article {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+    }
+
+    .content-area {
+        padding: 24px;
+    }
 }
