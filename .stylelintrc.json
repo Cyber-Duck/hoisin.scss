@@ -8,7 +8,7 @@
     "length-zero-no-unit": true,
     "unit-case": "lower",
     "unit-no-unknown": true,
-    "unit-whitelist": ["em", "rem", "%", "px"],
+    "unit-whitelist": ["em", "rem", "%", "px", "vh", "vw"],
     "value-keyword-case": "lower",
     "value-no-vendor-prefix": true,
     "value-list-comma-space-after": "always",

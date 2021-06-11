@@ -1,148 +1,487 @@
 /*
  * Hoisin.scss
  * CSS responsive framework boilerplate
- * Create your own grids, plugin anything
- * Version: 0.9.18
+ * Create easy grid layouts, plugin anything
+ * Version: 2.0.1
  * Created by: Cyber-Duck Ltd <info@cyber-duck.co.uk>,
  *             Ramon Lapenta <me@ramonlapenta.com>
  *
  */
-.container {
+.grid {
   display: grid;
   grid-template-rows: auto;
   margin: 0 auto;
   box-sizing: border-box;
   justify-items: stretch;
-  gap: 0;
 }
 
 .span {
   box-sizing: border-box;
   display: flex;
+  padding: 0;
+}
+.span.span-middle {
+  align-items: center;
 }
 
 @media (min-width: 720px) {
-  .container.grid-reverse .span:nth-child(1) {
+  .grid.grid-reverse > *:nth-child(1) {
     order: 6;
   }
-  .container.grid-reverse .span:nth-child(2) {
+  .grid.grid-reverse > *:nth-child(2) {
     order: 5;
   }
-  .container.grid-reverse .span:nth-child(3) {
+  .grid.grid-reverse > *:nth-child(3) {
     order: 4;
   }
-  .container.grid-reverse .span:nth-child(4) {
+  .grid.grid-reverse > *:nth-child(4) {
     order: 3;
   }
-  .container.grid-reverse .span:nth-child(5) {
+  .grid.grid-reverse > *:nth-child(5) {
     order: 2;
   }
-  .container.grid-reverse .span:nth-child(6) {
+  .grid.grid-reverse > *:nth-child(6) {
     order: 1;
   }
 }
-@media (min-width: 1140px) {
-  .container {
-    width: 1032px;
-    padding: 0 math-div(0, 2);
+@media (min-width: 1180px) {
+  .grid {
+    width: 1000px;
+    gap: 24px;
   }
-  .container.l-sp-2 {
+  .grid.grid-tight {
+    gap: 0;
+  }
+  .grid.grid-narrow {
+    width: 820px;
+  }
+  .grid.grid-wide {
+    width: 1160px;
+  }
+  .grid.lg-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .container.l-sp-3 {
+  .grid.lg-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .container.l-sp-4 {
+  .grid.lg-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .container.l-sp-5 {
+  .grid.lg-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .container.l-sp-6 {
+  .grid.lg-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .container.l-wside-r {
+  .grid.lg-wide-sidebar-right {
     grid-template-columns: 2fr 1fr;
   }
-  .container.l-wside-l {
+  .grid.lg-wide-sidebar-left {
     grid-template-columns: 1fr 2fr;
   }
-  .container.l-side-r {
+  .grid.lg-sidebar-right {
     grid-template-columns: 3fr 1fr;
   }
-  .container.l-side-l {
+  .grid.lg-sidebar-left {
     grid-template-columns: 1fr 3fr;
-  }
-
-  .span {
-    padding: 0 12px;
   }
 }
 @media (min-width: 1480px) {
-  .container {
-    width: 1260px;
-    gap: 0;
-    padding: 0 0;
+  .grid {
+    width: 1180px;
+    gap: 36px;
   }
-
-  .span {
-    padding: 0 18px;
+  .grid.grid-tight {
+    gap: 0;
+  }
+  .grid.grid-narrow {
+    width: 980px;
+  }
+  .grid.grid-wide {
+    width: 1460px;
   }
 }
-@media (min-width: 720px) and (max-width: 1139px) {
-  .container {
-    width: 100%;
-    max-width: 980px;
-    padding: 0 6px;
+@media (min-width: 720px) and (max-width: 1179px) {
+  .grid {
+    width: 90%;
+    gap: 0 12px;
   }
-  .container.m-sp-2 {
+  .grid.grid-tight {
+    gap: 0;
+  }
+  .grid.md-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .container.m-sp-3 {
+  .grid.md-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .container.m-sp-4 {
+  .grid.md-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .container.m-sp-5 {
+  .grid.md-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .container.m-sp-6 {
+  .grid.md-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .container.m-wside-r {
+  .grid.grid-narrow {
+    width: 80%;
+  }
+  .grid.grid-wide {
+    width: 100%;
+  }
+  .grid.md-wide-sidebar-right {
     grid-template-columns: 2fr 1fr;
   }
-  .container.m-wside-l {
+  .grid.md-wide-sidebar-left {
     grid-template-columns: 1fr 2fr;
   }
-  .container.m-side-r {
+  .grid.md-sidebar-right {
     grid-template-columns: 3fr 1fr;
   }
-  .container.m-side-l {
+  .grid.md-sidebar-left {
     grid-template-columns: 1fr 3fr;
   }
-
-  .span {
-    padding: 0 6px;
-  }
 }
-@media (min-width: 120px) and (max-width: 719px) {
-  .container {
-    width: 100%;
-    max-width: 640px;
-    padding: 0 6px;
+@media (max-width: 720px) {
+  .grid {
+    width: 92%;
+    gap: 0 12px;
   }
-  .container.s-sp-2 {
+  .grid.grid-tight {
+    gap: 0;
+  }
+  .grid.grid-narrow {
+    width: 80%;
+  }
+  .grid.grid-wide {
+    width: 100%;
+  }
+  .grid.sm-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .container.s-sp-3 {
+  .grid.sm-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 
-  .span {
-    padding: 0 6px;
+body {
+  color: #666666;
+  margin: 0;
+  padding: 60px 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  background: white;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+h1 {
+  color: #d8531e;
+  font-weight: 300;
+  margin: 0 0 0.25em 0;
+}
+
+h2 {
+  color: #d8531e;
+  font-weight: 300;
+  margin: 0 0 0.25em 0;
+}
+
+h3 {
+  color: #333333;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 0.25em 0;
+}
+
+p {
+  margin: 0 0 21px 0;
+}
+p:last-of-type {
+  margin: 0;
+}
+
+.txtc {
+  text-align: center;
+}
+
+.txtr {
+  text-align: right;
+}
+
+.big {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+a {
+  color: #d8531e;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.box {
+  margin: 0 0 12px 0;
+  padding: 24px;
+  background: #0c353c;
+  color: #f6f6f6;
+  flex: 1 1 auto;
+}
+.box p {
+  margin: 0;
+}
+.box h1,
+.box h2,
+.box h3 {
+  color: #fff;
+}
+
+.code {
+  font-family: "Courier New", serif;
+  font-size: 0.9em;
+}
+
+.nesting {
+  background-color: #ffffdf;
+  margin-bottom: 20px;
+}
+.nesting .nesting {
+  background-color: #ffe7df;
+}
+
+pre {
+  border: 1px solid #cccccc;
+  background-color: #f9f9f9;
+  padding: 12px;
+  margin: 0;
+  overflow: auto;
+}
+
+article {
+  padding: 24px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+article p {
+  margin: 0;
+}
+
+.sp1 {
+  background-color: #21492d;
+  color: #fff;
+}
+.sp1 h3 {
+  color: #fff;
+}
+
+.sp2 {
+  background-color: #0c4336;
+  color: #fff;
+}
+.sp2 h3 {
+  color: #fff;
+}
+
+.sp3 {
+  background-color: #033c3c;
+  color: #fff;
+}
+.sp3 h3 {
+  color: #fff;
+}
+
+.sp4 {
+  background-color: #0c353c;
+  color: #fff;
+}
+.sp4 h3 {
+  color: #fff;
+}
+
+.sp5 {
+  background-color: #182d37;
+  color: #fff;
+}
+.sp5 h3 {
+  color: #fff;
+}
+
+.sp6 {
+  background-color: #101D24;
+  color: #fff;
+}
+.sp6 h3 {
+  color: #fff;
+}
+
+.grey {
+  padding: 24px 0;
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 1180px) {
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 2.4em;
+  }
+
+  h2 {
+    font-size: 1.86em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  .box {
+    margin-bottom: 24px;
+  }
+
+  article {
+    margin-bottom: 24px;
+  }
+
+  .gradient {
+    background: #21492d;
+    background: linear-gradient(90deg, #21492d 0%, #21492d 50%, #182d37 50%, #182d37 100%);
+  }
+  .gradient article {
+    margin: 0;
+  }
+  .gradient .sp1 {
+    padding-right: 48px;
+    padding-left: 0;
+  }
+  .gradient .sp5 {
+    padding-left: 48px;
+    padding-right: 0;
+  }
+
+  .content-area {
+    padding: 0 0 0 48px;
+  }
+
+  .grid-reverse .content-area {
+    padding: 0 48px 0 0;
   }
 }
+@media (min-width: 1480px) {
+  body {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .box {
+    margin-bottom: 36px;
+    padding: 36px;
+  }
+
+  article {
+    padding: 36px;
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 720px) and (max-width: 1179px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .row-tight article {
+    margin-bottom: 0;
+  }
+
+  .gradient {
+    background: #21492d;
+    background: linear-gradient(90deg, #21492d 0%, #21492d 50%, #182d37 50%, #182d37 100%);
+  }
+  .gradient article {
+    margin: 0;
+  }
+  .gradient .sp1 {
+    padding-right: 24px;
+    padding-left: 0;
+  }
+  .gradient .sp5 {
+    padding-left: 24px;
+    padding-right: 0;
+  }
+
+  .content-area {
+    padding: 0 0 0 24px;
+  }
+
+  .grid-reverse .content-area {
+    padding: 0 24px 0 0;
+  }
+}
+@media (max-width: 720px) {
+  body {
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .grid-tight article {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  .content-area {
+    padding: 24px;
+  }
+}
+/* 
+/* This is just Hoisin's sample page styles
+/* You can remove this and delete the _sample.scss
+/* file for your project.
+*/
 
 /*# sourceMappingURL=style.css.map */

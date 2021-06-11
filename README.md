@@ -1,67 +1,56 @@
 hoisin.scss
 ===========
 
-A simple responsive mini framework to kick start your project, written in Sass. Please note that this project does not include any predefined styling or premade components. We aim to create an organised base from you can create your own library instead of a one-size-fits-all solution.
+A simple responsive mini framework to kick start your web project. It containes a grid system, some mixins and functions and a base file structure to help you organize your styles.
 
-We did not include a reset since we believe they are not necessary, we encourage you to define the styles you need for your project, and leave the unstyled elements to the browser.
+**Disclaimer**: This is not a UI Kit, there are no predesigned components.
+
+**Note**: We did not include a reset since we believe they are not necessary, we encourage you to define the styles you need for your project, and leave the unstyled elements to the browser.
 
 ## Installation
-Place the `scss` and `css` folders in the relevan folder of your Project and set up your build system to compile from there, then link your compiled CSS to your templates.
+
+Place the `scss` and `css` folders in the relevan folder of your project and point your compiler to them. Link the generated CSS file to your web pages. That is all.
 
 ### Requirements
-* Should work with all Dart Sass 1.3 compatible preprocessors. 
+* Requires Dart Sass 1.3 and up 
+* A good understanding of Sass
+* A basic understanding of the CSS Grid module is helpful
 * We recommend installing our front end build system for easy compiling of Sass.
 
 ## Usage
-Open the `_vars.scss` file and add your variables to it, including the size of your base grid if you need anything different than the standard. You can add any variables you will be using like colors, font files, sizes, etc. Feel free to use Sass maps as well.
+The variables folder contain somoe basic files for colors, global variables and the grid system, feel free to modify them to fit your project, and to add new files with module specific variables.
 
 ### File structure
-We recommend to create one individual file for each component and save it in the `components` folder then use `@include: 'components/filename';` in the main styles file. The same with styles that apply only to individual pages and don't belong to any component can be saved in individual files per page in the `pages` folder and use `@include: 'pages/filename';` in the main styles file. You can create as many component or page files as you want.
+We recommend to create individual files for elements and components and save them in the `elements` and `components` folders respectively. Be sure to name these files using the `_filename` pattern to avoid Sass compiling them separately, and  remember to add the respective `@use` statements on these files to have access to variables or mixins.
 
-	// Grid
-	$gutter:	20px; // Width of gutters
+Then add `@use: 'elements/filename';` or/and `@use: 'components/filename';` in the main styles file to import them into your main stylesheet.
 
-	// Breakpoints
-	$bp-xl: 	1480px;
-	$bp-l: 		1140px;
-	$bp-m: 		720px;
-	$bp-s: 		120px;
+The same applies to styles related to specific pages and don't belong to any component, these can be saved in individual files per page in the `pages` folder and add `@use: 'pages/filename';` in the main styles file. 
 
+You can create as many element, component or page files as you want.
 
 ### Grid
-By default we use CSS Grid module with multiple divisions (2, 3, 4, 5 and 6). The column spans adapt to their container in equal sizes, except when using helper classes to create common layouts with sidebars. Please note you can add any new layouts by creating project specific class names.
+By default we use a CSS Grid setup with 1 to 6 columns and 24px gaps on small devices, 36px on larger desktop screens. All the values of the grid are configurable in the `variables/_grid.scss` file.
 
-#### Nested grids
-Please note the use of `.container` is currently only supported in the main level grid, as we believe nested layouts work better using flexbox and other project specific solutions.
+There are helper classes to remove grid gaps, reverse items placement, and make narrow or wider columns, and also to create some predefined common layouts like content/sidebar.
 
-#### Example of a typical simple layout:
+#### Example of a typical simple layout with content and sidebar:
 
-	<header class="container l-side-l m-side-l">
-	    <div class="span">
-		<div class="logo">
-
+	<div class="grid lg-sidebar-right md-sidebar-right">
+		<div class="span">
+			<div class="box code">
+				Main content
+			</div>
 		</div>
-	    </div>
-	    <div class="span">
-		<nav>
-
-		</nav>
-	    </div>
-	</header>
-
-	<div class="container l-side-l m-side-l">
-	    <div class="span">
-		<p>Your content here</p>
-	    </div>
-	    <div class="span">
-		<p>Your sidebar here</p>
-	    </div>
-	<div>
+		<aside class="span">
+			<div class="box code">
+				Sidebar
+			</div>
+		</aside>
+	</div>
 
 See index.html file for more layout examples and combinations.
 
 ### Mixins
 We have included a mixins file with all common mixins we use everyday. This file doesn't output anything by itself, so it's safe to include in the main styles file so the mixins are always available. Please check the `_mixins.scss` file for usage information about each one of them.
 
-### Functions
-We have also included a functions file with a few functions we use in every project. This file doesn't output anything by itself either, so it's always included in the main styles file so the functions are available across all components and pages. Please check the `_functions.scss` file for usageinformation about each one of them.

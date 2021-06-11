@@ -1,0 +1,37 @@
+// *
+// * Variables
+// * Define values for different breakpoint grid elements
+// *
+
+$include-grid:                   true;
+
+// Mobile grid
+$sm-grid-width:                  92%;
+$sm-grid-wide-width:             100%;
+$sm-grid-narrow-width:           80%;
+$sm-gutter:                      24px;
+$sm-gutter-sides:                0;
+$sm-max-spans:                   3;
+
+// Tablet grid
+$md-grid-width:                  90%;
+$md-grid-wide-width:             100%;
+$md-grid-narrow-width:           80%;
+$md-gutter:                      24px;
+$md-gutter-sides:                0;
+$md-max-spans:                   6;
+
+// Small desktop grid
+$grid-width:                     1000px;
+$grid-wide-width:                1160px;
+$grid-narrow-width:              820px;
+$gutter:                         24px;
+$gutter-sides:                   0;
+$lg-max-spans:                   6;
+
+// Large desktop grid
+$xl-grid-width:                  1180px;
+$xl-grid-wide-width:             1460px;
+$xl-grid-narrow-width:           980px;
+$xl-gutter:                      36px;
+$xl-gutter-sides:                0;

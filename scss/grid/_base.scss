@@ -1,0 +1,38 @@
+// *
+// * Grid system
+// * Define the properties of the common grid elements
+// *
+@use "../variables/global";
+@use "../variables/grid";
+@use "../mixins";
+
+.grid {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-items: stretch;
+}
+
+.span {
+    box-sizing: border-box;
+    display: flex;
+    padding: 0;
+
+    &.span-middle {
+        align-items: center;
+    }
+}
+
+// Reverse items on medium+ screens
+@include mixins.respond(md-up) {
+    .grid {
+        &.grid-reverse {
+            @for $i from 1 through grid.$md-max-spans {
+                & > *:nth-child(#{$i}) {
+                    order: ((grid.$md-max-spans + 1) - $i);
+                }
+            }
+        }
+    }
+}
