@@ -151,10 +151,18 @@ pre {
 
 // }
 
-// @include mixins.respond(md) {
+@include mixins.respond(md) {
+    .wrap {
+        padding-top: 50px;
+    }
+}
 
-// }
+@include mixins.respond(sm) {
+    .wrap {
+        padding-top: 0;
+    }
 
-// @include mixins.respond(sm) {
-
-// }
+	.menu-wrap {
+		display: none;
+	}
+}

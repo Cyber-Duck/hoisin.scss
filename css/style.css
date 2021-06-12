@@ -318,6 +318,20 @@ pre {
     padding-top: 50px;
   }
 }
+@media (min-width: 720px) and (max-width: 1179px) {
+  .wrap {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 720px) {
+  .wrap {
+    padding-top: 0;
+  }
+
+  .menu-wrap {
+    display: none;
+  }
+}
 .head {
   padding: 24px 0;
   color: #ffffff;
@@ -352,7 +366,7 @@ pre {
 .menu-wrap {
   height: 50px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.95);
   position: fixed;
   top: 0;
   z-index: 11;

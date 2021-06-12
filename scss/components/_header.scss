@@ -41,7 +41,7 @@
 .menu-wrap {
 	height: 50px;
 	width: 100%;
-	background-color: rgba($white, 0.75);
+	background-color: rgba($white, 0.95);
 	position: fixed;
 	top: 0;
 	z-index: 11;
@@ -79,7 +79,6 @@
 }
 
 @media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
-
 	.head {
 		color: $white;
 		height: auto;
