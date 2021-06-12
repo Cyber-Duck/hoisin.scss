@@ -18,6 +18,9 @@
     box-sizing: border-box;
     display: flex;
     padding: 0;
+    max-width: 100%;
+    min-width: 0;
+    overflow: visible;
 
     &.span-middle {
         align-items: center;

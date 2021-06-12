@@ -32,9 +32,5 @@
                 grid-template-columns: repeat(#{$i}, 1fr);
             }
         }
-
-        .span {
-            max-width: grid.$sm-grid-width;
-        }
     }
 }

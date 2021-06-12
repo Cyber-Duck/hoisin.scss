@@ -19,6 +19,9 @@
   box-sizing: border-box;
   display: flex;
   padding: 0;
+  max-width: 100%;
+  min-width: 0;
+  overflow: visible;
 }
 .span.span-middle {
   align-items: center;
@@ -171,9 +174,6 @@
   }
   .grid.sm-3 {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .grid .span {
-    max-width: 92%;
   }
 }
 body {
@@ -848,6 +848,10 @@ article p {
   .grid-tight article {
     margin-bottom: 0;
     border-radius: 0;
+  }
+
+  .content-wrap {
+    padding: 0 0 28px 0;
   }
 
   .content-area {
