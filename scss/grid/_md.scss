@@ -48,9 +48,5 @@
         &.md-sidebar-left {
             grid-template-columns: 1fr 3fr;
         }
-
-        .span {
-            max-width: grid.$md-grid-width;
-        }
     }
 }
