@@ -28,7 +28,7 @@
 @include mixins.respond(md-up) {
     .grid {
         &.grid-reverse {
-            @for $i from 1 through grid.$md-max-spans {
+            @for $i from 1 through grid.$lg-max-spans {
                 & > *:nth-child(#{$i}) {
                     order: ((grid.$md-max-spans + 1) - $i);
                 }
