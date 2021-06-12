@@ -2,7 +2,7 @@
  * Hoisin.scss
  * CSS responsive framework boilerplate
  * Create easy grid layouts, plugin anything
- * Version: 2.0.2
+ * Version: 2.0.3
  * Created by: Cyber-Duck Ltd <info@cyber-duck.co.uk>,
  *             Ramon Lapenta <me@ramonlapenta.com>
  *
@@ -87,9 +87,6 @@
   .grid.lg-sidebar-left {
     grid-template-columns: 1fr 3fr;
   }
-  .grid .span {
-    max-width: 1000px;
-  }
 }
 @media (min-width: 1480px) {
   .grid {
@@ -104,9 +101,6 @@
   }
   .grid.grid-wide {
     width: 1460px;
-  }
-  .grid .span {
-    max-width: 1180px;
   }
 }
 @media (min-width: 720px) and (max-width: 1179px) {
@@ -150,9 +144,6 @@
   .grid.md-sidebar-left {
     grid-template-columns: 1fr 3fr;
   }
-  .grid .span {
-    max-width: 90%;
-  }
 }
 @media (max-width: 720px) {
   .grid {
@@ -173,9 +164,6 @@
   }
   .grid.sm-3 {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .grid .span {
-    max-width: 92%;
   }
 }
 body {
