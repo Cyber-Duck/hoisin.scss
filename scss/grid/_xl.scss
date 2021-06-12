@@ -26,5 +26,9 @@
         &.grid-wide {
             width: grid.$xl-grid-wide-width;
         }
+
+        .span {
+            max-width: grid.$xl-grid-width;
+        }
     }
 }

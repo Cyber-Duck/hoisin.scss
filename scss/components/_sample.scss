@@ -76,6 +76,38 @@ section {
     }
 }
 
+.note {
+    border-radius: 8px;
+    background-color: rgb(250, 242, 195);
+    padding: math.div(grid.$gutter, 2);
+    margin-bottom: math.div(grid.$gutter, 2);
+}
+
+.content-wrap {
+    flex-basis: 100%;
+    margin: 0 0 12px 0;
+    position: relative;
+    padding-right: 100px;
+}
+
+.toggle-code {
+    color: #f1f1f1;
+    background: #333;
+    border: 0;
+    display: block;
+    padding: 5px 10px;
+    float: right;
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.sample-code {
+    display: none;
+    margin-bottom: 12px;
+}
 
 .code {
     font-family: 'Courier New', serif;
@@ -193,6 +225,11 @@ article {
         margin-bottom: grid.$gutter;
     }
 
+    .note {
+        padding: grid.$gutter;
+        margin-bottom: grid.$gutter;
+    }
+
     .gradient {
         background: #21492d;
         background: linear-gradient(90deg, #21492d 0%, #21492d 50%, #182d37 50%, #182d37 100%);
@@ -249,6 +286,11 @@ article {
         padding: grid.$xl-gutter;
         margin-bottom: grid.$xl-gutter;
     }
+
+.note {
+    padding: grid.$xl-gutter;
+    margin-bottom: grid.$xl-gutter;
+}
 }
 
 @include mixins.respond(md) {
@@ -268,7 +310,7 @@ article {
         font-size: 1.2em;
     }
 
-    .row-tight {
+    .grid-tight {
         article {
             margin-bottom: 0;
         }
@@ -284,13 +326,11 @@ article {
         }
 
         .sp1 {
-            padding-right: 24px;
-            padding-left: 0;
+            padding: 24px;
         }
 
         .sp5 {
-            padding-left: 24px;
-            padding-right: 0;
+            padding: 24px;
         }
     }
 
