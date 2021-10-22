@@ -11,8 +11,8 @@
     .grid {
         width: grid.$grid-width;
         gap: grid.$gutter;
-        @if(grid.$gutter-sides > 0) {
-        padding: 0 math.div(grid.$gutter-sides, 2);
+        @if (grid.$gutter-sides > 0) {
+            padding: 0 math.div(grid.$gutter-sides, 2);
         }
 
         &.grid-tight {

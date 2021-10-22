@@ -157,7 +157,7 @@
     width: 80%;
   }
   .grid.grid-wide {
-    width: 100%;
+    width: 96%;
   }
   .grid.sm-2 {
     grid-template-columns: repeat(2, 1fr);
