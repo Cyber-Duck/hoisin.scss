@@ -19,22 +19,22 @@
 // */
 @mixin respond($bp) {
     @if $bp == 'sm' {
-        @media (max-width: global.$bp-m) {
+        @media (max-width: global.$bp-s) {
             @content;
         }
     }
     @else if $bp == 'md' {
-        @media (min-width: global.$bp-m) and (max-width: (global.$bp-l - 1)) {
+        @media (min-width: global.$bp-s) and (max-width: (global.$bp-m - 1)) {
             @content;
         }
     }
     @else if $bp == 'md-up' {
-        @media (min-width: global.$bp-m) {
+        @media (min-width: global.$bp-s) {
             @content;
         }
     }
     @else if $bp == 'md-dn' {
-        @media (max-width: (global.$bp-l - 1)) {
+        @media (max-width: (global.$bp-m - 1)) {
             @content;
         }
     }
